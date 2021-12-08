@@ -40,16 +40,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxPro.4">
-      <HintPath>..\AjaxPro.4.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\AjaxPro.4.dll</HintPath>
     </Reference>
     <Reference Include="Cg_Cls_LeerConexionW">
-      <HintPath>..\Cg_Cls_LeerConexionW.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\Cg_Cls_LeerConexionW.dll</HintPath>
     </Reference>
     <Reference Include="IBM.Data.Informix">
-      <HintPath>..\IBM.Data.Informix.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\IBM.Data.Informix.dll</HintPath>
     </Reference>
-    <Reference Include="LbrUtilerias">
-      <HintPath>..\LbrUtilerias.dll</HintPath>
+    <Reference Include="LbrUtilerias, Version=1.0.2424.17648, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\LbrUtilerias.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />

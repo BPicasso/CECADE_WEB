@@ -111,11 +111,10 @@
       l45.369-14.738C320.371,243.946,323.965,236.895,321.832,230.327z"/>
     </svg>
   </a>
-        <%--<div class="mensaje "></div>--%>
+      
 </div>
                                
-                                              
-                                         
+                                      
 
 </body>
 <script src="js/global.js"></script>
