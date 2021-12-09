@@ -162,6 +162,41 @@ width: 640px;
   font-size: 16px;
 }
 
+.why-us .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#d70067 50%, rgba(112, 34, 131, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+}
+
+.why-us .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(112, 34, 131, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(112, 34, 131, 0);
+}
+
 </style>
 
 <body>
