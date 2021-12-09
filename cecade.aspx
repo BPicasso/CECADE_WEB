@@ -168,7 +168,7 @@ width: 640px;
     .why-us .video-box {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 610px;
+    min-height: 620px;
     position: relative;
 }
 
