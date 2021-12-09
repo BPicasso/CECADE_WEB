@@ -12,6 +12,24 @@ namespace WebCECADE
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Session.IsNewSession)
+            {
+                Response.Redirect("Inicia.aspx");
+            }
+            else
+            {
+                if (Session["id"].Equals("3"))
+                {
+                    Response.Redirect("cecade.aspx");
+                }
+                else
+                {
+
+                }
+            }
+                
+          
+            
         }
     }
 }

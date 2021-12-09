@@ -19,10 +19,10 @@ namespace WebCECADE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        [WebMethod]
+        [WebMethod(EnableSession =true)]
         public static String Login(Usuario objUsuario)
         {
             //Aqui se usa Cg_Cls_LeerConexion que es la libreria que permite leer la conexion encriptada de la BD de CECADE
@@ -55,6 +55,9 @@ namespace WebCECADE
                         String scontrasena = DTblTmp.Rows[0]["contrasena"].ToString();
                         if (sNombre.Equals(objUsuario.user) && scontrasena.Equals(objUsuario.password))
                         {
+                            HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["id"].ToString();
+                            HttpContext.Current.Session["Usuario"] = sNombre;
+                            HttpContext.Current.Session["Contrasena"] = scontrasena;
                             User.Add(DTblTmp.Rows[0]["id"].ToString());
                             User.Add(sNombre);
                             User.Add(scontrasena);

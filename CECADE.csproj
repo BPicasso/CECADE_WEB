@@ -40,17 +40,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxPro.4">
-      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\AjaxPro.4.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Proyectos Visual\AjaxPro.4.dll</HintPath>
     </Reference>
     <Reference Include="Cg_Cls_LeerConexionW">
-      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\Cg_Cls_LeerConexionW.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Proyectos Visual\Cg_Cls_LeerConexionW.dll</HintPath>
     </Reference>
     <Reference Include="IBM.Data.Informix">
-      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\IBM.Data.Informix.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Proyectos Visual\IBM.Data.Informix.dll</HintPath>
     </Reference>
     <Reference Include="LbrUtilerias, Version=1.0.2424.17648, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Desktop\PROYECTO CECADE\LbrUtilerias.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Proyectos Visual\LbrUtilerias.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -107,8 +107,12 @@
     <Content Include="assets\vendor\remixicon\remixicon.ttf" />
     <Content Include="assets\vendor\remixicon\remixicon.woff" />
     <Content Include="assets\vendor\remixicon\remixicon.woff2" />
+    <Content Include="becas.aspx" />
     <Content Include="cecade.aspx" />
     <Content Include="cursos.aspx" />
+    <Content Include="cursosempleado.aspx" />
+    <Content Include="cursosmes.aspx" />
+    <Content Include="cursosvirtual.aspx" />
     <Content Include="forms\contact.php" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -240,10 +244,18 @@
     <Content Include="Inicia.aspx" />
     <Content Include="js\global.js" />
     <Content Include="menu.aspx" />
+    <Content Include="modalidad.aspx" />
     <Content Include="recrsoshumanos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="becas.aspx.cs">
+      <DependentUpon>becas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="becas.aspx.designer.cs">
+      <DependentUpon>becas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cecade.aspx.cs">
       <DependentUpon>cecade.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -257,6 +269,27 @@
     </Compile>
     <Compile Include="cursos.aspx.designer.cs">
       <DependentUpon>cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cursosempleado.aspx.cs">
+      <DependentUpon>cursosempleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cursosempleado.aspx.designer.cs">
+      <DependentUpon>cursosempleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cursosmes.aspx.cs">
+      <DependentUpon>cursosmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cursosmes.aspx.designer.cs">
+      <DependentUpon>cursosmes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cursosvirtual.aspx.cs">
+      <DependentUpon>cursosvirtual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cursosvirtual.aspx.designer.cs">
+      <DependentUpon>cursosvirtual.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormularioBeca.aspx.cs">
       <DependentUpon>FormularioBeca.aspx</DependentUpon>
@@ -278,6 +311,13 @@
     </Compile>
     <Compile Include="menu.aspx.designer.cs">
       <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modalidad.aspx.cs">
+      <DependentUpon>modalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modalidad.aspx.designer.cs">
+      <DependentUpon>modalidad.aspx</DependentUpon>
     </Compile>
     <Compile Include="model\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
