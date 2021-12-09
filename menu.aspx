@@ -37,36 +37,28 @@
 
 <div class="container" >
   <div  class="frame" >
-
     <div class="nav"  >
       <ul class"links">
-        <li  class="signin-active"><a href="recrsoshumanos.aspx" style="color: #fff"; class="btn">Recursos Humanos</a></li>
+        <li  class="signin-active"><a id="Entrada" onClick="cecade();" style="color: #fff"; class="btn">Recursos Humanos</a></li>
+
       </ul>
     </div>
   </div>
 </div>
-
-
 <div class="container">
   <div  class="frame">
     <div class="nav">
       <ul class"links">
-
-                <li class="signup-active"><a href="cecade.aspx" style="color: #fff";  class="btn">CECADE</a></li>
+                <li class="signup-active"><a onClick="cecade();" style="color: #fff";  class="btn">CECADE</a></li>
       </ul>
-    </div>   
+    </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
 </body>
+
+
+    <script src="js/Menu.js"></script>
+
 <script type="text/javascript">
 	
     window.location.hash = "no-back-button";
@@ -74,38 +66,8 @@
     window.onhashchange = function () { window.location.hash = "no-back-button"; }
 
 
-$(function() {
-	$(".btn").click(function() {
-		$(".form-signin").toggleClass("form-signin-left");
-    $(".form-signup").toggleClass("form-signup-left");
-    $(".frame").toggleClass("frame-long");
-    $(".signup-inactive").toggleClass("signup-active");
-    $(".signin-active").toggleClass("signin-inactive");
-    $(".forgot").toggleClass("forgot-left");   
-    $(this).removeClass("idle").addClass("active");
-	});
-});
 
-$(function() {
-	$(".btn-signup").click(function() {
-  $(".nav").toggleClass("nav-up");
-  $(".form-signup-left").toggleClass("form-signup-down");
-  $(".success").toggleClass("success-left"); 
-  $(".frame").toggleClass("frame-short");
-	});
-});
-
-$(function() {
-	$(".btn-signin").click(function() {
-  $(".btn-animate").toggleClass("btn-animate-grow");
-  $(".welcome").toggleClass("welcome-left");
-  $(".cover-photo").toggleClass("cover-photo-down");
-  $(".frame").toggleClass("frame-short");
-  $(".profile-photo").toggleClass("profile-photo-down");
-  $(".btn-goback").toggleClass("btn-goback-up");
-  $(".forgot").toggleClass("forgot-fade");
-	});
-});
+ 
 
 
 

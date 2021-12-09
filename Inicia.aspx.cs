@@ -30,9 +30,9 @@ namespace WebCECADE
             Cg_Cls_LeerConexion clsConexion = new Cg_Cls_LeerConexion();
             ClsTransaccionesWeb Obj_Transacciones = new ClsTransaccionesWeb(clsConexion.cadenaConexion, "Infiernix");
             //la respuesta que regresa el String respuesta la valida en global.js para comprobar si la session fue correcta
-            string respuesta = "Por favor de De verificar los datos";
+            string respuesta = "La Contraseña o el Usuario ingresado es Incorrecta";
 
-            if (objUsuario == null)
+            if (objUsuario.user == "")
             {
                 respuesta = "Por favor de llenar los campos";
             }
@@ -43,10 +43,10 @@ namespace WebCECADE
                // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
 
                 String SQL = "SELECT usuario_ap,nombre,contrasena FROM usuario where usuario_ap ='" + objUsuario.user + "'";
-                String SQL2 = " execute procedure usuario_entrada('" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "')";
+                String SQL2 = " execute procedure usuario_entrada('" + objUsuario.user + "','" + objUsuario.password + "')";
 
                 //aqui reguistra los datos de la consulta
-                DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta2");
+                DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta2");
                 if (DTblTmp2!=null)
                 {
                     if (DTblTmp2.Rows.Count > 0)
@@ -59,18 +59,32 @@ namespace WebCECADE
                         {
                             if (DTblTmp.Rows.Count > 0)
                             {
-                                String sNombre = DTblTmp.Rows[0]["nombre"].ToString();
-                                String scontrasena = objUsuario.password;
-                               
-                                    HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["contrasena"].ToString();
-                                    HttpContext.Current.Session["Usuario"] = sNombre;
-                                   
+                                //verifica por el procedimiento si el error es de contrasena o de estatus
+                                switch (DTblTmp2.Rows[0]["column2"].ToString())
+                                {
 
-                                    User.Add(DTblTmp.Rows[0]["contrasena"].ToString());
-                                    User.Add(sNombre);
-                                    User.Add(DTblTmp.Rows[0]["nombre"].ToString());
-                                    respuesta = "Success";
-                                
+                                    case "1":
+                                        respuesta = "Usuario Inactivo";
+                                        break;
+                                    case "2":
+                                        respuesta = "La Contraseña o el Usuario ingresado es Incorrecta";
+                                        break;
+
+                                    default:
+                                        String sNombre = DTblTmp.Rows[0]["nombre"].ToString();
+                                        String scontrasena = objUsuario.password;
+
+                                        HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["contrasena"].ToString();
+                                        HttpContext.Current.Session["Usuario"] = sNombre;
+
+
+                                        User.Add(DTblTmp.Rows[0]["contrasena"].ToString());
+                                        User.Add(sNombre);
+                                        User.Add(DTblTmp.Rows[0]["nombre"].ToString());
+                                        respuesta = "Success";
+                                        break;
+                                }
+
 
                             }
 
@@ -96,12 +110,6 @@ namespace WebCECADE
                 //    }
 
                 //}
-
-
-
-
-
-
             }
             clsConexion = null;
             Obj_Transacciones = null;
