@@ -170,7 +170,7 @@ width: 640px;
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i style="color: #d70067;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@gmail.com</a>
+        <i style="color: #d70067;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
         <i style="color: #d70067;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
       <div class="cta d-none d-md-block">
@@ -189,7 +189,7 @@ width: 640px;
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="menu.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="menu.aspx">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">¿Quienes Somos?</a></li>
           <li><a class="nav-link scrollto" href="#cta">Marco Legal</a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
@@ -405,7 +405,7 @@ width: 640px;
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
       </div>
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
 
@@ -449,7 +449,7 @@ width: 640px;
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Cátalogo de cursos</h4>
               <p>Programas</p>
-              <a href="cursos.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="cursos.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -458,7 +458,7 @@ width: 640px;
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Modalidades</h4>
               <p>Presencial y Virtual</p>
-              <a href="modalidad.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="modalidad.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -466,7 +466,7 @@ width: 640px;
             <img src="assets/img/img3.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Cursos del mes</h4>
-              <a href="cursosmes.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="cursosmes.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -474,7 +474,7 @@ width: 640px;
             <img src="assets/img/img4.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Mis Cursos</h4>
-              <a href="cursosempleado.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="cursosempleado.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -483,7 +483,7 @@ width: 640px;
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Detección de Necesidad de Capacitación</h4>
               <p>DNC</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -513,7 +513,7 @@ width: 640px;
               <h4>Beca</h4>
               <p>UACH Maestría</p>
               <a href="assets/img/imgbeca.jpg" class="preview-link" ><i class="bx bx-plus"></i></a>
-              <a href="becas.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="becas.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 

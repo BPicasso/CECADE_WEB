@@ -291,7 +291,7 @@ transform: skewY(10deg);
     <div id="topbar" class="fixed-top d-flex align-items-center ">
       <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@gmail.com</a>
+          <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
           <i style="color: #e50069;" class="bi bi-phone-fill phone-icon"></i> 4293300
         </div>
       <!--div class="cta d-none d-md-block">
@@ -304,11 +304,11 @@ transform: skewY(10deg);
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="cursosvirtual.html">CURSOS VIRTUALES</a></h1>
+      <h1 class="logo"><a href="cursosvirtual.aspx">CURSOS VIRTUALES</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="modalidad.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="modalidad.aspx">Inicio</a></li>
           
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

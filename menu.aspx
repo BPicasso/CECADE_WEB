@@ -41,37 +41,21 @@
     <div class="nav"  >
       <ul class"links">
         <li  class="signin-active"><a href="recrsoshumanos.aspx" style="color: #fff"; class="btn">Recursos Humanos</a></li>
-        
-        
-
       </ul>
     </div>
-
-     
   </div>
-
 </div>
-
-
-
-
-
 
 
 <div class="container">
   <div  class="frame">
-    
     <div class="nav">
       <ul class"links">
 
                 <li class="signup-active"><a href="cecade.aspx" style="color: #fff";  class="btn">CECADE</a></li>
-        
       </ul>
-    </div>
-
-     
+    </div>   
   </div>
-
 </div>
 
 
