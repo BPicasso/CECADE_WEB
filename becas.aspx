@@ -77,13 +77,13 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="becas.html">Becas</a></h1>
+      <h1 class="logo"><a href="becas.aspx">Becas</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="cecade.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="cecade.aspx">Inicio</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -113,7 +113,7 @@
             <img src="assets/img/beca1.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca Navideña</h4>
-              <a href="FormularioBeca.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -121,7 +121,7 @@
             <img src="assets/img/beca2.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca Benito Juarez</h4>
-              <a href="FormularioBeca.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -129,7 +129,7 @@
             <img src="assets/img/beca3.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca Deportiva</h4>
-              <a href="FormularioBeca.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -137,7 +137,7 @@
             <img src="assets/img/beca4.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca al Extranjero</h4>
-              <a href="FormularioBeca.html" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -145,7 +145,7 @@
             <img src="assets/img/beca5.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca Excelencia Académica</h4>
-              <a href="FormularioBeca.html" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
+              <a href="FormularioBeca.aspx" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -153,7 +153,7 @@
             <img width="900" src="assets/img/beca6.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca Bienestar</h4>
-                <a href="FormularioBeca.html" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
+                <a href="FormularioBeca.aspx" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
