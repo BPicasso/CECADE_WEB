@@ -189,7 +189,7 @@ width: 640px;
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="menu.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="menu.aspx">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">¿Quienes Somos?</a></li>
           <li><a class="nav-link scrollto" href="#cta">Marco Legal</a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
@@ -405,7 +405,7 @@ width: 640px;
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
       </div>
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
 
