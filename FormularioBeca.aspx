@@ -1,8 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="portfolio-details.aspx.cs" Inherits="WebCECADE.portfolio_details" %>
 
 <!DOCTYPE html>
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +10,7 @@
   <title>Formulario</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-       <link rel="stylesheet" href="CSS\StyleBeca.css" />
+
   <!-- Favicons -->
   <!--link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
@@ -41,7 +39,116 @@
   ======================================================== -->
 </head>
 
+<style type="text/css">
 
+.cta {
+    background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url(../img/cta-bg.jpg) fixed center center;
+    background-size: all;
+    padding: 120px 0;
+}
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 9px solid #702283;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+.cta .cta-btn:hover {
+    background: #702283;
+}
+.cta .cta-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 8px 26px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    border-radius: 50px;
+    border: 5px solid #702283;
+    color: #fff;
+}
+
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 35%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+
+.form-control {
+    display: block;
+    width: 243%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font: message-box;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #702283;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 9px solid #702283;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 1px;
+    font-family: inherit;
+    border: 9px solid #702283;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#header {
+    background: #702283;
+    transition: all 0.5s;
+    z-index: 997;
+    height: 70px;
+    top: 60px;
+}
+
+#footer {
+    background: #702283;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+#header.header-scrolled {
+    background: rgba(112, 34, 131, 0.9);
+    top: 0;
+}
+
+
+</style>
 
 <body>
 
@@ -51,7 +158,7 @@
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">recursoshumanos@gmail.com</a>
+        <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
         <i style="color: #e50069;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
       <!--div class="cta d-none d-md-block">
@@ -64,13 +171,13 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="inicia.aspx">FORMULARIO BECA</a></h1>
+      <h1 class="logo"><a href="FormularioBeca.aspx">FORMULARIO BECA</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="cecade.aspx">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="becas.aspx">Inicio</a></li>
           
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

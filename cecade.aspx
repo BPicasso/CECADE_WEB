@@ -170,7 +170,7 @@ width: 640px;
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i style="color: #d70067;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@gmail.com</a>
+        <i style="color: #d70067;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
         <i style="color: #d70067;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
       <div class="cta d-none d-md-block">

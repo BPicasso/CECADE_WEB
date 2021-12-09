@@ -288,7 +288,7 @@ transform: skewY(10deg);
     <div id="topbar" class="fixed-top d-flex align-items-center ">
       <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@gmail.com</a>
+          <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
           <i style="color: #e50069;" class="bi bi-phone-fill phone-icon"></i> 4293300
         </div>
     </div>
@@ -298,11 +298,11 @@ transform: skewY(10deg);
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="cursosmes.html">CURSOS DEL MES</a></h1>
+      <h1 class="logo"><a href="cursosmes.aspx">CURSOS DEL MES</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="cecade.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="cecade.aspx">Inicio</a></li>
           
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

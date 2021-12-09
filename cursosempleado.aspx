@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cursosempleado.aspx.cs" Inherits="CECADE.cursosempleado" %>
 
-  <!DOCTYPE html>
+   <!DOCTYPE html>
   <html lang="en">
 
   <head>
@@ -291,7 +291,7 @@
     <div id="topbar" class="fixed-top d-flex align-items-center ">
       <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@gmail.com</a>
+          <i style="color: #e50069;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
           <i style="color: #e50069;" class="bi bi-phone-fill phone-icon"></i> 4293300
         </div>
       <!--div class="cta d-none d-md-block">
@@ -304,11 +304,11 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="cursosempleado.html">MIS CURSOS</a></h1>
+      <h1 class="logo"><a href="cursosempleado.aspx">MIS CURSOS</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="cecade.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="cecade.aspx">Inicio</a></li>
           
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

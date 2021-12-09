@@ -70,7 +70,7 @@
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i style="color: #d70067;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@gmail.com</a>
+        <i style="color: #d70067;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
         <i style="color: #d70067;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
 
@@ -81,13 +81,13 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="modalidad.html">MODALIDADES</a></h1>
+      <h1 class="logo"><a href="modalidad.aspx">MODALIDADES</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="cecade.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="cecade.aspx">Inicio</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -112,14 +112,14 @@
               <img src="assets/img/virtual.jpg" class="img-fluid" alt="">
               <div style="background-color: #d70067"; class="portfolio-info">
                 <h4>Cursos Virtuales</h4>
-                <a href="cursosvirtual.html" class="details-link" ><i class="bx bx-link"></i></a>
+                <a href="cursosvirtual.aspx" class="details-link" ><i class="bx bx-link"></i></a>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <img src="assets/img/presencial.jpg" class="img-fluid" alt="">
               <div style="background-color: #d70067"; class="portfolio-info">
-                <h4>Modalidades</h4>
+                <h4>Cursos Presenciales</h4>
                 <!--a href="assets/img/presencialvirtual1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a-->
 
               </div>
