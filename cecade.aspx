@@ -165,7 +165,7 @@ width: 640px;
 
 }
 
-    .why-us1 .video-box {
+    .why-us .video-box {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 610px;
@@ -266,7 +266,7 @@ width: 640px;
     </div>
   </header><!-- End Header -->
 
-  <section id="why-us1" class="why-us1">
+  <section id="why-us" class="why-us">
 
     <div class="col-lg-12 align-items-center position-center video-box" style='background-image: url("assets/img/maru1.jpg");' >
       <a href="https://www.youtube.com/watch?v=2VfLYaUx-mY" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
