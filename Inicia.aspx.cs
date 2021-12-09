@@ -40,44 +40,68 @@ namespace WebCECADE
             {
                 //llamas a la cadena de conexion que esta se abre en automatico por la libreria LbrUtilerias
                 String conectar = clsConexion.cadenaConexion;
-                String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
+               // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
+
+                String SQL = "SELECT usuario_ap,nombre,contrasena FROM usuario where usuario_ap ='" + objUsuario.user + "'";
+                String SQL2 = " execute procedure usuario_entrada('" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "')";
+
                 //aqui reguistra los datos de la consulta
-                DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta");
-
-                //Se declara una lista para almacenar los datos de la consulta
-                List<String> User = new List<String>();
-
-                if (DTblTmp != null)
+                DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta2");
+                if (DTblTmp2!=null)
                 {
-                    if (DTblTmp.Rows.Count > 0)
+                    if (DTblTmp2.Rows.Count > 0)
                     {
-                        String sNombre = DTblTmp.Rows[0]["nombre"].ToString();
-                        String scontrasena = DTblTmp.Rows[0]["contrasena"].ToString();
-                        if (sNombre.Equals(objUsuario.user) && scontrasena.Equals(objUsuario.password))
+
+                        //Se declara una lista para almacenar los datos de la consulta
+                        List<String> User = new List<String>();
+                        DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta");
+                        if (DTblTmp != null)
                         {
-                            HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["id"].ToString();
-                            HttpContext.Current.Session["Usuario"] = sNombre;
-                            HttpContext.Current.Session["Contrasena"] = scontrasena;
-                            User.Add(DTblTmp.Rows[0]["id"].ToString());
-                            User.Add(sNombre);
-                            User.Add(scontrasena);
-                            respuesta = "Success";
-                        }
-                        else
-                        {
-                            respuesta = "Por favor de De verificar los datos";
+                            if (DTblTmp.Rows.Count > 0)
+                            {
+                                String sNombre = DTblTmp.Rows[0]["nombre"].ToString();
+                                String scontrasena = objUsuario.password;
+                               
+                                    HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["contrasena"].ToString();
+                                    HttpContext.Current.Session["Usuario"] = sNombre;
+                                   
+
+                                    User.Add(DTblTmp.Rows[0]["contrasena"].ToString());
+                                    User.Add(sNombre);
+                                    User.Add(DTblTmp.Rows[0]["nombre"].ToString());
+                                    respuesta = "Success";
+                                
+
+                            }
+
+
                         }
                     }
-                    else
-                    {
-                        respuesta = "Por favor de De verificar los datos";
-                    }
+                }
 
-                }
-                else
-                {
-                    respuesta = "Por favor de De verificar los datos";
-                }
+
+                //if (DTblTmp.Rows.Count > 0)
+                //{
+                //    String sNombre = DTblTmp.Rows[0]["nombre"].ToString();
+                //    String scontrasena = DTblTmp.Rows[0]["contrasena"].ToString();
+                //    if (sNombre.Equals(objUsuario.user) && scontrasena.Equals(objUsuario.password))
+                //    {
+                //        HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["id"].ToString();
+                //        HttpContext.Current.Session["Usuario"] = sNombre;
+                //        HttpContext.Current.Session["Contrasena"] = scontrasena;
+                //        User.Add(DTblTmp.Rows[0]["id"].ToString());
+                //        User.Add(sNombre);
+                //        User.Add(scontrasena);
+                //        respuesta = "Success";
+                //    }
+
+                //}
+
+
+
+
+
+
             }
             clsConexion = null;
             Obj_Transacciones = null;
