@@ -41,6 +41,13 @@
 
 <style type="text/css">
 
+    .why-us .video-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    position: relative;
+}
+
 
   #hero {
     width: 100%;
