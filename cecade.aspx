@@ -162,6 +162,14 @@ width: 640px;
   text-decoration: none;
   padding: 20px;
   font-size: 16px;
+
+}
+
+    .why-us1 .video-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 610px;
+    position: relative;
 }
 
 .why-us .play-btn {
@@ -199,12 +207,7 @@ width: 640px;
   background: rgba(112, 34, 131, 0);
 }
 
-    .why-us1 .video-box {
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 610px;
-    position: relative;
-}
+
 
 </style>
 
