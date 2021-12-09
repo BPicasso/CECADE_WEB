@@ -44,7 +44,7 @@
     .why-us .video-box {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 400px;
+    min-height: 600px;
     position: relative;
 }
 
