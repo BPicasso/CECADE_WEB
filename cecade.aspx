@@ -39,7 +39,130 @@
   ======================================================== -->
 </head>
 
+<style type="text/css">
 
+
+  #hero {
+    width: 100%;
+    height: 43vh;
+    overflow: hidden;
+    position: relative;
+    background: url("../img/hero-bg.jpg") top center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -90px;
+    z-index: 99;
+    transition: 0.3s;
+  }
+
+  .icon-boxes .icon-box {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #702383;
+    transform: scale(1);
+    box-shadow: 50px 100px 120px 0 rgb(112 34 131 / 20%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 60px;
+  }
+
+    .icon-boxes .icon-box1 {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #e50069;
+    transform: scale(1);
+    box-shadow: 50px 100px 120px 0 rgb(229 0 105 / 20%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 60px;
+  }
+
+
+
+#topbar {
+  height: 60px;
+  padding: 0;
+  font-size: 14px;
+  transition: all 0.5s;
+  overflow: hidden;
+  color: black;
+  z-index: 996;
+}
+
+#topbar .contact-info a {
+  line-height: 0;
+  color: black;
+  transition: 0.3s;
+}
+
+
+
+.accordian {
+  width: 805px; height: 320px;
+  overflow: hidden;
+  
+  /*Time for some styling*/
+  margin: 100px auto;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+  width: 1200px;
+  /*This will give ample space to the last item to move
+  instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+  position: relative;
+  display: block;
+  width: 160px;
+  float: left;
+  
+  border-left: 1px solid #888;
+  
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  
+  /*Transitions to give animation effect*/
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  /*If you hover on the images now you should be able to 
+  see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+  display: block;
+}
+
+/*Image title styles*/
+.image_title {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0; bottom: 0; 
+width: 640px; 
+
+}
+.image_title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+}
+
+</style>
 
 <body>
 
@@ -51,7 +174,7 @@
         <i style="color: #d70067;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
       <div class="cta d-none d-md-block">
-        <a  href="menu.aspx" class="scrollto">Cerrar Sesión</a>
+        <a  href="menu.html" class="scrollto">Cerrar Sesión</a>
       </div>
     </div>
   </div>
@@ -60,13 +183,13 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="cecade.aspx">SISTEMA CECADE</a></h1>
+      <h1 class="logo"><a href="cecade.html">SISTEMA CECADE</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="menu.aspx">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="menu.html">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">¿Quienes Somos?</a></li>
           <li><a class="nav-link scrollto" href="#cta">Marco Legal</a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
@@ -75,16 +198,6 @@
           <li><a href="blog.html">Blog</a></li-->
           <li class="dropdown"><a href="#portfolio"><span>Capacitación y desarrollo</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <!--li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Capacitación y desarrollo</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li-->
               <li><a href="#portfolio">Cátalogo de Cursos</a></li>
               <li><a href="#portfolio">Modalidades</a></li>
               <li><a href="#portfolio">Solicitar un curso para tu Dependencia</a></li>
@@ -106,44 +219,13 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+  <section id="why-us" class="why-us">
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Bienvenidos</h2>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">CECADE</h2>
-          <p class="animate__animated animate__fadeInUp">Centro de Capacitación y Desarrollo</p>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <!--div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
-      </div-->
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
-
+    <div class="col-lg-12 align-items-center position-center video-box" style='background-image: url("assets/img/maru1.jpg");' >
+      <a href="https://www.youtube.com/watch?v=2VfLYaUx-mY" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
     </div>
-  </section><!-- End Hero -->
+
+  </section><!-- End Why Us Section -->
 
   <main id="main">
 
@@ -151,105 +233,38 @@
     <section id="icon-boxes" class="icon-boxes">
       <div class="container">
 
-        <div id="app"></div>
-
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
-
-              <h4 class="title"><a style="color: #121212;" href="">Día Internacional de la mujer</a></h4>
-
-              <div class="clients-slider swiper" >
-                <div class="swiper-wrapper align-items-center" >
-
-
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen1.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen1.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                </div>
-                <br>
-                <br>
-                <div class="swiper-pagination"></div>
-              </div>
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" width="250" height="380"></a>
             </div>
           </div>
-
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <!--div class="icon"><i class="bx bx-file"></i></div-->
-              <h4 class="title"><a style="color: #121212;" href="">Centro de Capacitación y Desarrollo</a></h4>
-                            <div class="clients-slider swiper" >
-                <div class="swiper-wrapper align-items-center" >
-
-
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen6.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen6.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                </div>
-                <br>
-                <br>
-                <div class="swiper-pagination"></div>
-              </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box1">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/FLAYERSOTOLERÍA.png" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/FLAYERSOTOLERÍA.png" width="250" height="380"></a>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
-              <!--div class="icon"><i class="bx bx-tachometer"></i></div-->
-              <h4 class="title"><a style="color: #121212;" href="">Becas para Maestría</a></h4>
-                            <div class="clients-slider swiper" >
-                <div class="swiper-wrapper align-items-center" >
-
-
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen3.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen3.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                </div>
-                <br>
-                <br>
-                <div class="swiper-pagination"></div>
-              </div>
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/SALÓNCOMICS.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/SALÓNCOMICS.jpg" width="250" height="380"></a>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <!--div class="icon"><i class="bx bx-layer"></i></div-->
-              <h4 class="title"><a style="color: #121212;" href="">Lenguaje Incluyente</a></h4>
-                            <div class="clients-slider swiper" >
-                <div class="swiper-wrapper align-items-center" >
-
-
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen3.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen4.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/"  class="img-fluid" alt=""></div>
-                </div>
-                <br>
-                <br>
-                <div class="swiper-pagination"></div>
-              </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box1">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/PEKESYFAMILY.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/PEKESYFAMILY.jpg" width="250" height="380"></a>
             </div>
           </div>
 
         </div>
 
       </div>
-
-
-
     </section><!-- End Icon Boxes Section -->
 
     <!-- ======= About Us Section ======= -->
@@ -316,48 +331,48 @@
 </section><!-- End About Us Section -->
 
 
-  <!-- ======= Cta Section ======= -->
-  <section id="cta" class="cta">
-    <div class="container" data-aos="fade-up">
+<!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+  <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <h2 style="color:#FFFFFF";>Marco Legal</h2>
-        <div class="col-md-15 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
-          <div class="icon-box">
+    <div class="section-title">
+      <h2 style="color:#FFFFFF";>Marco Legal</h2>
+      <div class="col-md-15 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon-box">
 
-            <h4><b><a href="#" style="color:#000000";>ARTÍCULO 51. Compete al Centro de Capacitación y Desarrollo, las siguinetes funciones:</a></b></h4>
-            <p style='text-align: justify;'>I. Aplicar las póliticas establecidad por la Subsecretaria de Administración en materia de reclutamiento y selección del personal al servicio del Poder Ejecutivo.</p>
-            <p style='text-align: justify;'>II. Apoyar a las Dependencias, y en su caso a las entidades, en el reclutamiento y la selección de su personal.</p>
-            <p style='text-align: justify;'>III. Diseñar e impartir a los empleados de nuevo ingreso a las Dependencias, el Programa de Inducción al Gobierno del Estado, proporcionadoles la información básica relativa a las mismas, así como en relación a sus derechos y obligaciones públicos.</p>
-            <p style='text-align: justify;'>IV. Operar los sistemas de detección de necesidades de capacitación, actualización y desarrollo humano de los servidores públicos.</p>
-            <p style='text-align: justify;'>V. Diseñar y desarrollar programas de capacitación para el recurso humano de las Dependencias, así como validar en su caso los formulados por éstas.</p>
-            <p style='text-align: justify;'>VI. Elaborar el Programa Anual de Capacitación, basandose en la detección de necesidades de las Dependencias.</p>
-            <p style='text-align: justify;'>VII. Llevar el control de los cursos impartidos y evaluar en coordinación con las dependencias su eficiencia.</p>
-            <p style='text-align: justify;'>VIII. Evaluar y tramitar el otorgamiento de becas de capacitación y actualización al personal adscrito a las Dependencias, con apego a las políticas establecidas por la Dirección General de Administración.</p>
+          <h4><b><a href="#" style="color:#000000";>ARTÍCULO 51. Compete al Centro de Capacitación y Desarrollo, las siguinetes funciones:</a></b></h4>
+          <p style='text-align: justify;'>I. Aplicar las póliticas establecidad por la Subsecretaria de Administración en materia de reclutamiento y selección del personal al servicio del Poder Ejecutivo.</p>
+          <p style='text-align: justify;'>II. Apoyar a las Dependencias, y en su caso a las entidades, en el reclutamiento y la selección de su personal.</p>
+          <p style='text-align: justify;'>III. Diseñar e impartir a los empleados de nuevo ingreso a las Dependencias, el Programa de Inducción al Gobierno del Estado, proporcionadoles la información básica relativa a las mismas, así como en relación a sus derechos y obligaciones públicos.</p>
+          <p style='text-align: justify;'>IV. Operar los sistemas de detección de necesidades de capacitación, actualización y desarrollo humano de los servidores públicos.</p>
+          <p style='text-align: justify;'>V. Diseñar y desarrollar programas de capacitación para el recurso humano de las Dependencias, así como validar en su caso los formulados por éstas.</p>
+          <p style='text-align: justify;'>VI. Elaborar el Programa Anual de Capacitación, basandose en la detección de necesidades de las Dependencias.</p>
+          <p style='text-align: justify;'>VII. Llevar el control de los cursos impartidos y evaluar en coordinación con las dependencias su eficiencia.</p>
+          <p style='text-align: justify;'>VIII. Evaluar y tramitar el otorgamiento de becas de capacitación y actualización al personal adscrito a las Dependencias, con apego a las políticas establecidas por la Dirección General de Administración.</p>
 
-            <p style='text-align: justify;'>IX. Fomentar y organizar en el ámbito institucional las actividades de recreación e integración de los servidores públicos, en coordinacion con las Dependencias.</p>
-            <br>
-            <h4><b><a href="#" style="color:#000000";>Anexo al periódico oficial Miércoles 10 de septiembre del 2014. 45</a></b></h4>
-            <p style='text-align: justify;'>X. Administrar la bolsa de trabajo del Gobierno del Estado, en coordinación con la Secretaría de Trabajo y Previsión Social.</p>
-            <p style='text-align: justify;'>XI. Extender constancias a los prestadores del servicio social y prácticas profesionales realizadas en las dependencias del Poder Ejecutivo.</p>
-            <p style='text-align: justify;'>XII. Las funciones que le asigne el Secretario, el Subsecretario de Administración y/o Director de Recursos Humanos, y las demás que les competen de conformidad con las disposiciones legales y reglamentarias alicables.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="container" align="right">
-
-      <div class="row" data-aos="zoom-in">
-        <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="assets/img/cacech_anexo73-2014.pdf" download="cacech_anexo73-2014.pdf">Consultar Reglamento Interior de la Secretaría de Hacienda</a>
+          <p style='text-align: justify;'>IX. Fomentar y organizar en el ámbito institucional las actividades de recreación e integración de los servidores públicos, en coordinacion con las Dependencias.</p>
+          <br>
+          <h4><b><a href="#" style="color:#000000";>Anexo al periódico oficial Miércoles 10 de septiembre del 2014. 45</a></b></h4>
+          <p style='text-align: justify;'>X. Administrar la bolsa de trabajo del Gobierno del Estado, en coordinación con la Secretaría de Trabajo y Previsión Social.</p>
+          <p style='text-align: justify;'>XI. Extender constancias a los prestadores del servicio social y prácticas profesionales realizadas en las dependencias del Poder Ejecutivo.</p>
+          <p style='text-align: justify;'>XII. Las funciones que le asigne el Secretario, el Subsecretario de Administración y/o Director de Recursos Humanos, y las demás que les competen de conformidad con las disposiciones legales y reglamentarias alicables.</p>
         </div>
       </div>
 
     </div>
-  </section><!-- End Cta Section -->
+
+  </div>
+
+  <div class="container" align="right">
+
+    <div class="row" data-aos="zoom-in">
+      <div class="col-lg-3 cta-btn-container text-center">
+        <a class="cta-btn align-middle" href="assets/img/cacech_anexo73-2014.pdf" download="cacech_anexo73-2014.pdf">Consultar Reglamento Interior de la Secretaría de Hacienda</a>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Cta Section -->
 
 
 <!-- ======= Clients Section ======= -->
@@ -368,12 +383,12 @@
   <div class="clients-slider swiper" >
     <div class="swiper-wrapper align-items-center" >
 
-      <div class="swiper-slide"><img src="assets/img/clients/imagen1.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/clients/imagen2.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/clients/imagen3.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/clients/imagen4.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/clients/imagen5.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/clients/imagen6.jpg"  class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="assets/img/portfolio/imagen1.jpg"  class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="assets/img/portfolio/imagen2.jpg"  class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="assets/img/portfolio/imagen3.jpg"  class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="assets/img/portfolio/imagen4.jpg"  class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="assets/img/portfolio/imagen5.jpg"  class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="assets/img/portfolio/imagen6.jpg"  class="img-fluid" alt=""></div>
     </div>
     <br>
     <br>
@@ -388,9 +403,7 @@
 <!-- ======= Why Us Section ======= -->
 <section id="why-us" class="why-us">
   <div class="container-fluid">
-
     <div class="row">
-
       <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
       </div>
@@ -402,11 +415,7 @@
             Declaración patrimonial.
           </p></a>
         </div>
-
-
-
       </div>
-
     </div>
   </section><!-- End Why Us Section -->
 
@@ -414,274 +423,192 @@
 
   <!-- ======= Portfoio Section ======= -->
   <section id="cta" class="cta">
-  <section style="background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)) " id="portfolio" class="portfoio">
+    <section style="background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)) " id="portfolio" class="portfoio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Capacitación y Desarrollo</h2>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul  id="portfolio-flters">
+              <li style="background-color: #d70067"; id="Todo" data-filter="*" class="filter-active">Todo</li>
+              <li style="background-color: #d70067"; data-filter=".filter-app">Cursos</li>
+              <li style="background-color: #d70067"; data-filter=".filter-card">Mi espacio</li>
+              <!--li data-filter=".filter-web">Web</li-->
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/img1.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Cátalogo de cursos</h4>
+              <p>Programas</p>
+              <a href="cursos.html" class="details-link" ><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/img2.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Modalidades</h4>
+              <p>Presencial y Virtual</p>
+              <a href="modalidad.html" class="details-link" ><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/img3.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Cursos del mes</h4>
+              <a href="cursosmes.html" class="details-link" ><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/img4.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Mis Cursos</h4>
+              <a href="cursosempleado.html" class="details-link" ><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/img5.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Detección de Necesidad de Capacitación</h4>
+              <p>DNC</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img width="900" src="assets/img/img6.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Solicitar Curso para tu Dependencia</h4>
+              <p>App</p>
+              <!--a href="assets/img//portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a-->
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/img7.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Validaciones</h4>
+              <p>Formato de solicitud</p>
+              <a href="assets/img/vali2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
+              <a href="assets/img/imgform.jpg" data-gallery="portfolioGallery" class="details-link" ><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img width="900" src="assets/img/img8.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Beca</h4>
+              <p>UACH Maestría</p>
+              <a href="assets/img/imgbeca.jpg" class="preview-link" ><i class="bx bx-plus"></i></a>
+              <a href="becas.html" class="details-link" ><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/img9.jpg" class="img-fluid" alt="">
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Galeria</h4>
+              <p>Fotos</p>
+              <a href="assets/img/capdes/img1.jpg" class="portfolio-lightbox preview-link " ><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfoio Section -->
+  </section>
+
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Capacitación y Desarrollo</h2>
-
+        <h2 >Contacto</h2>
       </div>
 
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul  id="portfolio-flters">
-            <li style="background-color: #d70067"; id="Todo" data-filter="*" class="filter-active">Todo</li>
-            <li style="background-color: #d70067"; data-filter=".filter-app">Cursos</li>
-            <li style="background-color: #d70067"; data-filter=".filter-card">Mi espacio</li>
-            <!--li data-filter=".filter-web">Web</li-->
-          </ul>
-        </div>
-      </div>
+      <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
 
-      <div class="row portfolio-container">
+        <div class="col-lg-5">
+          <div class="info">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <img src="assets/img/img1.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Cátalogo de cursos</h4>
-            <p>Programas</p>
-            <a href="assets/img/cursos1.jpg" class="portfolio-lightbox preview-link" title="CURSOS"><i class="bx bx-plus"></i></a>
+            <div class="address">
+              <a href="https://goo.gl/maps/nHg1X3jrGkQUfrPK9" target="_blank"><i class="bi bi-geo-alt" style="background-color: #d70067";></i></a>
+              <h4>Dirección:</h4>
+              <p>C. 15 215, Zona Centro, 31000 Chihuahua, Chih.</p>
+            </div>
+
+            <div class="email">
+              <a href="https://accounts.google.com/ServiceLogin/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&followup=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i style="background-color: #d70067"; class="bi bi-envelope"></i></a>
+              <h4>Correo:</h4>
+              <p>cecade@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i style="background-color: #d70067"; class="bi bi-phone"></i>
+              <h4>Teléfono:</h4>
+              <p>4293300</p>
+            </div>
+
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <img src="assets/img/img2.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Modalidades</h4>
-            <p>Presencial y Virtual</p>
-            <a href="assets/img/presencialvirtual1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-            
-          </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <img src="assets/img/img3.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Cursos del mes</h4>
-            <p>Inscripción</p>
-            <a width="800" href="assets/img/p3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <img src="assets/img/img4.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Mis Cursos</h4>
-            <p>Imprime tu constancia</p>
-            <p>Historial de Capacitación</p>
-            <a href="assets/img/CONSTANCIA_CECADE.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-printer"></i></a>
-            <a href="assets/img/imgimp.jpg" data-gallery="portfolioGallery" class="details-link" title="Historial"><i class="bx bx-tachometer"></i></a>
-          </div>
-        </div>
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Cargando...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Mensaje enviado. Gracias!</div>
+            </div>
+            <div class="text-center"><button type="submit">Enviar</button></div>
+            <br>
+          </form>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <img src="assets/img/img5.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Detección de Necesidad de Capacitación</h4>
-            <p>DNC</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <img width="900" src="assets/img/img6.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Solicitar Curso para tu Dependencia</h4>
-            <p>App</p>
-            <!--a href="assets/img//portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a-->
-            
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <img src="assets/img/img7.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Validaciones</h4>
-            <p>Formato de solicitud</p>
-            <a href="assets/img/vali2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-            <a href="assets/img/imgform.jpg" data-gallery="portfolioGallery" class="details-link" ><i class="bx bx-plus"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <img width="900" src="assets/img/img8.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Beca</h4>
-            <p>UACH Maestría</p>
-            <a href="assets/img/imgbeca.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-            <a href="FormularioBeca.aspx" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <img src="assets/img/img9.jpg" class="img-fluid" alt="">
-          <div style="background-color: #d70067"; class="portfolio-info">
-            <h4>Galeria</h4>
-            <p>Fotos</p>
-            <a href="assets/img/imggaleria.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-          </div>
         </div>
 
       </div>
 
     </div>
-  </section><!-- End Portfoio Section -->
-  </section>
+  </section><!-- End Contact Section -->
 
-  <!-- ======= Team Section ======= -->
-    <!--section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
+</main><!-- End #main -->
 
-        <div class="section-title">
-          <h2>Equipo de soporte</h2>
-        </div>
+<!-- ======= Footer ======= -->
+<footer id="footer">
 
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4 style="color: #000000">Persona 1</h4>
-                <span>Recepción</span>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4 style="color: #000000">Persona 2</h4>
-                <span>Secretaria</span>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4 style="color: #000000">Persona 3</h4>
-                <span>Secretaria 2</span>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4 style="color: #000000">Persona 4</h4>
-                <span>Secretaria 3</span>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section--><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 >Contacto</h2>
-        </div>
-
-        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
-
-          <div class="col-lg-5">
-            <div class="info">
-
-              <div class="address">
-                <a href="https://goo.gl/maps/nHg1X3jrGkQUfrPK9" target="_blank"><i class="bi bi-geo-alt" style="background-color: #d70067";></i></a>
-                <h4>Dirección:</h4>
-                <p>C. 15 215, Zona Centro, 31000 Chihuahua, Chih.</p>
-              </div>
-
-              <div class="email">
-                <a href="https://accounts.google.com/ServiceLogin/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&followup=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i style="background-color: #d70067"; class="bi bi-envelope"></i></a>
-                <h4>Correo:</h4>
-                <p>cecade@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i style="background-color: #d70067"; class="bi bi-phone"></i>
-                <h4>Teléfono:</h4>
-                <p>4293300</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Cargando...</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Mensaje enviado. Gracias!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar</button></div>
-              <br>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div Style = "width:2500px;" class="container">
-      <div class="copyright">
-        &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span> http://ipagos.chihuahua.gob.mx</span></strong> y/o <strong><span> http://www.chihuahua.gob.mx/avisos</span></strong>, así mismo sus modificaciones serán publicadas en estas direcciones.
-      </div>
+  <div Style = "width:2500px;" class="container">
+    <div class="copyright">
+      &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span> http://ipagos.chihuahua.gob.mx</span></strong> y/o <strong><span> http://www.chihuahua.gob.mx/avisos</span></strong>, así mismo sus modificaciones serán publicadas en estas direcciones.
+    </div>
       <!--div class="credits">
         < All the links in the footer should remain intact. >
         < You can delete the links only if you purchased the pro version. >
