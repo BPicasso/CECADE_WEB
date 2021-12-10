@@ -17,7 +17,18 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://code.jquery.com/jquery-3.5.1.js" rel="stylesheet">
+    
 
+    <!-- datables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <link href="https://code.jquery.com/jquery-3.6.0.min.js" rel="stylesheet" >
+    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js" rel="stylesheet">
+
+    
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -30,6 +41,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/styleRH.css" rel="stylesheet">
+    
 
   <!-- =======================================================
   * Template Name: Anyar - v4.6.0
@@ -330,17 +342,17 @@ transform: skewY(10deg);
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
 
 
-               <table class="table table-responsive table-bordered">
+               <table id="example" class="display" style="width:100%">
                 <thead>
                   <h3>Cursos 2021</h3>
                   <tr>
-                    <th>Curso</th>
                     <th>Nombre del curso</th>
                     <th>Duración hrs</th>
+                    <th>Tipo de curso</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                   <tr>
                     <td>1434</td>
                     <td>REDES SOCIALES Y NUEVAS CONDUCTAS EN INTERNET</td>
                     <td>2</td>
@@ -350,28 +362,10 @@ transform: skewY(10deg);
                     <td>PREVENCIÓN DE ACCIDENTES EN ESTA TEMPORADA INVERNAL</td>
                     <td>2</td>
                   </tr>
-                  <tr>
-                    <td>1436</td>
-                    <td>PRIMEROS AUXILIOS</td>
-                    <td>8</td>
-                  </tr>
-                                  <tr>
-                    <td>1436</td>
-                    <td>PRIMEROS AUXILIOS</td>
-                    <td>8</td>
-                  </tr>
-                                  <tr>
-                    <td>1436</td>
-                    <td>PRIMEROS AUXILIOS</td>
-                    <td>8</td>
-                  </tr>
-                                  <tr>
-                    <td>1436</td>
-                    <td>PRIMEROS AUXILIOS</td>
-                    <td>8</td>
-                  </tr>
+
                 </tbody>
               </table>
+
 
               <!---------------------------------------------------------------------------------------------------------------->
             </form>

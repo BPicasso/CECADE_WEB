@@ -4,6 +4,13 @@
     border-color: #e50069;
 }
 
+
+
+table {
+    border: 5 px solid;
+    color: white;
+}
+
 .cta {
     background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url(../img/cta-bg.jpg) fixed center center;
     background-size: all;

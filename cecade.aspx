@@ -221,7 +221,7 @@ width: 640px;
         <i style="color: #d70067;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
       <div class="cta d-none d-md-block">
-        <a  href="menu.html" class="scrollto">Cerrar Sesión</a>
+        <a  href="menu.aspx" class="scrollto">Cerrar Sesión</a>
       </div>
     </div>
   </div>
