@@ -30,8 +30,6 @@ namespace CECADE
 
             Cg_Cls_LeerConexion clsConexion = new Cg_Cls_LeerConexion();
             ClsTransaccionesWeb Obj_Transacciones = new ClsTransaccionesWeb(clsConexion.cadenaConexion, "Infiernix");
-            String SQL = "SELECT usuario_ap,nombre,contrasena FROM usuario where usuario_ap ='" + /*Session["Usuario"] + "'";*/ "JMARTINEZ'";
-            DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta2");
             String SQL2 = "" +
             "SELECT em.nombre             nom_empleado," +
                 " em.apellido_paterno app_empleado," +
@@ -65,7 +63,7 @@ namespace CECADE
                             "</tr>";
                 }
             }
-            if (DTblTmp2 != null)
+            if (DTblTmp != null)
             {
                 if (DTblTmp.Rows.Count > 0)
                 {

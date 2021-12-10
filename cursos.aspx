@@ -332,17 +332,12 @@ transform: skewY(10deg);
       <!-- ======= Cta Section ======= -->
       <section id="cta" class="cta">
         <div class="container" data-aos="fade-up">
-
-
           <div class="row mt-1 d-flex left-content-end" data-aos="fade-right" data-aos-delay="100">
-
-
             <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-
-
-               <table id="example" class="display" style="width:100%">
+               
+                  
+                  <table class="table table-responsive table-bordered" id="Table_Usr">
                 <thead>
                   <h3>Cursos 2021</h3>
                   <tr>
@@ -351,39 +346,15 @@ transform: skewY(10deg);
                     <th>Tipo de curso</th>
                   </tr>
                 </thead>
-                <tbody>
-                   <tr>
-                    <td>1434</td>
-                    <td>REDES SOCIALES Y NUEVAS CONDUCTAS EN INTERNET</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>1435</td>
-                    <td>PREVENCIÓN DE ACCIDENTES EN ESTA TEMPORADA INVERNAL</td>
-                    <td>2</td>
-                  </tr>
-
+                <tbody id="TbodyC" runat="server">
                 </tbody>
               </table>
 
-
-              <!---------------------------------------------------------------------------------------------------------------->
             </form>
-
-
           </div>
-
+        </div>
       </div>
-
-      </div>
-
-
-
     </section><!-- End Cta Section -->
-
-
-
-
   </main><!-- End #main -->
 </section>
 
