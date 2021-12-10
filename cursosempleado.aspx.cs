@@ -17,10 +17,8 @@ namespace CECADE
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             llenarGV();
         }
-
 
         private void llenarGV()
         {
@@ -61,20 +59,10 @@ namespace CECADE
             {
                 if (DTblTmp.Rows.Count > 0)
                 {
-                    
                         TbodyUser.InnerHtml = "<tr>  " +
                             "<td>" + DTblTmp.Rows[0]["nom_empleado"] + "</td>" +
                             "<td>" + DTblTmp.Rows[0]["app_empleado"] + " " + DTblTmp.Rows[0]["apm_empleado"] + "</td>" +
                             "</tr>";
-                        /* Usr.Rows.Add(
-                             DTblTmp2.Rows[i]["contrasena"],
-                              DTblTmp2.Rows[i]["nombre"]
-                             );*/
-                    
-                    //ContenedorGrid.InnerHtml = "<table>  </table
-                    //GVPedidos.DataSource = Usr;
-                    //GVPedidos.DataBind();
-
                 }
             }
             if (DTblTmp2 != null)
