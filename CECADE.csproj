@@ -71,6 +71,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alianza.aspx" />
     <Content Include="assets\img\beca1.jpg" />
     <Content Include="assets\img\beca2.jpg" />
     <Content Include="assets\img\beca3.jpg" />
@@ -278,6 +279,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alianza.aspx.cs">
+      <DependentUpon>Alianza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alianza.aspx.designer.cs">
+      <DependentUpon>Alianza.aspx</DependentUpon>
+    </Compile>
     <Compile Include="becas.aspx.cs">
       <DependentUpon>becas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
