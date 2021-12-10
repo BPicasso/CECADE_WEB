@@ -83,40 +83,44 @@
 
       </section><!-- End Why Us Section -->
 
-
- 
-         <section id="cta" class="cta">
-        <form id="form1" runat="server">
-
-            <div class="row mt-1 d-flex left-content-end" data-aos="fade-right" data-aos-delay="100">
-
-
-                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-                    <div>
-                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-                        <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">
-                            <ContentTemplate>
-                                <asp:GridView ID="GVPedidos" runat="server" AutoGenerateColumns="False">
-                                    <Columns>
-                                        <asp:BoundField HeaderText="ID" DataField="id" >
-                                        <ControlStyle BorderStyle="Solid" />
-                                        </asp:BoundField>
-                                        <asp:BoundField HeaderText="Nombre" DataField="nombre" >
-                                        <FooterStyle BorderStyle="Solid" />
-                                        </asp:BoundField>
-                                    </Columns>
-                                </asp:GridView>
-                            </ContentTemplate>
-                        </asp:UpdatePanel>
-                    </div>
-                </div>
+        <section id="cta" class="cta">
+        <div class="container" data-aos="fade-up">
+          <div class="row mt-1 d-flex left-content-end" data-aos="fade-right" data-aos-delay="100">
+            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+             <table class="table table-responsive table-bordered" id="Table_Usr">
+             <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                  </tr>
+                </thead>
+                <tbody id="TbodyUser" runat="server">
+                  
+                </tbody>
+                 
+              </table>
 
 
-            </div>
-        </form>
-             </section>
-     
-
+              <table class="table table-responsive table-bordered">
+                <thead>
+                  <tr>
+                    <th>Curso</th>
+                    <th>Nombre del curso</th>
+                    <th>Duración hrs</th>
+                    <th>Constancia</th>
+                  </tr>
+                </thead>
+                <tbody id="TbodyCursos" runat="server">
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+        <br>
+      </div>
+      <br>
+      <br>
   </main><!-- End #main -->
 </section>
 
