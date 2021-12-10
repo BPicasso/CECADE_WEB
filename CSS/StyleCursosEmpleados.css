@@ -16,21 +16,6 @@ table {
 }
 
 
-th {
-    font-weight: bold;
-}
-
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th {
-    border-color: inherit;
-    border-style: solid;
-    border-width: 0;
-}
-
 .cta {
     background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url(../img/cta-bg.jpg) fixed center center;
     background-size: all;
