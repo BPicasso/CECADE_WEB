@@ -135,6 +135,7 @@
     <Content Include="assets\vendor\remixicon\remixicon.woff2" />
     <Content Include="becas.aspx" />
     <Content Include="cecade.aspx" />
+    <Content Include="CSS\StyleCursosEmpleados.css" />
     <Content Include="cursos.aspx" />
     <Content Include="cursosempleado.aspx" />
     <Content Include="cursosmes.aspx" />

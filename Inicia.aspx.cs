@@ -42,7 +42,7 @@ namespace WebCECADE
                 String conectar = clsConexion.cadenaConexion;
                // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
 
-                String SQL = "SELECT usuario_ap,nombre,contrasena FROM usuario where usuario_ap ='" + objUsuario.user + "'";
+                String SQL = "SELECT usuario_ap,nombre,contrasena,empleado FROM usuario where usuario_ap ='" + objUsuario.user + "'";
                 String SQL2 = " execute procedure usuario_entrada('" + objUsuario.user + "','" + objUsuario.password + "')";
 
                 //aqui reguistra los datos de la consulta
@@ -73,7 +73,7 @@ namespace WebCECADE
                                     default:
                                         String sNombre = DTblTmp.Rows[0]["nombre"].ToString();
                                         String scontrasena = objUsuario.password;
-
+                                        HttpContext.Current.Session["empleado"] = DTblTmp.Rows[0]["empleado"].ToString();
                                         HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["contrasena"].ToString();
                                         HttpContext.Current.Session["Usuario"] = sNombre;
 
