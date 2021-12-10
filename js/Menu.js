@@ -3,6 +3,7 @@
     setTimeout(function () { window.location.href = "Cecade.aspx"; }, 1000);
 }
 
+
 $(function () {
     $(".btn").click(function () {
         $(".form-signin").toggleClass("form-signin-left");

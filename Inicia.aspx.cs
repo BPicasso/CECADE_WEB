@@ -73,11 +73,16 @@ namespace WebCECADE
                                     default:
                                         String sNombre = DTblTmp.Rows[0]["nombre"].ToString();
                                         String scontrasena = objUsuario.password;
-                                        HttpContext.Current.Session["empleado"] = DTblTmp.Rows[0]["empleado"].ToString();
+                                        if (DTblTmp.Rows[0]["empleado"].ToString().Equals(""))
+                                        {
+                                            HttpContext.Current.Session["empleado"] = "0";
+                                        }
+                                        else
+                                        {
+                                            HttpContext.Current.Session["empleado"] = DTblTmp.Rows[0]["empleado"].ToString();
+                                        }
                                         HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["contrasena"].ToString();
                                         HttpContext.Current.Session["Usuario"] = sNombre;
-
-
                                         User.Add(DTblTmp.Rows[0]["contrasena"].ToString());
                                         User.Add(sNombre);
                                         User.Add(DTblTmp.Rows[0]["nombre"].ToString());

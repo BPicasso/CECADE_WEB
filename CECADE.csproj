@@ -270,6 +270,7 @@
     <Content Include="FormularioBeca.aspx" />
     <Content Include="Inicia.aspx" />
     <Content Include="js\global.js" />
+    <Content Include="js\MenuRH.js" />
     <Content Include="js\Menu.js" />
     <Content Include="menu.aspx" />
     <Content Include="modalidad.aspx" />

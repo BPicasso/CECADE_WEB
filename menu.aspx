@@ -39,7 +39,7 @@
   <div  class="frame" >
     <div class="nav"  >
       <ul class"links">
-        <li  class="signin-active"><a id="Entrada" onClick="cecade();" style="color: #fff"; class="btn">Recursos Humanos</a></li>
+        <li  class="signin-active"><a id="Entrada" onClick="rh();" style="color: #fff"; class="btn">Recursos Humanos</a></li>
 
       </ul>
     </div>
@@ -58,6 +58,7 @@
 
 
     <script src="js/Menu.js"></script>
+    <script src="js/MenuRH.js"></script>
 
 <script type="text/javascript">
 	
