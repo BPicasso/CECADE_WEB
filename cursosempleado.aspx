@@ -91,8 +91,8 @@
              <table class="table table-responsive table-bordered" id="Table_Usr">
              <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
                   </tr>
                 </thead>
                 <tbody id="TbodyUser" runat="server">

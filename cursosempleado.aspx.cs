@@ -57,21 +57,20 @@ namespace CECADE
                 " AND co.empleado =" + /*Session["empleado"] + "'";*/ "976645";
             DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta");
 
-            if (DTblTmp2 != null)
+            if (DTblTmp != null)
             {
-                if (DTblTmp2.Rows.Count > 0)
+                if (DTblTmp.Rows.Count > 0)
                 {
-                    for (int i = 0; i < DTblTmp2.Rows.Count; i++)
-                    {
+                    
                         TbodyUser.InnerHtml = "<tr>  " +
-                            "<td>" + DTblTmp2.Rows[i]["contrasena"] + "</td>" +
-                            "<td>" + DTblTmp2.Rows[i]["nombre"] + "</td>" +
+                            "<td>" + DTblTmp.Rows[0]["nom_empleado"] + "</td>" +
+                            "<td>" + DTblTmp.Rows[0]["app_empleado"] + " " + DTblTmp.Rows[0]["apm_empleado"] + "</td>" +
                             "</tr>";
                         /* Usr.Rows.Add(
                              DTblTmp2.Rows[i]["contrasena"],
                               DTblTmp2.Rows[i]["nombre"]
                              );*/
-                    }
+                    
                     //ContenedorGrid.InnerHtml = "<table>  </table
                     //GVPedidos.DataSource = Usr;
                     //GVPedidos.DataBind();
