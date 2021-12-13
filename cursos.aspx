@@ -56,9 +56,9 @@
 
 
 
-    .table {
-    --bs-table-bg: #000000;
-    --bs-table-accent-bg: #000000;
+  .table {
+    --bs-table-bg: #ffffff66;
+    --bs-table-accent-bg: #ffffff40;
     --bs-table-striped-color: #212529;
     --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
     --bs-table-active-color: #212529;
@@ -276,7 +276,6 @@ transform: skewY(10deg);
     padding: 0.5rem 0.5rem;
     background-color: var(--bs-table-bg);
     border-bottom-width: 1px;
-    color: #fff;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
