@@ -55,6 +55,40 @@
 
 
 
+
+    .table {
+    --bs-table-bg: #000000;
+    --bs-table-accent-bg: #000000;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+table {
+    caption-side: bottom;
+    border-collapse: inherit;
+}
+
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 1px 3px;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+}
+
+
+
   .cta {
     background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url(../img/cta-bg.jpg) fixed center center;
     background-size: all;
