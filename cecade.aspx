@@ -39,177 +39,8 @@
   ======================================================== -->
 </head>
 
-<style type="text/css">
+ <link rel="stylesheet" href="CSS\StyleCecade.css" />
 
-
-
-
-  #hero {
-    width: 100%;
-    height: 43vh;
-    overflow: hidden;
-    position: relative;
-    background: url("../img/hero-bg.jpg") top center;
-    background-size: cover;
-    position: relative;
-    margin-bottom: -90px;
-    z-index: 99;
-    transition: 0.3s;
-  }
-
-  .icon-boxes .icon-box {
-    padding: 30px 20px;
-    position: relative;
-    overflow: hidden;
-    background: #702383;
-    transform: scale(1);
-    box-shadow: 50px 100px 120px 0 rgb(112 34 131 / 20%);
-    transition: all 0.3s ease-in-out;
-    border-radius: 60px;
-  }
-
-    .icon-boxes .icon-box1 {
-    padding: 30px 20px;
-    position: relative;
-    overflow: hidden;
-    background: #e50069;
-    transform: scale(1);
-    box-shadow: 50px 100px 120px 0 rgb(229 0 105 / 20%);
-    transition: all 0.3s ease-in-out;
-    border-radius: 60px;
-  }
-
-
-
-#topbar {
-  height: 60px;
-  padding: 0;
-  font-size: 14px;
-  transition: all 0.5s;
-  overflow: hidden;
-  color: black;
-  z-index: 996;
-}
-
-#topbar .contact-info a {
-  line-height: 0;
-  color: black;
-  transition: 0.3s;
-}
-
-
-
-.accordian {
-  width: 805px; height: 320px;
-  overflow: hidden;
-  
-  /*Time for some styling*/
-  margin: 100px auto;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-}
-
-/*A small hack to prevent flickering on some browsers*/
-.accordian ul {
-  width: 1200px;
-  /*This will give ample space to the last item to move
-  instead of falling down/flickering during hovers.*/
-}
-
-.accordian li {
-  position: relative;
-  display: block;
-  width: 160px;
-  float: left;
-  
-  border-left: 1px solid #888;
-  
-  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  
-  /*Transitions to give animation effect*/
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  /*If you hover on the images now you should be able to 
-  see the basic accordian*/
-}
-
-/*Reduce with of un-hovered elements*/
-.accordian ul:hover li {width: 40px;}
-/*Lets apply hover effects now*/
-/*The LI hover style should override the UL hover style*/
-.accordian ul li:hover {width: 640px;}
-
-
-.accordian li img {
-  display: block;
-}
-
-/*Image title styles*/
-.image_title {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 0; bottom: 0; 
-width: 640px; 
-
-}
-.image_title a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 20px;
-  font-size: 16px;
-
-}
-
-    .why-us .video-box {
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 620px;
-    position: relative;
-}
-
-.why-us .play-btn {
-    width: 94px;
-    height: 94px;
-    background: radial-gradient(#d70067 50%, rgba(112, 34, 131, 0.4) 52%);
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    left: calc(50% - 47px);
-    top: calc(50% - 47px);
-    overflow: hidden;
-}
-
-.why-us .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(112, 34, 131, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(112, 34, 131, 0);
-}
-
-
-
-</style>
 
 <body>
 
@@ -422,7 +253,7 @@ width: 640px;
 </section><!-- End Cta Section -->
 
 
-<!-- ======= Clients Section ======= -->
+      <!-- ======= Clients Section ======= -->
 <br>
 <br>          
 <div class="container" data-aos="zoom-in">
@@ -579,83 +410,65 @@ width: 640px;
 
       </div>
     </section><!-- End Portfoio Section -->
+      
   </section>
-
+      
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
+      <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <h2 >Contacto</h2>
-      </div>
+        <div class="section-title">
+          <h2 >Contacto</h2>
+        </div>
 
-      <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
 
-        <div class="col-lg-5">
-          <div class="info">
+          <div class="col-lg-5">
+            <div class="info">
 
-            <div class="address">
-              <a href="https://goo.gl/maps/nHg1X3jrGkQUfrPK9" target="_blank"><i class="bi bi-geo-alt" style="background-color: #d70067";></i></a>
-              <h4>Dirección:</h4>
-              <p>C. 15 215, Zona Centro, 31000 Chihuahua, Chih.</p>
+              <div class="address">
+                <a href="https://goo.gl/maps/nHg1X3jrGkQUfrPK9" target="_blank"><i class="bi bi-geo-alt" style="background-color: #d70067";></i></a>
+                <h4>Dirección:</h4>
+                <p>C. 15 215, Zona Centro, 31000 Chihuahua, Chih.</p>
+              </div>
+
+              <div class="email">
+                <a href="https://accounts.google.com/ServiceLogin/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&followup=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i style="background-color: #d70067"; class="bi bi-envelope"></i></a>
+                <h4>Correo:</h4>
+                <p>cecade@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i style="background-color: #d70067"; class="bi bi-phone"></i>
+                <h4>Teléfono:</h4>
+                <p>4293300</p>
+              </div>
+
             </div>
 
-            <div class="email">
-              <a href="https://accounts.google.com/ServiceLogin/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&followup=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i style="background-color: #d70067"; class="bi bi-envelope"></i></a>
-              <h4>Correo:</h4>
-              <p>cecade@gmail.com</p>
-            </div>
+          </div>
 
-            <div class="phone">
-              <i style="background-color: #d70067"; class="bi bi-phone"></i>
-              <h4>Teléfono:</h4>
-              <p>4293300</p>
-            </div>
+          <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+
+            <iframe src="Contacto.aspx" width="350" height="500"></iframe>
 
           </div>
 
         </div>
 
-        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Cargando...</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Mensaje enviado. Gracias!</div>
-            </div>
-            <div class="text-center"><button type="submit">Enviar</button></div>
-            <br>
-          </form>
-
-        </div>
-
       </div>
+    </section><!-- End Contact Section -->
 
-    </div>
-  </section><!-- End Contact Section -->
+  </main><!-- End #main -->
 
-</main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
-
-  <div Style = "width:2500px;" class="container">
-    <div class="copyright">
-      &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span> http://ipagos.chihuahua.gob.mx</span></strong> y/o <strong><span> http://www.chihuahua.gob.mx/avisos</span></strong>, así mismo sus modificaciones serán publicadas en estas direcciones.
-    </div>
+    <div Style = "width:2500px;" class="container">
+      <div class="copyright">
+        &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span> http://ipagos.chihuahua.gob.mx</span></strong> y/o <strong><span> http://www.chihuahua.gob.mx/avisos</span></strong>, así mismo sus modificaciones serán publicadas en estas direcciones.
+      </div>
       <!--div class="credits">
         < All the links in the footer should remain intact. >
         < You can delete the links only if you purchased the pro version. >
@@ -768,6 +581,7 @@ width: 640px;
 
 
     </script>
+        
 
   </body>
 

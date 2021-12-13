@@ -1,0 +1,163 @@
+﻿#hero {
+    width: 100%;
+    height: 43vh;
+    overflow: hidden;
+    position: relative;
+    background: url("../img/hero-bg.jpg") top center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -90px;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.icon-boxes .icon-box {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #702383;
+    transform: scale(1);
+    box-shadow: 50px 100px 120px 0 rgb(112 34 131 / 20%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 60px;
+}
+
+.icon-boxes .icon-box1 {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #e50069;
+    transform: scale(1);
+    box-shadow: 50px 100px 120px 0 rgb(229 0 105 / 20%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 60px;
+}
+
+
+
+#topbar {
+    height: 60px;
+    padding: 0;
+    font-size: 14px;
+    transition: all 0.5s;
+    overflow: hidden;
+    color: black;
+    z-index: 996;
+}
+
+    #topbar .contact-info a {
+        line-height: 0;
+        color: black;
+        transition: 0.3s;
+    }
+
+
+
+.accordian {
+    width: 805px;
+    height: 320px;
+    overflow: hidden;
+    /*Time for some styling*/
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+    /*A small hack to prevent flickering on some browsers*/
+    .accordian ul {
+        width: 1200px;
+        /*This will give ample space to the last item to move
+  instead of falling down/flickering during hovers.*/
+    }
+
+    .accordian li {
+        position: relative;
+        display: block;
+        width: 160px;
+        float: left;
+        border-left: 1px solid #888;
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        /*Transitions to give animation effect*/
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        /*If you hover on the images now you should be able to 
+  see the basic accordian*/
+    }
+
+    /*Reduce with of un-hovered elements*/
+    .accordian ul:hover li {
+        width: 40px;
+    }
+    /*Lets apply hover effects now*/
+    /*The LI hover style should override the UL hover style*/
+    .accordian ul li:hover {
+        width: 640px;
+    }
+
+
+    .accordian li img {
+        display: block;
+    }
+
+/*Image title styles*/
+.image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 640px;
+}
+
+    .image_title a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+.why-us .video-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 620px;
+    position: relative;
+}
+
+.why-us .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#d70067 50%, rgba(112, 34, 131, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+}
+
+    .why-us .play-btn::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-animation: pulsate-btn 2s;
+        animation: pulsate-btn 2s;
+        -webkit-animation-direction: forwards;
+        animation-direction: forwards;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: steps;
+        animation-timing-function: steps;
+        opacity: 1;
+        border-radius: 50%;
+        border: 5px solid rgba(112, 34, 131, 0.7);
+        top: -15%;
+        left: -15%;
+        background: rgba(112, 34, 131, 0);
+    }
