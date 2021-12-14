@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Alianza.aspx" />
+    <Content Include="assets\css\Stylecontacto.css" />
     <Content Include="assets\img\alianza\BABIES_KIDS_HOME.jpg" />
     <Content Include="assets\img\alianza\BACHILLERATO_CULTURAL_VALLARTA.jpg" />
     <Content Include="assets\img\alianza\CENTRO_EDUCATIVO_MI_MUNDO.jpg" />
