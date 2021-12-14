@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head >
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -39,276 +39,8 @@
   ======================================================== -->
 </head>
 
-<style type="text/css">
+ <link rel="stylesheet" href="CSS\StyleCursosMes.css" />
 
-.table {
-    --bs-table-bg: #ffffff66;
-    --bs-table-accent-bg: #ffffff40;
-    --bs-table-striped-color: #212529;
-    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-    --bs-table-active-color: #212529;
-    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-    --bs-table-hover-color: #212529;
-    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #212529;
-    vertical-align: top;
-    border-color: #dee2e6;
-}
-table {
-    caption-side: bottom;
-    border-collapse: inherit;
-}
-
-
-.table-bordered>:not(caption)>*>* {
-    border-width: 1px 3px;
-}
-
-tbody, td, tfoot, th, thead, tr {
-    border-color: black;
-    border-style: solid;
-    border-width: 0;
-}
-
-  .cta {
-    background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url(../img/cta-bg.jpg) fixed center center;
-    background-size: all;
-    padding: 120px 0;
-  }
-
-
-
-  .form-control {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 9px solid #702283;
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-
-
-
-  .cta .cta-btn:hover {
-    background: #702283;
-  }
-  .cta .cta-btn {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    display: inline-block;
-    padding: 8px 26px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    border-radius: 50px;
-    border: 5px solid #702283;
-    color: #fff;
-  }
-
-
-  .row>* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 35%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
-  }
-
-
-  .form-control {
-    display: block;
-    width: 243%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font: message-box;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #702283;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 9px solid #702283;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-
-  button, input, optgroup, select, textarea {
-    margin: 1px;
-    font-family: inherit;
-    border: 9px solid #702283;
-    font-size: inherit;
-    line-height: inherit;
-  }
-
-  #header {
-    background: #702283;
-    transition: all 0.5s;
-    z-index: 997;
-    height: 70px;
-    top: 60px;
-  }
-
-  #footer {
-    background: #702283;
-    padding: 0 0 30px 0;
-    color: #fff;
-    font-size: 14px;
-  }
-
-  #header.header-scrolled {
-    background: rgba(112, 34, 131, 0.9);
-    top: 0;
-  }
-
-
-  .imgResponsive{
-    width:100%;
-    height:auto;
-  }
-  .archivodescargar {
-    background: green;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    cursor:pointer;
-  }
-  .archivodescargar:hover {
-    background: blue;
-    
-  }
-
-  .imageDiv {
-    border: blue 1px solid;
-    border-radius: 3px;
-    position: absolute;
-    right: 155px;
-  }
-
-  .imageDiv > img {
-    width: 600px;
-    height: auto;
-  }
-
-  span.closeImage {
-    position: absolute;
-    background: red;
-    border-radius: 5px;
-    width: 20px;
-    height: 15px;
-    color: white;
-    font-size: 12px;
-    cursor:pointer;
-  }
-
-  .infoProyecto {
-    position: absolute;
-    background: #9E9E9E;
-    padding: 15px;
-    margin: 29px;
-    z-index: 999;
-    color: white;
-    margin-left: 30%;
-    text-align: center;
-    justify-content: center;
-    display: grid;
-  }
-
-  .arrow {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid #9e9e9e;
-    position: absolute;
-    margin-left: 31%;
-    margin-top: 5px;
-  }
-  .editable{
-    color: #3b6fff !important;
-
-  }
-
-  .actualizarActivado{
-
-  }
-
-  .swiper {
-transform: skewY(10deg);
-
-  }
-
-
-  .row>* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 65%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
-}
-
-
-.table>:not(caption)>*>* {
-    padding: 0.5rem 0.5rem;
-    background-color: var(--bs-table-bg);
-    border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-}
-
-.why-us .play-btn {
-    width: 94px;
-    height: 94px;
-    background: radial-gradient(#d70067 50%, rgba(112, 34, 131, 0.4) 52%);
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    left: calc(50% - 47px);
-    top: calc(50% - 47px);
-    overflow: hidden;
-}
-
-.why-us .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(112, 34, 131, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(112, 34, 131, 0);
-}
-
-</style>
 
 <body>
 
@@ -359,11 +91,19 @@ transform: skewY(10deg);
           <div class="row mt-1 d-flex left-content-end" data-aos="fade-right" data-aos-delay="100">
 
 
-            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+            <div  class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form runat="server"> 
+                     <asp:TextBox ID="N_Curso" runat="server" placeholder="Curso" ></asp:TextBox>
+                  <asp:Button ID="Inscribir" runat="server" Text="Inscribirse a curso" OnClick="Inscribir_Click"/>
+                </form>
+                
 
 
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form" >
+
+
+                 
                <table class="table table-responsive table-bordered">
                 <thead>
                   <tr>
@@ -371,27 +111,11 @@ transform: skewY(10deg);
                     <th>Nombre del curso</th>
                     <th>Duración hrs</th>
                     <th>Fecha</th>
+                    
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>1434</td>
-                    <td>REDES SOCIALES Y NUEVAS CONDUCTAS EN INTERNET</td>
-                    <td>2</td>
-                    <td>16 Diciembre 2021</td>
-                  </tr>
-                  <tr>
-                    <td>1435</td>
-                    <td>PREVENCIÓN DE ACCIDENTES EN ESTA TEMPORADA INVERNAL</td>
-                    <td>2</td>
-                    <td>20 Diciembre 2021</td>
-                  </tr>
-                  <tr>
-                    <td>1436</td>
-                    <td>PRIMEROS AUXILIOS</td>
-                    <td>8</td>
-                    <td>27 Diciembre 2021</td>
-                  </tr>
+                <tbody id="TbodyCursos" runat="server">
+                  
                 </tbody>
               </table>
 
@@ -425,7 +149,7 @@ transform: skewY(10deg);
 
 
   </main><!-- End #main -->
-</section>
+</section >
 
 <!-- ======= Footer ======= -->
 <footer id="footer">

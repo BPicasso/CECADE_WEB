@@ -19,10 +19,10 @@ namespace WebCECADE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        [WebMethod(EnableSession =true)]
+        [WebMethod(EnableSession = true)]
         public static String Login(Usuario objUsuario)
         {
             //Aqui se usa Cg_Cls_LeerConexion que es la libreria que permite leer la conexion encriptada de la BD de CECADE
@@ -40,14 +40,14 @@ namespace WebCECADE
             {
                 //llamas a la cadena de conexion que esta se abre en automatico por la libreria LbrUtilerias
                 String conectar = clsConexion.cadenaConexion;
-               // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
+                // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
 
-                String SQL = "SELECT usuario_ap,nombre,contrasena,empleado FROM usuario where usuario_ap ='" + objUsuario.user + "'";
+                String SQL = "SELECT usuario_ap,nombre,contrasena,empleado, organismo,usuario FROM usuario where usuario_ap ='" + objUsuario.user + "'";
                 String SQL2 = " execute procedure usuario_entrada('" + objUsuario.user + "','" + objUsuario.password + "')";
 
                 //aqui reguistra los datos de la consulta
                 DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta2");
-                if (DTblTmp2!=null)
+                if (DTblTmp2 != null)
                 {
                     if (DTblTmp2.Rows.Count > 0)
                     {
@@ -81,8 +81,9 @@ namespace WebCECADE
                                         {
                                             HttpContext.Current.Session["empleado"] = DTblTmp.Rows[0]["empleado"].ToString();
                                         }
+                                        HttpContext.Current.Session["organismo"] = DTblTmp.Rows[0]["organismo"].ToString();
                                         HttpContext.Current.Session["id"] = DTblTmp.Rows[0]["contrasena"].ToString();
-                                        HttpContext.Current.Session["Usuario"] = sNombre;
+                                        HttpContext.Current.Session["Usuario"] = objUsuario.user;
                                         User.Add(DTblTmp.Rows[0]["contrasena"].ToString());
                                         User.Add(sNombre);
                                         User.Add(DTblTmp.Rows[0]["nombre"].ToString());
