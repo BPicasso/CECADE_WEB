@@ -33,7 +33,7 @@
                 
                 Swal.fire({
                     title: 'Error de Session',
-                    text: info.d,
+                    text: 'Vuelve a iniciar sesión',
                     icon: 'error',
                     confirmButtonText: 'Cerrar'
                     

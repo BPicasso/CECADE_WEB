@@ -25,8 +25,8 @@
 
             if (info.d == "Success") {
                 Swal.fire({
-                    title: 'Success',
-                    text: 'inscrito al curso',
+                    title: 'Registro completo',
+                    text: 'Inscrito al curso',
                     icon: 'success',
                     confirmButtonText: 'Cerrar'
 
@@ -43,7 +43,7 @@
             } else {
                 Swal.fire({
                     title: 'Error',
-                    text: info.d,
+                    text: 'Vuelve a iniciar sesión',
                     icon: 'error',
                     confirmButtonText: 'Cerrar'
 

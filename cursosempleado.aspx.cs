@@ -51,7 +51,7 @@ namespace CECADE
                 " AND gr.instructor = ins.instructor" +
                 " AND gr.proveedor = ins.proveedor" +
                 " AND co.empleado = em.empleado" +
-                " AND co.empleado =" + /*Session["empleado"] + "'";*/ "976645";
+                " AND co.empleado ='" + Session["empleado"] + "'";
             DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta");
 
             if (DTblTmp != null)

@@ -20,8 +20,8 @@
             
             if (info.d == "Success") {
                 Swal.fire({
-                    title: 'Success',
-                    text: info.d,
+                    title: 'Correo enviado',
+                    text: ' ',
                     icon: 'success',
                     confirmButtonText: 'Cerrar'
 
@@ -30,7 +30,7 @@
 
                 Swal.fire({
                     title: 'Error',
-                    text: info.d,
+                    text: 'Vuelve a intentarlo más tarde',
                     icon: 'error',
                     confirmButtonText: 'Cerrar'
 
