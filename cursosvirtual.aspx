@@ -387,22 +387,8 @@ transform: skewY(10deg);
                     <th>Herramientas</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>1434</td>
-                    <td>REDES SOCIALES Y NUEVAS CONDUCTAS EN INTERNET</td>
-                    <td>2</td><td><a href="assets/img/cacech_anexo73-2014.pdf" download="cacech_anexo73-2014.pdf"><input type='button' class='btn btn-sm btn-info' value ='Abrir'></a></td>
-                  </tr>
-                  <tr>
-                    <td>1435</td>
-                    <td>PREVENCIÓN DE ACCIDENTES EN ESTA TEMPORADA INVERNAL</td>
-                    <td>2</td><td><a href="assets/img/cacech_anexo73-2014.pdf" download="cacech_anexo73-2014.pdf"><input type='button' class='btn btn-sm btn-info' value ='Abrir'></a></td>
-                  </tr>
-                  <tr>
-                    <td>1436</td>
-                    <td>PRIMEROS AUXILIOS</td>
-                    <td>8</td><td><a href="assets/img/cacech_anexo73-2014.pdf" download="cacech_anexo73-2014.pdf"><input type='button' class='btn btn-sm btn-info' value ='Abrir'></a></td>
-                  </tr>
+                <tbody id="TbodyCursos" runat="server">
+ 
                 </tbody>
               </table>
 
