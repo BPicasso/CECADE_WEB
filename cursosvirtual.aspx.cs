@@ -52,7 +52,7 @@ namespace CECADE
                             "<td>" + DTblTmp.Rows[i]["curso"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["descripcion"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["duracion"] + "</td>" +
-                            "<td><a href='assets/img/cacech_anexo73 - 2014.pdf' download='cacech_anexo73 - 2014.pdf'><input type='button' class='btn btn-sm btn-info' value ='Abrir'></a></td>" +
+                            "<td><a href='assets/img/cacech_anexo73-2014.pdf' download='cacech_anexo73-2014.pdf'><input type='button' class='btn btn-sm btn-info' value ='Abrir'></a></td>" +
                             "</tr>";
                             idCurso = DTblTmp.Rows[i]["curso"].ToString();
                         }

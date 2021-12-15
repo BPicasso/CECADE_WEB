@@ -400,7 +400,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <!--img src="assets/img/img7.jpg" class="img-fluid" alt=""-->
-               <a href="assets/img/imgform.jpg" ><img src="assets/img/img7.jpg" width="350" height="200" ></a>
+               <a id =" plugin "type =" application / x-google-chrome-pdf" href="assets/img/FORMATO_SOLICITUD.pdf"  target="_blank"><img src="assets/img/img7.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Validaciones</h4>
               <p>Formato de solicitud</p>

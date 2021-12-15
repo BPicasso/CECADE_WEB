@@ -182,6 +182,7 @@
     <Content Include="cursosmes.aspx" />
     <Content Include="cursosvirtual.aspx" />
     <Content Include="forms\contact.php" />
+    <Content Include="assets\img\FORMATO_SOLICITUD.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -32,10 +32,12 @@ namespace CECADE
             Cg_Cls_LeerConexion clsConexion = new Cg_Cls_LeerConexion();
             ClsTransaccionesWeb Obj_Transacciones = new ClsTransaccionesWeb(clsConexion.cadenaConexion, "Infiernix");
             String SQL2 = "" +
-            "SELECT em.nombre             nom_empleado," +
+            "SELECT " +
+                "cu.curso curso,"+
+                "em.nombre             nom_empleado," +
                 " em.apellido_paterno app_empleado," +
                 " em.apellido_materno apm_empleado," +
-                " cu.descripcion curso," +
+                " cu.descripcion descripcion," +
                 " cu.duracion duracion," +
                 " gr.fecha_hasta fecha," +
                 " ins.nombre nom_instructor," +
@@ -81,8 +83,8 @@ namespace CECADE
 
                         String N_Completo = DTblTmp.Rows[i]["nom_empleado"].ToString() +" "+ DTblTmp.Rows[i]["app_empleado"].ToString() +" "+ DTblTmp.Rows[i]["apm_empleado"].ToString();
                         TCursos = TCursos += "<tr>  " +
-                            "<td>" + DTblTmp.Rows[i]["app_instructor"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["curso"] + "</td>" +
+                            "<td>" + DTblTmp.Rows[i]["descripcion"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["duracion"] + "</td>" +
                             "<td><a href='https://estadocuenta.chihuahua.gob.mx/ReportsView.aspx?reportName=RHRP0253&PARAMETRO1=CHIHUAHUA%20CHIH&PARAMETRO2="+ DTblTmp.Rows[i]["curso"] + "&PARAMETRO3=&PARAMETRO4="+ N_Completo + "&PARAMETRO5=&PARAMETRO6=" + DTblTmp.Rows[i]["duracion"] + "&PARAMETRO7="+fecha+ "&PARAMETRO8=&PARAMETRO9=" + DTblTmp.Rows[i]["app_instructor"] + "&PARAMETRO10=' target='_blank'><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
                             "</tr>";
