@@ -72,7 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Alianza.aspx" />
-    <Content Include="assets\css\Stylecontacto.css" />
     <Content Include="assets\img\alianza\BABIES_KIDS_HOME.jpg" />
     <Content Include="assets\img\alianza\BACHILLERATO_CULTURAL_VALLARTA.jpg" />
     <Content Include="assets\img\alianza\CENTRO_EDUCATIVO_MI_MUNDO.jpg" />
@@ -176,6 +175,7 @@
     <Content Include="Contacto.aspx" />
     <Content Include="CSS\StyleCursosEmpleados.css" />
     <Content Include="CSS\StyleCecade.css" />
+    <Content Include="CSS\StyleCursosMes.css" />
     <Content Include="cursos.aspx" />
     <Content Include="cursosempleado.aspx" />
     <Content Include="cursosmes.aspx" />
@@ -303,6 +303,7 @@
     <Content Include="js\global.js" />
     <Content Include="js\MenuRH.js" />
     <Content Include="js\Menu.js" />
+    <Content Include="js\SubCurso.js" />
     <Content Include="menu.aspx" />
     <Content Include="modalidad.aspx" />
     <Content Include="recrsoshumanos.aspx" />
@@ -394,6 +395,7 @@
       <DependentUpon>modalidad.aspx</DependentUpon>
     </Compile>
     <Compile Include="model\Correo.cs" />
+    <Compile Include="model\SubGrup.cs" />
     <Compile Include="model\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="recrsoshumanos.aspx.cs">
