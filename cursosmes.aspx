@@ -93,11 +93,17 @@
 
             <div  class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-                <form runat="server"> 
+  <%--              <form runat="server"> 
                      <asp:TextBox ID="N_Curso" runat="server" placeholder="Curso" ></asp:TextBox>
                   <asp:Button ID="Inscribir" runat="server" Text="Inscribirse a curso" OnClick="Inscribir_Click"/>
                 </form>
-                
+                --%>
+                <form method="post" id="sub-form" >
+                    <div>
+                        <input id="Curso"  type="number" name="Curso" placeholder="Numero Grupo" required />
+                         <button  type="submit">Inscribirse a curso</button>
+                    </div>
+                </form>
 
 
               <form action="forms/contact.php" method="post" role="form" class="php-email-form" >
@@ -111,6 +117,7 @@
                     <th>Nombre del curso</th>
                     <th>Duración hrs</th>
                     <th>Fecha</th>
+                    <th>Horario</th>
                     
                   </tr>
                 </thead>
@@ -178,6 +185,17 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/datatables.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       <script src="js/SubCurso.js"></script>
+            <script>
+                $(function () {
+                    __Sub();
+
+                });
+            </script>   
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js">

@@ -27,7 +27,8 @@ namespace CECADE
                 new DataColumn("id",typeof(string)),
                 new DataColumn("nombre",typeof(string))
             });
-
+            string fecha = "";
+            string mes = "";
             Cg_Cls_LeerConexion clsConexion = new Cg_Cls_LeerConexion();
             ClsTransaccionesWeb Obj_Transacciones = new ClsTransaccionesWeb(clsConexion.cadenaConexion, "Infiernix");
             String SQL2 = "" +
@@ -67,14 +68,23 @@ namespace CECADE
             {
                 if (DTblTmp.Rows.Count > 0)
                 {
+                   
                     String TCursos = "";
                     for (int i = 0; i < DTblTmp.Rows.Count; i++)
                     {
+                        fecha = DTblTmp.Rows[i]["fecha"].ToString();
+                        DateTime oDate = Convert.ToDateTime(fecha);
+                       
+
+
+                        fecha = oDate.Day + "-" + oDate.Month + "-" + oDate.Year;
+
+                        String N_Completo = DTblTmp.Rows[i]["nom_empleado"].ToString() +" "+ DTblTmp.Rows[i]["app_empleado"].ToString() +" "+ DTblTmp.Rows[i]["apm_empleado"].ToString();
                         TCursos = TCursos += "<tr>  " +
                             "<td>" + DTblTmp.Rows[i]["app_instructor"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["curso"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["duracion"] + "</td>" +
-                            "<td><a href='assets/img/CONSTANCIA_CECADE.jpg' download='CONSTANCIA_CECADE.jpg'><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
+                            "<td><a href='https://estadocuenta.chihuahua.gob.mx/ReportsView.aspx?reportName=RHRP0253&PARAMETRO1=CHIHUAHUA%20CHIH&PARAMETRO2="+ DTblTmp.Rows[i]["curso"] + "&PARAMETRO3=&PARAMETRO4="+ N_Completo + "&PARAMETRO5=&PARAMETRO6=" + DTblTmp.Rows[i]["duracion"] + "&PARAMETRO7="+fecha+ "&PARAMETRO8=&PARAMETRO9=" + DTblTmp.Rows[i]["app_instructor"] + "&PARAMETRO10='><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
                             "</tr>";
                     }
                     TbodyCursos.InnerHtml = TCursos;
