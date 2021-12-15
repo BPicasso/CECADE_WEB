@@ -200,9 +200,9 @@ button, input, optgroup, select, textarea {
 
             <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form id="sub-form" method="post"  class="php-email-form">
 <!---------------------------------------------------------------------------------------------------------------->
-                <div class="row">
+               <%-- <div class="row">
 
 
                   <div style="max-width: 30%;" class="col-md-6 form-group">
@@ -210,15 +210,15 @@ button, input, optgroup, select, textarea {
                   </div>
 
                 </div>
-                <br>
+                <br>--%>
 
 <!---------------------------------------------------------------------------------------------------------------->
 
-                <div class="row">
+                <div >
 
 
                   <div style="max-width: 52%;"  class="col-md-15 form-group">
-                    <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre Completo" required>
+                    <input type="text" name="name" class="form-control" id="Nombre" placeholder="Nombre Completo" required>
                   </div>
 
                 </div>
@@ -227,13 +227,13 @@ button, input, optgroup, select, textarea {
 <!---------------------------------------------------------------------------------------------------------------->
 
 
-                <div class="row">
+                <div >
 
 
                   <div  class="col-md-6 form-group">
 
                     <p> Sexo
-                    <select style="width: 50%" name="Sexo">
+                    <select id="Sexo" style="width: 50%" name="Sexo">
 
                       <option value="F">F</option>
                       <option value="M">M</option>
@@ -244,7 +244,7 @@ button, input, optgroup, select, textarea {
 
 <br>
                   <div class="col-md-7 form-group">
-                    <input type="NUMBER" name="name" class="form-control" id="sexoF" placeholder="Matricula" required>
+                    <input type="NUMBER" name="name" class="form-control" id="Matricula" placeholder="Matricula" required>
                   </div>
 
 
@@ -253,15 +253,15 @@ button, input, optgroup, select, textarea {
 
 
                 <div style="max-width: 50%;" class="form-group mt-3">
-                  <input class="form-control" name="Maestria" rows="5" placeholder="Maestria" required></input>
+                  <input class="form-control" name="Maestria"  id="Maestria" placeholder="Maestria"></input>
                 </div>
 
                 <div style="max-width: 50%;" class="form-group mt-3">
-                  <input class="form-control" name="Facultad" rows="5" placeholder="Facultad" required></input>
+                  <input class="form-control" name="Facultad"  id="Facultad" placeholder="Facultad" required></input>
                 </div>
 
                 <div style="max-width: 50%;" class="form-group mt-3">
-                  <input class="form-control" name="Dependencia" rows="5" placeholder="Dependencia" required></input>
+                  <input class="form-control" name="Dependencia"  id="Dependecia" placeholder="Dependencia" required></input>
                 </div>
                 <br>
 
@@ -270,19 +270,19 @@ button, input, optgroup, select, textarea {
 
 
                   <div  class="col-md-6 form-group">
-                    <input type="number" class="form-control"  name="tel" id="tel" placeholder="Telefono  y   Ext      o    Celular" required>
+                    <input type="number" class="form-control"  name="tel" id="Telefono" placeholder="Telefono  y   Ext      o    Celular" required>
                   </div>
 
 
                 <div style="max-width: 50%;" class="form-group mt-3">
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Correo" required>
+                    <input type="text" class="form-control" name="email" id="Correo" placeholder="Correo" required>
                 </div>
 
 
 
                 <div class="container" align="right">
 
-                  <div class="row" data-aos="zoom-in">
+                  <div >
                     <div class="col-lg-3 cta-btn-container text-center">
                       <button style="background-color: #702283"  class="cta-btn align-middle" type="submit"> Enviar</button>
                     </div>
@@ -332,7 +332,7 @@ button, input, optgroup, select, textarea {
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
@@ -426,6 +426,19 @@ button, input, optgroup, select, textarea {
 
 
     </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/datatables.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/SubBeca.js"></script>
+    <script>
+        $(function () {
+            __Sub();
+        });
+    </script> 
 
   </body>
 

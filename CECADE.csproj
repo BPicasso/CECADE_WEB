@@ -304,6 +304,7 @@
     <Content Include="js\global.js" />
     <Content Include="js\MenuRH.js" />
     <Content Include="js\Menu.js" />
+    <Content Include="js\SubBeca.js" />
     <Content Include="js\SubCurso.js" />
     <Content Include="menu.aspx" />
     <Content Include="modalidad.aspx" />
@@ -395,6 +396,7 @@
     <Compile Include="modalidad.aspx.designer.cs">
       <DependentUpon>modalidad.aspx</DependentUpon>
     </Compile>
+    <Compile Include="model\Beca.cs" />
     <Compile Include="model\Correo.cs" />
     <Compile Include="model\SubGrup.cs" />
     <Compile Include="model\Usuario.cs" />
