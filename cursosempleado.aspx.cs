@@ -84,7 +84,7 @@ namespace CECADE
                             "<td>" + DTblTmp.Rows[i]["app_instructor"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["curso"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["duracion"] + "</td>" +
-                            "<td><a href='https://estadocuenta.chihuahua.gob.mx/ReportsView.aspx?reportName=RHRP0253&PARAMETRO1=CHIHUAHUA%20CHIH&PARAMETRO2="+ DTblTmp.Rows[i]["curso"] + "&PARAMETRO3=&PARAMETRO4="+ N_Completo + "&PARAMETRO5=&PARAMETRO6=" + DTblTmp.Rows[i]["duracion"] + "&PARAMETRO7="+fecha+ "&PARAMETRO8=&PARAMETRO9=" + DTblTmp.Rows[i]["app_instructor"] + "&PARAMETRO10='><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
+                            "<td><a href='https://estadocuenta.chihuahua.gob.mx/ReportsView.aspx?reportName=RHRP0253&PARAMETRO1=CHIHUAHUA%20CHIH&PARAMETRO2="+ DTblTmp.Rows[i]["curso"] + "&PARAMETRO3=&PARAMETRO4="+ N_Completo + "&PARAMETRO5=&PARAMETRO6=" + DTblTmp.Rows[i]["duracion"] + "&PARAMETRO7="+fecha+ "&PARAMETRO8=&PARAMETRO9=" + DTblTmp.Rows[i]["app_instructor"] + "&PARAMETRO10=' target='_blank'><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
                             "</tr>";
                     }
                     TbodyCursos.InnerHtml = TCursos;

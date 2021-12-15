@@ -104,62 +104,35 @@
           <h2 style="color: #fff;" >Disponibilidad de becas</h2>
 
         </div>
-
-
-
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/beca.jpg" class="img-fluid" alt="">
+            <!--img src="assets/img/beca.jpg" class="img-fluid" alt=""-->
+              <a href="FormularioBeca.aspx" ><img src="assets/img/beca.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Beca Navideña</h4>
+              <h4>Beca UACH</h4>
               <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
+            
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/beca2.jpg" class="img-fluid" alt="">
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Beca Benito Juarez</h4>
-              <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/beca3.jpg" class="img-fluid" alt="">
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Beca Deportiva</h4>
-              <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/beca4.jpg" class="img-fluid" alt="">
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Beca al Extranjero</h4>
-              <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/beca5.jpg" class="img-fluid" alt="">
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Beca Excelencia Académica</h4>
-              <a href="FormularioBeca.aspx" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img width="900" src="assets/img/beca6.jpg" class="img-fluid" alt="">
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Beca Bienestar</h4>
-                <a href="FormularioBeca.aspx" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
-            </div>
-          </div>
         </div>
       </div>
     </section><!-- End Portfoio Section -->
+            <div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>              
+              <br>
+              <br>
+      </div>
   </section>
+
 
 
   </main><!-- End #main -->
