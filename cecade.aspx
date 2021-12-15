@@ -30,6 +30,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style - copia.css" rel="stylesheet">
+   
 
   <!-- =======================================================
   * Template Name: Anyar - v4.6.0
@@ -39,7 +40,23 @@
   ======================================================== -->
 </head>
 
+
  <link rel="stylesheet" href="CSS\StyleCecade.css" />
+
+    <style type="text/css">
+.portfoio .portfolio-item .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    right: 65px;
+    bottom: -50px;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: #0880e8;
+    padding: 15px 20px;
+}
+
+</style>
 
 
 <body>
@@ -323,93 +340,102 @@
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img align="center" src="assets/img/img1.jpg" class="img-fluid" alt="">
+            <!--img align="center" src="assets/img/img1.jpg" class="img-fluid" alt=""-->
+              <a href="cursos.aspx" ><img src="assets/img/img1.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Cátalogo de cursos</h4>
               <p>Programas</p>
-              <a href="cursos.aspx" class="details-link" ><i class="bx bx-link"></i></a>
+              <!--a href="cursos.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/img2.jpg" class="img-fluid" alt="">
+            <!--img src="assets/img/img2.jpg" class="img-fluid" alt=""-->
+              <a href="modalidad.aspx" ><img src="assets/img/img2.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Modalidades</h4>
               <p>Presencial y Virtual</p>
-              <a href="modalidad.aspx" class="details-link" ><i class="bx bx-link"></i></a>
+              <!--a href="modalidad.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/img3.jpg" class="img-fluid" alt="">
+            <!--img src="assets/img/img3.jpg" class="img-fluid" alt=""-->
+              <a href="cursosmes.aspx" ><img src="assets/img/img3.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Cursos del mes</h4>
-              <a href="cursosmes.aspx" class="details-link" ><i class="bx bx-link"></i></a>
+              <!--a href="cursosmes.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/img4.jpg" class="img-fluid" alt="">
+            <!--img src="assets/img/img4.jpg" class="img-fluid" alt=""-->
+              <a href="cursosempleado.aspx" ><img src="assets/img/img4.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Mis Cursos</h4>
-              <a href="cursosempleado.aspx" class="details-link" ><i class="bx bx-link"></i></a>
+              <!--a href="cursosempleado.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/img5.jpg" class="img-fluid" alt="">
+            <!--img src="assets/img/img5.jpg" class="img-fluid" alt=""-->
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" ><img src="assets/img/img5.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Detección de Necesidad de Capacitación</h4>
               <p>DNC</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
+              <!--a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" ><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img width="900" src="assets/img/img6.jpg" class="img-fluid" alt="">
+            <!--img width="900" src="assets/img/img6.jpg" class="img-fluid" alt=""-->
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank"><img src="assets/img/img6.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Solicitar Curso para tu Dependencia</h4>
               <p>App</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank" class="details-link" ><i class="bx bx-link"></i></a>
+              <!--a href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank" class="details-link" ><i class="bx bx-link"></i></a-->
 
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/img7.jpg" class="img-fluid" alt="">
+            <!--img src="assets/img/img7.jpg" class="img-fluid" alt=""-->
+               <a href="assets/img/imgform.jpg" ><img src="assets/img/img7.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Validaciones</h4>
               <p>Formato de solicitud</p>
-              <a href="assets/img/vali2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-              <a href="assets/img/imgform.jpg" data-gallery="portfolioGallery" class="details-link" ><i class="bx bx-plus"></i></a>
+              <!--a href="assets/img/vali2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a-->
+              <!--a href="assets/img/imgform.jpg" data-gallery="portfolioGallery" class="details-link" ><i class="bx bx-plus"></i></a-->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img width="900" src="assets/img/img8.jpg" class="img-fluid" alt="">
+            <!--img width="900" src="assets/img/img8.jpg" class="img-fluid" alt=""-->
+              <a href="becas.aspx" ><img src="assets/img/img8.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca</h4>
               <p>UACH Maestría</p>
-              <a href="assets/img/imgbeca.jpg" class="preview-link" ><i class="bx bx-plus"></i></a>
-              <a href="becas.aspx" class="details-link" ><i class="bx bx-link"></i></a>
+              <!--a href="assets/img/imgbeca.jpg" class="preview-link" ><i class="bx bx-plus"></i></a-->
+              <!--a href="becas.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/img9.jpg" class="img-fluid" alt="">
+            <!--img src="assets/img/img9.jpg" class="img-fluid" alt=""-->
+              <a href="assets/img/galeria/team-1.jpg" class="portfolio-lightbox preview-link " ><img src="assets/img/img9.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Galeria</h4>
               <p>Fotos</p>
-              <a href="assets/img/alianza/....jpg" class="portfolio-lightbox preview-link " ><i class="bx bx-plus"></i></a>
+              <!--a href="assets/img/alianza/....jpg" class="portfolio-lightbox preview-link " ><i class="bx bx-plus"></i></a-->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/img13.jpg" class="img-fluid" alt="">
+            <!--img  src="assets/img/img13.jpg" class="img-fluid" alt=""-->
+              <a href="Alianza.aspx" ><img src="assets/img/img13.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Alianzas</h4>
-              <a href="Alianza.aspx" class="details-link"><i class="bx bx-link"></i></a>
             </div>
           </div>
 

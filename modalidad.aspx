@@ -109,15 +109,17 @@
           <div class="row portfolio-container">
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/virtual.jpg" class="img-fluid" alt="">
+              <!--img src="assets/img/virtual.jpg" class="img-fluid" alt=""-->
+                <a href="cursosvirtual.aspx" ><img src="assets/img/virtual.jpg" width="430" height="280" ></a>
               <div style="background-color: #d70067"; class="portfolio-info">
                 <h4>Cursos Virtuales</h4>
-                <a href="cursosvirtual.aspx" class="details-link" ><i class="bx bx-link"></i></a>
+                <!--a href="cursosvirtual.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/presencial.jpg" class="img-fluid" alt="">
+              <!--img src="assets/img/presencial.jpg" class="img-fluid" alt=""-->
+                <a href=" " ><img src="assets/img/presencial.jpg" width="430" height="280" ></a>
               <div style="background-color: #d70067"; class="portfolio-info">
                 <h4>Cursos Presenciales</h4>
                 <!--a href="assets/img/presencialvirtual1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a-->

@@ -110,7 +110,7 @@
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/beca1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/beca.jpg" class="img-fluid" alt="">
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Beca Navideña</h4>
               <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
