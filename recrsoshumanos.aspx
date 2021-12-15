@@ -49,7 +49,7 @@
         <i  style="color: #e50069;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
       <div class="cta d-none d-md-block">
-        <a  href="menu.aspx" class="scrollto">Cerrar Sesión</a>
+        <a  href="inicia.aspx" class="scrollto">Cerrar Sesión</a>
       </div>
     </div>
   </div>
