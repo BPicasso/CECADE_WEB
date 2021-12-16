@@ -53,7 +53,8 @@ namespace CECADE
                 " AND gr.instructor = ins.instructor" +
                 " AND gr.proveedor = ins.proveedor" +
                 " AND co.empleado = em.empleado" +
-                " AND co.empleado ='" + Session["empleado"] + "'";
+                " AND co.empleado ='" + Session["empleado"] + "'"+
+                "order by gr.fecha_hasta DESC";
             DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta");
 
             if (DTblTmp != null)
@@ -76,17 +77,33 @@ namespace CECADE
                     {
                         fecha = DTblTmp.Rows[i]["fecha"].ToString();
                         DateTime oDate = Convert.ToDateTime(fecha);
-                       
 
 
-                        fecha = oDate.Day + "-" + oDate.Month + "-" + oDate.Year;
+                        if (oDate.Day.ToString().Length==1 && oDate.Month.ToString().Length == 1)
+                        {
+                            fecha ="0"+ oDate.Day + "-0" + oDate.Month + "-" + oDate.Year;
+                        }
+                        else if (oDate.Day.ToString().Length == 1)
+                        {
+                            fecha ="0"+ oDate.Day + "-" + oDate.Month + "-" + oDate.Year;
+                        }
+                        else if (oDate.Month.ToString().Length == 1)
+                        {
+                            fecha = oDate.Day + "-0" + oDate.Month + "-" + oDate.Year;
+                        }
+                        else
+                        {
+                            fecha = oDate.Day + "-" + oDate.Month + "-" + oDate.Year;
+                        }
+                        
 
                         String N_Completo = DTblTmp.Rows[i]["nom_empleado"].ToString() +" "+ DTblTmp.Rows[i]["app_empleado"].ToString() +" "+ DTblTmp.Rows[i]["apm_empleado"].ToString();
                         TCursos = TCursos += "<tr>  " +
                             "<td>" + DTblTmp.Rows[i]["curso"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["descripcion"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["duracion"] + "</td>" +
-                            "<td><a href='https://estadocuenta.chihuahua.gob.mx/ReportsView.aspx?reportName=RHRP0253&PARAMETRO1=CHIHUAHUA%20CHIH&PARAMETRO2="+ DTblTmp.Rows[i]["curso"] + "&PARAMETRO3=&PARAMETRO4="+ N_Completo + "&PARAMETRO5=&PARAMETRO6=" + DTblTmp.Rows[i]["duracion"] + "&PARAMETRO7="+fecha+ "&PARAMETRO8=&PARAMETRO9=" + DTblTmp.Rows[i]["app_instructor"] + "&PARAMETRO10=' target='_blank'><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
+                            "<td>" + fecha + "</td>" +
+                            "<td><a href='https://estadocuenta.chihuahua.gob.mx/ReportsView.aspx?reportName=RHRP0253&PARAMETRO1=CHIHUAHUA%20CHIH&PARAMETRO2=" + DTblTmp.Rows[i]["curso"] + "&PARAMETRO3=&PARAMETRO4="+ N_Completo + "&PARAMETRO5=&PARAMETRO6=" + DTblTmp.Rows[i]["duracion"] + "&PARAMETRO7="+fecha+ "&PARAMETRO8=&PARAMETRO9=" + DTblTmp.Rows[i]["app_instructor"] + "&PARAMETRO10=' target='_blank'><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
                             "</tr>";
                     }
                     TbodyCursos.InnerHtml = TCursos;

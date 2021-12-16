@@ -108,6 +108,7 @@
                     <th>Curso</th>
                     <th>Nombre del curso</th>
                     <th>Duración hrs</th>
+                      <th>Fecha</th>
                     <th>Constancia</th>
                   </tr>
                 </thead>
