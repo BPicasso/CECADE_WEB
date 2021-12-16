@@ -114,8 +114,7 @@
               <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
           </div>
-            
-
+            <img src="assets/img/BECAS.jpg">
         </div>
       </div>
     </section><!-- End Portfoio Section -->

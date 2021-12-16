@@ -23,6 +23,47 @@
  <!--Custom styles-->
  <link rel="stylesheet" type="text/css" href="Anyar/assets/css/styles.css">
 
+<style type="text/css">
+
+    .btn-signin {
+  float: left;
+  padding-top: 8px;
+  width: 123%;
+  height: 35px;
+  border: none;
+      font-weight: bold;
+    font-size: 17px;
+  border-radius: 20px;
+  margin-top: -8px;
+}
+    .frame {
+  height: 620px;
+  width: 530px;
+  background: linear-gradient( rgba(87,87,86,0.75), rgba(0,81,137,0.95)), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 1px rgba(255,255,255,.5);
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 20%);
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+
+.form-styling {
+    width: 123%;
+    height: 50px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.2);
+}
+
+
+</style>
+
 </head>
 <body>
 
@@ -39,6 +80,7 @@
       <div class="nav">
         <ul class"links">
           <li class="signin-active"><a class="btn">Inicio de Sesi&oacute;n</a></li>
+            <img src="assets/img/LOGOTIPO_GOB(2021)-MONOCROMO_HORIZONTAL-NEGRO.PNG" width="250px" height="80px">
           <!--li class="signup-inactive"><a class="btn">CECADE</a></li-->
         </ul>
       </div>
