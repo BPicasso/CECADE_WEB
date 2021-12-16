@@ -28,7 +28,7 @@ namespace CECADE
             {
                 MailMessage correo = new MailMessage();
                 correo.From = new MailAddress("administracion.ceit@chihuahua.gob.mx", "Solicitud de contacto de pagina", System.Text.Encoding.UTF8);//Correo de salida
-                correo.To.Add("josecarlos.martinez@chihuahua.gob.mx"); //Correo destino?
+                correo.To.Add("cecade@chihuahua.gob.mx"); //Correo destino?
                // correo.To.Add("brandon.picazo@chihuahua.gob.mx"); //Correo destino?
                 correo.Subject = "CECADE Web"; //Asunto
                 correo.Body = " Contacto: " + objMail.Nombre + " Correo:" + objMail.Correo_M + " Tipo de Solicitud:" + objMail.Mensaje;

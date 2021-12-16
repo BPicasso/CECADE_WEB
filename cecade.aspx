@@ -467,7 +467,7 @@
               <div class="email">
                 <a href="https://accounts.google.com/ServiceLogin/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&followup=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i style="background-color: #d70067"; class="bi bi-envelope"></i></a>
                 <h4>Correo:</h4>
-                <p>cecade@gmail.com</p>
+                <p>cecade@chihuahua.gob.mx</p>
               </div>
 
               <div class="phone">

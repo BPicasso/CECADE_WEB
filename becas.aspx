@@ -106,6 +106,8 @@
         </div>
         <div class="row portfolio-container">
 
+            
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <!--img src="assets/img/beca.jpg" class="img-fluid" alt=""-->
               <a href="FormularioBeca.aspx" ><img src="assets/img/beca.jpg" width="350" height="200" ></a>
@@ -113,10 +115,14 @@
               <h4>Beca UACH</h4>
               <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
+              
           </div>
-            <img src="assets/img/BECAS.jpg">
+            
         </div>
+          
       </div>
+
+        
     </section><!-- End Portfoio Section -->
             <div>
 
