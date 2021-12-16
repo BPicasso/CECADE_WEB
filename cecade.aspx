@@ -423,9 +423,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <!--img src="assets/img/img9.jpg" class="img-fluid" alt=""-->
-              <a href="assets/img/galeria/team-1.jpg" class="portfolio-lightbox preview-link " ><img src="assets/img/img9.jpg" width="350" height="200" ></a>
+              <a href="assets/img/galeria/team-1.jpg" class="portfolio-lightbox preview-link " ><img src="assets/img/evidencia.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Galeria</h4>
+              <h4>Galeria de evidencias</h4>
               <p>Fotos</p>
               <!--a href="assets/img/alianza/....jpg" class="portfolio-lightbox preview-link " ><i class="bx bx-plus"></i></a-->
             </div>
