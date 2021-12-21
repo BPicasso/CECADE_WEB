@@ -104,10 +104,7 @@
           <h2 style="color: #fff;" >Disponibilidad de becas</h2>
 
         </div>
-        <div class="row portfolio-container">
-
-            
-
+        <div class="row portfolio-container">          
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <!--img src="assets/img/beca.jpg" class="img-fluid" alt=""-->
               <a href="FormularioBeca.aspx" ><img src="assets/img/beca.jpg" width="350" height="200" ></a>
@@ -115,17 +112,19 @@
               <h4>Beca UACH</h4>
               <a href="FormularioBeca.aspx" class="details-link" ><i class="bx bx-link"></i></a>
             </div>
-              
           </div>
-            
-        </div>
-          
-      </div>
-
         
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position:absolute;left:895px;top:0px;">
+                
+          </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position:absolute;left:895px;top:0px;">
+                <a href="assets/img/BECAS.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/BECAS.jpg" width="350" height="500"></a>
+          </div>
+        </div>
+      </div>
     </section><!-- End Portfoio Section -->
             <div>
-
               <br>
               <br>
               <br>
