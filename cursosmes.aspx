@@ -41,6 +41,43 @@
 
  <link rel="stylesheet" href="CSS\StyleCursosMes.css" />
 
+    <style type="text/css">
+
+  .table {
+    --bs-table-bg: #ffffff66;
+    --bs-table-accent-bg: #ffffff40;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+table {
+    caption-side: bottom;
+    border-collapse: inherit;
+}
+
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 1px 3px;
+    color: black;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+}
+
+
+</style>
+
 
 <body>
 

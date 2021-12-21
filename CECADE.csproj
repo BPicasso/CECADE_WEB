@@ -120,6 +120,7 @@
     <Content Include="assets\img\clients\RADIODIÁGNOTICOEIMAGEN.png" />
     <Content Include="assets\img\clients\SALÓNCOMICS.jpg" />
     <Content Include="assets\img\evidencia.jpg" />
+    <Content Include="assets\img\FORMATO_SOLICITUD.pdf" />
     <Content Include="assets\img\galeria\team-1.jpg" />
     <Content Include="assets\img\galeria\team-2.jpg" />
     <Content Include="assets\img\galeria\team-3.jpg" />
@@ -186,7 +187,6 @@
     <Content Include="cursosmes.aspx" />
     <Content Include="cursosvirtual.aspx" />
     <Content Include="forms\contact.php" />
-    <Content Include="assets\img\FORMATO_SOLICITUD.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
