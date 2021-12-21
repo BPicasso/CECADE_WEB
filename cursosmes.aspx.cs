@@ -141,7 +141,7 @@ namespace CECADE
                     }
                     else
                     {
-                        String SQL = "INSERT INTO inscripcion (organismo, empleado, grupo, fecha_inscripcion, confirmacion, fecha_confirmacion, usuario, status, curso) VALUES ('" + org + "', " + Empleado + ", " + objMail.Curso + ", to_Date('" + Fecha + "','%Y-%m-%d'), null, null, '" + Usuario + "', 'A', null);";
+                        String SQL = "INSERT INTO inscripcion (organismo, empleado, grupo, fecha_inscripcion, confirmacion, fecha_confirmacion, usuario, status) VALUES ('" + org + "', " + Empleado + ", " + objMail.Curso + ", to_Date('" + Fecha + "','%Y-%m-%d'), null, null, '" + Usuario + "', 'A');";
                         DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta");
                         if (DTblTmp != null)
                         {
