@@ -151,9 +151,13 @@ tbody, td, tfoot, th, thead, tr {
                 <thead>
                   <tr>
                     <th>Curso</th>
+                     
                     <th>Nombre del curso</th>
                     <th>Duración hrs</th>
-                    <th>Fecha</th>
+                    
+                    <th>Capacidad</th>
+                    <th>Numero de inscritos</th>
+                      <th>Fecha</th>
                     <th>Horario</th>
                     
                   </tr>

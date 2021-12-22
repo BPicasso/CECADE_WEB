@@ -34,6 +34,7 @@ namespace CECADE
             String SQL2 = "" +
             "SELECT " +
                 "gr.grupo grupo, " +
+                "gr.capacidad capacidad, " +
                 "cu.descripcion nombre, " +
                 "cu.duracion duracion, " +
                 "gr.fecha_hasta fecha, " +
@@ -54,7 +55,7 @@ namespace CECADE
                 "AND gr.instructor = ins.instructor " +
                 "AND gr.proveedor = ins.proveedor " +
                 "AND co.empleado = em.empleado " +
-            "order by cu.curso ";
+            "order by cu.curso, gr.fecha_hasta";
             DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta");
             int curso = 0;
             string curs = "";
@@ -62,21 +63,36 @@ namespace CECADE
             {
                 if (DTblTmp.Rows.Count > 0)
                 {
-
+                    string fecha2 = DTblTmp.Rows[0]["fecha_hasta"].ToString();
                     String TCursos = "";
                     for (int i = 0; i < DTblTmp.Rows.Count; i++)
                     {
                         curs = DTblTmp.Rows[i]["curso"].ToString();
                         string fecha = DTblTmp.Rows[i]["fecha_hasta"].ToString();
                         DateTime oDate = Convert.ToDateTime(fecha);
-                        if (Int32.Parse(curs) != curso)/*Int32.Parse(curs) != curso || oDate.Year.ToString().Equals("2020"))*/
+                        if (Int32.Parse(curs) != curso || fecha2 != fecha)/*Int32.Parse(curs) != curso || oDate.Year.ToString().Equals("2020"))*/
                         {
+                            String SQL3 = " SELECT grupo, confirmacion FROM inscripcion where grupo == '" + DTblTmp.Rows[i]["grupo"] + "' and confirmacion== 'CO';";
+                            fecha2 = fecha;
                             curso = Int32.Parse(curs);
                             TCursos = TCursos += "<tr>  " +
                             //"<td><a href='assets/img/CONSTANCIA_CECADE.jpg' download='CONSTANCIA_CECADE.jpg'><input type='button' class='btn btn-sm btn-info' value ='Imprimir'></a></td>" +
                             "<td align='center'>" + DTblTmp.Rows[i]["grupo"] + "</td>" +
                             "<td>" + DTblTmp.Rows[i]["nombre"] + "</td>" +
-                            "<td align='center'>" + DTblTmp.Rows[i]["duracion"] + "</td>";
+                            "<td align='center'>" + DTblTmp.Rows[i]["duracion"] + "</td>" +
+                            "<td align='center'>" + DTblTmp.Rows[i]["capacidad"] + "</td>";
+                            DataTable DTblTmp3 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL3, "consulta3");
+                            if (DTblTmp3!=null)
+                            {
+                                TCursos = TCursos += "" +
+                                "<td align='center'>" + DTblTmp3.Rows.Count+ "</td>";
+                            }
+                            else
+                            {
+                                TCursos = TCursos += "" +
+                                "<td align='center'>" +0+"</td>";
+                            }
+                            
                             if (oDate.Month.ToString().Length == 1 && oDate.Day.ToString().Length == 1)
                             {
                                 TCursos = TCursos +
@@ -141,11 +157,40 @@ namespace CECADE
                     }
                     else
                     {
-                        String SQL = "INSERT INTO inscripcion (organismo, empleado, grupo, fecha_inscripcion, confirmacion, fecha_confirmacion, usuario, status) VALUES ('" + org + "', " + Empleado + ", " + objMail.Curso + ", to_Date('" + Fecha + "','%Y-%m-%d'), null, null, '" + Usuario + "', 'A');";
-                        DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta");
-                        if (DTblTmp != null)
+
+                        String SQL3 = "SELECT count(empleado) Confirmados FROM inscripcion where grupo == '" + objMail.Curso + "' and confirmacion== 'CO'";
+                        String SQL4 = "SELECT  capacidad FROM grupo where grupo == '" + objMail.Curso + "';";
+                        DataTable DTblTmp3 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL3, "consulta3");
+                        DataTable DTblTmp4 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL4, "consulta4");
+                        if (DTblTmp3 != null && DTblTmp4 != null)
                         {
-                            R = "Success";
+                            if (DTblTmp4.Rows.Count>0)
+                            {
+                                int capacidad = Int32.Parse(DTblTmp3.Rows[0]["Confirmados"].ToString());
+                                int Inscritos = Int32.Parse(DTblTmp4.Rows[0]["capacidad"].ToString());
+                                if (Inscritos != capacidad)
+                                {
+                                    String SQL = "INSERT INTO inscripcion (organismo, empleado, grupo, fecha_inscripcion, confirmacion, fecha_confirmacion, usuario, status) VALUES ('" + org + "', " + Empleado + ", " + objMail.Curso + ", to_Date('" + Fecha + "','%Y-%m-%d'), null, null, '" + Usuario + "', 'A');";
+                                    DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta");
+                                    if (DTblTmp != null)
+                                    {
+                                        R = "Success";
+                                    }
+                                }
+                                else
+                                {
+                                    R = "Full";
+                                }
+                            }
+                            else
+                            {
+                                R = "Capacidad Desconocida";
+                            }
+                        }
+                        else
+                        {
+                            R = "Curso Desconocido";
+                            R = "Capacidad Desconocida";
                         }
                     }
 

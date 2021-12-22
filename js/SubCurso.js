@@ -29,7 +29,34 @@
                 Swal.fire({
                     title: '',
                     text: 'Ya esta inscrito a este curso',
-                    icon: 'info,',
+                    icon: 'info',
+                    confirmButtonText: 'Cerrar'
+
+                })
+            } else if (info.d == "Curso Desconocido") {
+
+                Swal.fire({
+                    title: '',
+                    text: 'El curso ingresado no existe',
+                    icon: 'question',
+                    confirmButtonText: 'Cerrar'
+
+                })
+            } else if (info.d == "Capacidad Desconocida") {
+
+                Swal.fire({
+                    title: '',
+                    text: 'La capacidad del curso que desea ingresar no esta definida',
+                    icon: 'question',
+                    confirmButtonText: 'Cerrar'
+
+                })
+            } else if (info.d == "Full") {
+
+                Swal.fire({
+                    title: '',
+                    text: 'El curso ya esta lleno',
+                    icon: 'info',
                     confirmButtonText: 'Cerrar'
 
                 })
