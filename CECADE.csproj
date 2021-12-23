@@ -137,7 +137,9 @@
     <Content Include="assets\img\img7.jpg" />
     <Content Include="assets\img\img8.jpg" />
     <Content Include="assets\img\img9.jpg" />
+    <Content Include="assets\img\inicio.jpg" />
     <Content Include="assets\img\LOGOTIPO_GOB%282021%29-IMPRESOS_HORIZONTAL-SF.PNG" />
+    <Content Include="assets\img\LOGOTIPO_GOB%282021%29-IMPRESOS_VERTICAL-SF.PNG" />
     <Content Include="assets\img\LOGOTIPO_GOB%282021%29-MONOCROMO_HORIZONTAL-NEGRO.PNG" />
     <Content Include="assets\img\maru1.jpg" />
     <Content Include="assets\img\presencial.jpg" />

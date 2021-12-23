@@ -173,6 +173,23 @@
         </div>
 
         <div class="row">
+
+                  <table class="table table-responsive table-bordered" id="Table_Usr">
+                <thead>
+                  <h3>Cursos 2021</h3>
+                  <tr>
+                    <th>Nombre del empleado</th>
+                    <th>Apellidos</th>
+                    <th>Dependencia</th>
+                    <th>Area</th>
+                  </tr>
+                </thead>
+                <tbody id="TbodyC" runat="server">
+                </tbody>
+              </table>
+
+
+
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box" >
               <i style="color: #702283;" class="bi bi-card-checklist"></i>

@@ -52,10 +52,6 @@
 </head>
 
 <style type="text/css">
-
-
-
-
   .table {
     --bs-table-bg: #ffffff66;
     --bs-table-accent-bg: #ffffff40;

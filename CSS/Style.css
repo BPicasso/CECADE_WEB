@@ -7,7 +7,7 @@ html, body * {
 body {
     background: linear-gradient( rgba(246,247,249,0.8), rgba(246,247,249,0.8)), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/sky-clouds-cloudy-mountain.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-image: url('../assets/img/index.jpg');
+    background-image: url('../assets/img/inicio.jpg');
 }
 
 .container {
