@@ -49,7 +49,7 @@
   <div  class="frame">
     <div class="nav">
       <ul class"links">
-                <li class="signup-active"><a onClick="cecade();" style="color: #fff";  class="btn">CECADE</a></li>
+                <li class="signup-active"><a onClick="cecade();" style="color: #fff";  class="btn">Centro de Capacitación y Desarrollo</a></li>
       </ul>
     </div>
   </div>

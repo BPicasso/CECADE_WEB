@@ -43,7 +43,7 @@
 
  <link rel="stylesheet" href="CSS\StyleCecade.css" />
 
-    <style type="text/css">
+<style type="text/css">
 .portfoio .portfolio-item .portfolio-info {
     opacity: 0;
     position: absolute;
@@ -54,6 +54,23 @@
     transition: all ease-in-out 0.3s;
     background: #0880e8;
     padding: 15px 20px;
+}
+    #header .logo {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .navbar {
+    padding: 263px;
+}
+ .img-fluid {
+    max-width: 180%;
+    height: auto;
 }
 
 </style>
@@ -76,34 +93,33 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-between">
+    
 
-      <h1 class="logo"><a href="cecade.html">SISTEMA CECADE</a></h1>
+      <h1 class="logo"><a href="cecade.html">Centro de Capacitaci&oacute;n y Desarrollo</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="menu.aspx">Inicio</a></li>
+          <li><!--a class="nav-link scrollto active" href="menu.aspx">Inicio</a--></li>
           <li><a class="nav-link scrollto" href="#about">¿Quienes Somos?</a></li>
           <li><a class="nav-link scrollto" href="#cta">Marco Legal</a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li-->
-          <li class="dropdown"><a href="#portfolio"><span>Capacitación y desarrollo</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#portfolio"><span>Capacitaci&oacute;n y desarrollo</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#portfolio">Cátalogo de Cursos</a></li>
-              <li><a href="#portfolio">Modalidades</a></li>
-              <li><a href="#portfolio">Solicitar un curso para tu Dependencia</a></li>
+              <li><a href="#portfolio">C&aacute;talogo de Cursos</a></li>
               <li><a href="#portfolio">Consulta de los cursos del mes</a></li>
               <li><a href="#portfolio">Mis cursos</a></li>
-              <li><a href="#portfolio">Alianzas</a></li>
-              <li><a href="#portfolio">Becas</a></li>
-              <li><a href="#portfolio">Validaciones</a></li>
-              <li><a href="#portfolio">Galeria</a></li>
               <li><a href="#portfolio">Detección de Necesidades de capacitación</a></li>
-              <li><a href="#portfolio">Unidad de igualdad de género</a></li>
+              <li><a href="#portfolio">Solicitar un curso para tu Dependencia</a></li>
+              <li><a href="#portfolio">Validaciones</a></li>
+              <li><a href="#portfolio">Becas</a></li>
+              <li><a href="#portfolio">Alianzas y más</a></li>
+              <li><a href="#portfolio">Bolsa de Trabajo</a></li>
+              <li><a href="#portfolio">Servicio Social y Prácticas Profesionales</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
@@ -129,33 +145,18 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" width="250" height="380"></a>
+
+          <div class="clients-slider swiper" >
+            <div class="swiper-wrapper align-items-center" >
+                  <div class="swiper-slide"><a href="assets/img/galeria/team-1.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-1.jpg"  class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a href="assets/img/galeria/team-2.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-2.jpg"  class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a href="assets/img/galeria/team-3.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-3.jpg"  class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a href="assets/img/galeria/team-4.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-4.jpg"  class="img-fluid" alt=""></a></div>
             </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box1">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/FLAYERSOTOLERÍA.png" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/FLAYERSOTOLERÍA.png" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/SALÓNCOMICS.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/SALÓNCOMICS.jpg" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box1">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/PEKESYFAMILY.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/PEKESYFAMILY.jpg" width="250" height="380"></a>
-            </div>
-          </div>
+    <br>
+    <br>
+    <div class="swiper-pagination"></div>
+  </div>
 
         </div>
 
@@ -219,11 +220,11 @@
             </div>
           </div-->
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
+            <!--div class="icon-box">
               <i style="color: #702283;" class="bi bi-phone-fill"></i>
               <h4><a style="color: #121212;" href="#">Contacto</a></h4>
               <p>Para solicitud de cursos e inscripciones comunicarse al teléfono 4293300.<br>Extensiones 15904, 15908, 15910, 15911, 15913, 15926, 15929.<br>Lunes a viernes de 8:00 a 20:00 hrs.<br>Sábados de 9:00 a 13:00 hrs.</p>
-            </div>
+            </div-->
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
@@ -339,7 +340,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Capacitación y Desarrollo</h2>
+          <h2>Servicios</h2>
 
         </div>
 
@@ -363,16 +364,6 @@
               <h4>Cátalogo de cursos</h4>
               <p>Programas</p>
               <!--a href="cursos.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <!--img src="assets/img/img2.jpg" class="img-fluid" alt=""-->
-              <a href="modalidad.aspx" ><img src="assets/img/img2.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Modalidades</h4>
-              <p>Presencial y Virtual</p>
-              <!--a href="modalidad.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -437,22 +428,27 @@
             </div>
           </div>
 
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <!--img src="assets/img/img9.jpg" class="img-fluid" alt=""-->
-              <a href="assets/img/galeria/team-1.jpg" class="portfolio-lightbox preview-link " ><img src="assets/img/evidencia.jpg" width="350" height="200" ></a>
+            <!--img  src="assets/img/img13.jpg" class="img-fluid" alt=""-->
+              <a href="Alianza.aspx" ><img src="assets/img/img13.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Galeria de evidencias</h4>
-              <p>Fotos</p>
-              <!--a href="assets/img/alianza/....jpg" class="portfolio-lightbox preview-link " ><i class="bx bx-plus"></i></a-->
+              <h4>Alianzas y más</h4>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <!--img  src="assets/img/img13.jpg" class="img-fluid" alt=""-->
-              <a href="Alianza.aspx" ><img src="assets/img/img13.jpg" width="350" height="200" ></a>
+              <a href="" ><img src="assets/img/img9.jpg" width="350" height="200" ></a>
             <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Alianzas</h4>
+              <h4>Bolsas de Trabajo</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <!--img  src="assets/img/img13.jpg" class="img-fluid" alt=""-->
+              <a href="" ><img src="assets/img/img11.jpg" width="350" height="200" ></a>
+            <div style="background-color: #d70067"; class="portfolio-info">
+              <h4>Servicio Social y Prácticas Profesionales</h4>
             </div>
           </div>
 
