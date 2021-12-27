@@ -8,7 +8,23 @@
                 password: $("#password").val()
             }
         }
-
+        let timerInterval
+        Swal.fire({
+            title: 'Iniciando Session',
+            //html: 'I will close in <b></b> milliseconds.',
+            timer: 35000,
+           // timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                    b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+        })
         $.ajax({
             method: "POST",
             url: "Inicia.aspx/Login",
@@ -20,20 +36,14 @@
             console.log(info);
             $(".mensaje").html(info.d);
             if (info.d == "Success") {
-                $(".btn-animate").toggleClass("btn-animate-grow");
-                $(".welcome").toggleClass("welcome-left");
-                $(".cover-photo").toggleClass("cover-photo-down");
-                $(".frame").toggleClass("frame-short");
-                $(".profile-photo").toggleClass("profile-photo-down");
-                $(".btn-goback").toggleClass("btn-goback-up");
-                $(".forgot").toggleClass("forgot-fade");
-                setTimeout(function () { window.location.href = "menu.aspx"; }, 2000);
+                
+                setTimeout(function () { window.location.href = "menu.aspx"; }, 500);
                // window.location.href = "menu.aspx";
             } else {
                 
                 Swal.fire({
                     title: 'Error de Session',
-                    text: 'Vuelve a iniciar sesión',
+                    text: 'La contraseña o el usuario es incorrecta. Vuelve a intentarlo nuevamente',
                     icon: 'error',
                     confirmButtonText: 'Cerrar'
                     
