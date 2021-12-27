@@ -21,25 +21,34 @@
     
     <!--Fontawesome CDN-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 <body>
-	
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<img style="margin-left: 110px;" src="assets/img/LOGOTIPO_GOB(2021)-IMPRESOS_VERTICAL-SF.PNG" width="240px" height="230px">	
+    <h3 style="text-align:center; font-size: 40px; margin-top: -226px;"><b>Secretaría de Hacienda</b></h3>
+    <br>
+    <h3 style="text-align:center; font-size: 40px;"><b>Dirección de Recursos Humanos</b></h3>
+
+
 
 <div class="container" >
   <div  class="frame" >
     <div class="nav"  >
       <ul class"links">
-        <li  class="signin-active"><a id="Entrada" onClick="rh();" style="color: #fff"; class="btn">Recursos Humanos</a></li>
+        <li  class="signin-active"><a id="Entrada" onClick="rh();" style="color: #fff"; class="btn">Personal Burócrata</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container" >
+  <div  class="frame" >
+    <div class="nav"  >
+      <ul class"links">
+        <li  class="signin-active"><a id="Entrada" onClick="rh();" style="color: #fff"; class="btn">Personal Magisterial</a></li>
 
       </ul>
     </div>
