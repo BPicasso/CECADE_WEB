@@ -11,6 +11,7 @@
     transition: 0.3s;
 }
 
+
 .icon-boxes .icon-box {
     padding: 30px 20px;
     position: relative;
@@ -19,7 +20,7 @@
     transform: scale(1);
     box-shadow: 50px 100px 120px 0 rgb(112 34 131 / 20%);
     transition: all 0.3s ease-in-out;
-    border-radius: 60px;
+    border-radius: 0px 35px 0px 35px;
 }
 
 .icon-boxes .icon-box1 {
@@ -30,7 +31,7 @@
     transform: scale(1);
     box-shadow: 50px 100px 120px 0 rgb(229 0 105 / 20%);
     transition: all 0.3s ease-in-out;
-    border-radius: 60px;
+    border-radius: 0px 35px 0px 35px;
 }
 
 

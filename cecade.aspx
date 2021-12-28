@@ -73,6 +73,28 @@
     height: auto;
 }
 
+.icon-boxes .icon-box {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #702383;
+    transform: scale(1);
+    box-shadow: 50px 100px 120px 0 rgb(112 34 131 / 20%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 0px 35px 0px 35px;
+}
+
+.icon-boxes .icon-box1 {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #e50069;
+    transform: scale(1);
+    box-shadow: 50px 100px 120px 0 rgb(229 0 105 / 20%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 0px 35px 0px 35px;
+}
+
 </style>
 
 
@@ -136,28 +158,54 @@
       <a href="https://www.youtube.com/watch?v=2VfLYaUx-mY" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
     </div>
 
+    
+
   </section><!-- End Why Us Section -->
+
+
+    <section style="margin-left: 149px; margin-top: -55px; margin-right: 1613px;">
+
+        <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));"><b>Inducción</b></button>
+
+    </section>
 
   <main id="main">
 
     <!-- ======= Icon Boxes Section ======= -->
     <section id="icon-boxes" class="icon-boxes">
+
       <div class="container">
-
-        <div class="row">
-
-          <div class="clients-slider swiper" >
-            <div class="swiper-wrapper align-items-center" >
-                  <div class="swiper-slide"><a href="assets/img/galeria/team-1.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-1.jpg"  class="img-fluid" alt=""></a></div>
-                  <div class="swiper-slide"><a href="assets/img/galeria/team-2.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-2.jpg"  class="img-fluid" alt=""></a></div>
-                  <div class="swiper-slide"><a href="assets/img/galeria/team-3.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-3.jpg"  class="img-fluid" alt=""></a></div>
-                  <div class="swiper-slide"><a href="assets/img/galeria/team-4.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/galeria/team-4.jpg"  class="img-fluid" alt=""></a></div>
+         <h3 style="text-align: center; font-size: 50px; color: black; "><b>Alianzas y Beneficios</b></h3>
+                <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" width="250" height="380"></a>
             </div>
-    <br>
-    <br>
-    <div class="swiper-pagination"></div>
-  </div>
+          </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box1">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/FLAYERSOTOLERÍA.png" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/FLAYERSOTOLERÍA.png" width="250" height="380"></a>
+            </div>
+          </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/SALÓNCOMICS.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/SALÓNCOMICS.jpg" width="250" height="380"></a>
+            </div>
+          </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box1">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/PEKESYFAMILY.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/PEKESYFAMILY.jpg" width="250" height="380"></a>
+            </div>
+          </div>
 
+        </div>
         </div>
 
       </div>
@@ -289,11 +337,13 @@
 
 
       <!-- ======= Clients Section ======= -->
+      <section>
 <br>
 <br>          
 <div class="container" data-aos="zoom-in">
 
   <div class="clients-slider swiper" >
+      <h3 style="text-align: center; font-size: 50px"><b>Cursos del mes</b></h3>
     <div class="swiper-wrapper align-items-center" >
 
       <div class="swiper-slide"><img src="assets/img/portfolio/imagen1.jpg"  class="img-fluid" alt=""></div>
@@ -305,7 +355,6 @@
     </div>
     <br>
     <br>
-    <div class="swiper-pagination"></div>
   </div>
 
 </div>
@@ -456,6 +505,34 @@
       </div>
     </section><!-- End Portfoio Section -->
   </section>
+
+
+            <!-- ======= Clients Section ======= -->
+          <section>        
+
+
+              <div class="container" data-aos="zoom-in">
+
+              <div class="clients-slider swiper" >
+                  <h3 style="text-align: center; font-size: 50px"><b>Cursos del mes</b></h3>
+                <div class="swiper-wrapper align-items-center" >
+
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
+                </div>
+                <br>
+                <br>
+              </div>
+
+</div>
+
+
+
+          </section><!-- End Clients Section -->
       
 
   <!-- ======= Contact Section ======= -->
