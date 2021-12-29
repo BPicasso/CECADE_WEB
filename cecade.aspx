@@ -210,7 +210,9 @@
 
     <!--section style="margin-left: 149px; margin-top: -55px; margin-right: 1613px;"-->
 
-        <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; margin-left: 159px; padding: 10px; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));"><b>Inducción</b></button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScUQcxLYYMoN67h5V2DCnjR5R1FEBUqQtGsRsLCagbzVpvdUw/viewform" target="_blank" >
+            <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; margin-left: 159px; padding: 10px; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));">
+                <b>Inducción</b></button></a>
 
     <!--/section-->
 
