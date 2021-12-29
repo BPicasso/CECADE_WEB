@@ -286,6 +286,7 @@
     <Content Include="forms\Readme.txt" />
     <Content Include="FormularioBeca.aspx" />
     <Content Include="Inicia.aspx" />
+    <Content Include="introduccion.aspx" />
     <Content Include="js\ContactMail.js" />
     <Content Include="js\global.js" />
     <Content Include="js\MenuRH.js" />
@@ -294,6 +295,7 @@
     <Content Include="js\SubCurso.js" />
     <Content Include="menu.aspx" />
     <Content Include="modalidad.aspx" />
+    <Content Include="quienes_Somos.aspx" />
     <Content Include="recrsoshumanos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -375,6 +377,13 @@
     <Compile Include="Inicia.aspx.designer.cs">
       <DependentUpon>Inicia.aspx</DependentUpon>
     </Compile>
+    <Compile Include="introduccion.aspx.cs">
+      <DependentUpon>introduccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="introduccion.aspx.designer.cs">
+      <DependentUpon>introduccion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="menu.aspx.cs">
       <DependentUpon>menu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -394,6 +403,13 @@
     <Compile Include="model\SubGrup.cs" />
     <Compile Include="model\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quienes_Somos.aspx.cs">
+      <DependentUpon>quienes_Somos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quienes_Somos.aspx.designer.cs">
+      <DependentUpon>quienes_Somos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="recrsoshumanos.aspx.cs">
       <DependentUpon>recrsoshumanos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

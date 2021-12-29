@@ -162,22 +162,22 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     
 
-      <h1 class="logo"><a href="cecade.html">Centro de Capacitaci&oacute;n y Desarrollo</a></h1>
+      <h1 class="logo"><a href="cecade.aspx">Centro de Capacitaci&oacute;n y Desarrollo</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><!--a class="nav-link scrollto active" href="menu.aspx">Inicio</a--></li>
-          <li><a class="nav-link scrollto" href="#about">¿Quienes Somos?</a></li>
-          <li><a class="nav-link scrollto" href="#cta">Marco Legal</a></li>
+          <li><a class="nav-link scrollto" href="quienes_Somos.aspx">¿Quienes Somos?</a></li>
+          <li><a class="nav-link scrollto" href="aviso.aspx">Marco Legal</a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li-->
           <li class="dropdown"><a href="#portfolio"><span>Capacitaci&oacute;n y desarrollo</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#portfolio">C&aacute;talogo de Cursos</a></li>
+              <li><a href="#portfolio">Cátalogo de Cursos</a></li>
               <li><a href="#portfolio">Consulta de los cursos del mes</a></li>
               <li><a href="#portfolio">Mis cursos</a></li>
               <li><a href="#portfolio">Detección de Necesidades de capacitación</a></li>
@@ -210,7 +210,9 @@
 
     <!--section style="margin-left: 149px; margin-top: -55px; margin-right: 1613px;"-->
 
-        <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; margin-left: 159px; padding: 10px; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));"><b>Inducción</b></button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScUQcxLYYMoN67h5V2DCnjR5R1FEBUqQtGsRsLCagbzVpvdUw/viewform" target="_blank" >
+            <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; margin-left: 159px; padding: 10px; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));">
+                <b>Inducción</b></button></a>
 
     <!--/section-->
 
@@ -252,13 +254,11 @@
 
         </div>
         </div>
-
-      </div>
     </section><!-- End Icon Boxes Section -->
 
     <!-- ======= About Us Section ======= -->
 
-    <section id="about" class="services">
+    <!--section-- id="about" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -267,23 +267,6 @@
         </div>
 
         <div class="row">
-
-                  <!--table class="table table-responsive table-bordered" id="Table_Usr">
-                <thead>
-                  <h3>Cursos 2021</h3>
-                  <tr>
-                    <th>Nombre del empleado</th>
-                    <th>Apellidos</th>
-                    <th>Dependencia</th>
-                    <th>Area</th>
-                  </tr>
-                </thead>
-                <tbody id="TbodyC" runat="server">
-                </tbody>
-              </table-->
-
-
-
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box" >
               <i style="color: #702283;" class="bi bi-card-checklist"></i>
@@ -305,19 +288,7 @@
               <p style='text-align: justify;'>Ser un centro vanguardista en materia de profesionalización que genere aprendizajes, desarrolle capacidades y transforme actitudes de las y los servidores públicos.</p>
             </div>
           </div>
-          <!--div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-brightness-high"></i>
-              <h4><a href="#">Compromiso</a></h4>
-              <p style='text-align: justify;' >.....................................................................................................................................</p>
-            </div>
-          </div-->
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
-            <!--div class="icon-box">
-              <i style="color: #702283;" class="bi bi-phone-fill"></i>
-              <h4><a style="color: #121212;" href="#">Contacto</a></h4>
-              <p>Para solicitud de cursos e inscripciones comunicarse al teléfono 4293300.<br>Extensiones 15904, 15908, 15910, 15911, 15913, 15926, 15929.<br>Lunes a viernes de 8:00 a 20:00 hrs.<br>Sábados de 9:00 a 13:00 hrs.</p>
-            </div-->
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
@@ -327,16 +298,10 @@
             </div>
           </div>
         </div>
-    </section><!-- End Services Section -->
-
-
-
-  </div>
-</section><!-- End About Us Section -->
-
+    </section--><!-- End Services Section -->
 
 <!-- ======= Cta Section ======= -->
-<section id="cta" class="cta">
+<!--section id="cta" class="cta">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
@@ -376,7 +341,7 @@
     </div>
 
   </div>
-</section><!-- End Cta Section -->
+</section--><!-- End Cta Section -->
 
 
       <!-- ======= Clients Section ======= -->
