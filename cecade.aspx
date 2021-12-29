@@ -170,7 +170,7 @@
         <ul>
           <li><!--a class="nav-link scrollto active" href="menu.aspx">Inicio</a--></li>
           <li><a class="nav-link scrollto" href="quienes_Somos.aspx">¿Quienes Somos?</a></li>
-          <li><a class="nav-link scrollto" href="#cta">Marco Legal</a></li>
+          <li><a class="nav-link scrollto" href="aviso.aspx">Marco Legal</a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
@@ -298,10 +298,8 @@
         </div>
     </section--><!-- End Services Section -->
 
-
-
 <!-- ======= Cta Section ======= -->
-<section id="cta" class="cta">
+<!--section id="cta" class="cta">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
@@ -341,7 +339,7 @@
     </div>
 
   </div>
-</section><!-- End Cta Section -->
+</section--><!-- End Cta Section -->
 
 
       <!-- ======= Clients Section ======= -->
