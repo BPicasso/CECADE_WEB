@@ -170,6 +170,7 @@
     <Content Include="assets\vendor\remixicon\remixicon.ttf" />
     <Content Include="assets\vendor\remixicon\remixicon.woff" />
     <Content Include="assets\vendor\remixicon\remixicon.woff2" />
+    <Content Include="aviso.aspx" />
     <Content Include="becas.aspx" />
     <Content Include="cecade.aspx" />
     <Content Include="Contacto.aspx" />
@@ -303,6 +304,13 @@
     </Compile>
     <Compile Include="Alianza.aspx.designer.cs">
       <DependentUpon>Alianza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aviso.aspx.cs">
+      <DependentUpon>aviso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aviso.aspx.designer.cs">
+      <DependentUpon>aviso.aspx</DependentUpon>
     </Compile>
     <Compile Include="becas.aspx.cs">
       <DependentUpon>becas.aspx</DependentUpon>
