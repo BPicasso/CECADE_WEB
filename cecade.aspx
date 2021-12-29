@@ -44,6 +44,51 @@
  <link rel="stylesheet" href="CSS\StyleCecade.css" />
 
 <style type="text/css">
+
+    .mobile-nav-toggle.bi-x {
+    color: black;
+    font-weight: bold;
+}
+
+    .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: black;
+    font-weight: bold;
+}
+
+    .navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+    .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+    color: #e50069;
+}
+
+    .nav-link:focus, .nav-link:hover {
+    color: black;
+}
+
+    .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #e50069;
+}
+
+    .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(229, 0, 105, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+}
 .portfoio .portfolio-item .portfolio-info {
     opacity: 0;
     position: absolute;
@@ -163,11 +208,11 @@
   </section><!-- End Why Us Section -->
 
 
-    <section style="margin-left: 149px; margin-top: -55px; margin-right: 1613px;">
+    <!--section style="margin-left: 149px; margin-top: -55px; margin-right: 1613px;"-->
 
-        <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));"><b>Inducción</b></button>
+        <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; margin-left: 159px; padding: 10px; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));"><b>Inducción</b></button>
 
-    </section>
+    <!--/section-->
 
   <main id="main">
 
@@ -175,7 +220,7 @@
     <section id="icon-boxes" class="icon-boxes">
 
       <div class="container">
-         <h3 style="text-align: center; font-size: 50px; color: black; "><b>Alianzas y Beneficios</b></h3>
+         <h3 style="text-align: center; font-size: 50px; color: black; "><b>Alianzas y Beneficios</b></h3><br>
                 <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
@@ -223,7 +268,7 @@
 
         <div class="row">
 
-                  <table class="table table-responsive table-bordered" id="Table_Usr">
+                  <!--table class="table table-responsive table-bordered" id="Table_Usr">
                 <thead>
                   <h3>Cursos 2021</h3>
                   <tr>
@@ -235,7 +280,7 @@
                 </thead>
                 <tbody id="TbodyC" runat="server">
                 </tbody>
-              </table>
+              </table-->
 
 
 
@@ -282,8 +327,6 @@
             </div>
           </div>
         </div>
-
-      </div>
     </section><!-- End Services Section -->
 
 
@@ -514,7 +557,7 @@
               <div class="container" data-aos="zoom-in">
 
               <div class="clients-slider swiper" >
-                  <h3 style="text-align: center; font-size: 50px"><b>Cursos del mes</b></h3>
+                  <h3 style="text-align: center; font-size: 50px"><b>Galeria</b></h3>
                 <div class="swiper-wrapper align-items-center" >
 
                   <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
