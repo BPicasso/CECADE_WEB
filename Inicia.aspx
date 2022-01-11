@@ -641,10 +641,10 @@ a.btn-goback:hover {
               <input class="form-styling" type="text" name="fullname" placeholder="" /> 
               <label for="email">Correo electr&oacute;nico</label>
               <input class="form-styling" type="text" name="email" placeholder="" /> 
+              <label for="fullname"><abbr title="El nombre de usuario esta conformado por la primera letra del nombre y el apellido paterno.">Usuario</abbr></label>
+              <input class="form-styling" type="text" name="fullname" placeholder="" />
               <label for="password">Contrase&ntilde;a</label> 
-              <input class="form-styling" type="password" name="password" placeholder="" /> 
-              <label for="confirmpassword">Confirmar contrase&ntilde;a</label> 
-              <input class="form-styling" type="password" name="confirmpassword" placeholder="" />
+              <input class="form-styling" type="password" name="password" placeholder="" />
                 <button style="border-radius: 0px 35px 0px 35px; height: 35px; width: 110%; color: white; background: #e50069; font-size: 15px;" class="btn-signup">Registrarme</button>
             </form>
             <div class="success"> <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
