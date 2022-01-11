@@ -641,6 +641,8 @@ a.btn-goback:hover {
               <input class="form-styling" type="text" name="fullname" placeholder="" /> 
               <label for="email">Correo electr&oacute;nico</label>
               <input class="form-styling" type="text" name="email" placeholder="" /> 
+              <label for="fullname">Número de empleado</label> 
+              <input class="form-styling" type="number" name="fullname" placeholder="" />
               <label for="fullname"><abbr title="El nombre de usuario esta conformado por la primera letra del nombre y el apellido paterno.">Usuario</abbr></label>
               <input class="form-styling" type="text" name="fullname" placeholder="" />
               <label for="password">Contrase&ntilde;a</label> 
