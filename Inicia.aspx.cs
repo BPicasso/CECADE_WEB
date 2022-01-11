@@ -19,12 +19,13 @@ namespace WebCECADE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            HttpContext.Current.Session.Abandon();
         }
 
         [WebMethod(EnableSession = true)]
         public static String Login(Usuario objUsuario)
         {
+            
             //Aqui se usa Cg_Cls_LeerConexion que es la libreria que permite leer la conexion encriptada de la BD de CECADE
             //El descriptado lo realiza automaticamente siempre y cuando tenga el archivo confCn.dat en la raiz del proyecto 
             Cg_Cls_LeerConexion clsConexion = new Cg_Cls_LeerConexion();
