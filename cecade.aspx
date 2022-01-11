@@ -218,43 +218,6 @@
 
   <main id="main">
 
-    <!-- ======= Icon Boxes Section ======= -->
-    <section id="icon-boxes" class="icon-boxes">
-
-      <div class="container">
-         <h3 style="text-align: center; font-size: 50px; color: black; "><b>Alianzas y Beneficios</b></h3><br>
-                <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box1">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/FLAYERSOTOLERÍA.png" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/FLAYERSOTOLERÍA.png" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/SALÓNCOMICS.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/SALÓNCOMICS.jpg" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box1">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/PEKESYFAMILY.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/PEKESYFAMILY.jpg" width="250" height="380"></a>
-            </div>
-          </div>
-
-        </div>
-        </div>
-    </section><!-- End Icon Boxes Section -->
 
     <!-- ======= About Us Section ======= -->
 
@@ -345,9 +308,7 @@
 
 
       <!-- ======= Clients Section ======= -->
-      <section>
-<br>
-<br>          
+      <section>        
 <div class="container" data-aos="zoom-in">
 
   <div class="clients-slider swiper" >
@@ -389,8 +350,6 @@
     </div>
   </section><!-- End Why Us Section -->
 
-
-
   <!-- ======= Portfoio Section ======= -->
   <section id="cta" class="cta">
     <section style="background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)) " id="portfolio" class="portfoio">
@@ -402,7 +361,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
+          <div class="col-lg-12 d-flex justify-content-center"> 
             <ul  id="portfolio-flters">
               <li style="background-color: #d70067"; id="Todo" data-filter="*" class="filter-active">Todo</li>
               <li style="background-color: #d70067"; data-filter=".filter-app">Cursos</li>
@@ -513,6 +472,45 @@
       </div>
     </section><!-- End Portfoio Section -->
   </section>
+
+
+          <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+
+      <div class="container">
+         <h3 style="text-align: center; font-size: 50px; color: black; "><b>Alianzas y Beneficios</b></h3><br>
+                <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" width="250" height="380"></a>
+            </div>
+          </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box1">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/FLAYERSOTOLERÍA.png" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/FLAYERSOTOLERÍA.png" width="250" height="380"></a>
+            </div>
+          </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/SALÓNCOMICS.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/SALÓNCOMICS.jpg" width="250" height="380"></a>
+            </div>
+          </div>
+          <!---------------------------------------------------->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box1">
+              <i style="color: #702283;"></i>
+              <a href="assets/img/clients/PEKESYFAMILY.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/PEKESYFAMILY.jpg" width="250" height="380"></a>
+            </div>
+          </div>
+
+        </div>
+        </div>
+    </section><!-- End Icon Boxes Section -->
 
 
             <!-- ======= Clients Section ======= -->
