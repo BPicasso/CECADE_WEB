@@ -25,7 +25,7 @@ namespace WebCECADE
         [WebMethod(EnableSession = true)]
         public static String Login(Usuario objUsuario)
         {
-            
+
             //Aqui se usa Cg_Cls_LeerConexion que es la libreria que permite leer la conexion encriptada de la BD de CECADE
             //El descriptado lo realiza automaticamente siempre y cuando tenga el archivo confCn.dat en la raiz del proyecto 
             Cg_Cls_LeerConexion clsConexion = new Cg_Cls_LeerConexion();
@@ -122,6 +122,75 @@ namespace WebCECADE
             Obj_Transacciones = null;
             return respuesta;
         }
+        [WebMethod(EnableSession = true)]
+        public static String CreateUser(CreateUser objCUsuario)
+        {
+            Cg_Cls_LeerConexion clsConexion = new Cg_Cls_LeerConexion();
+            ClsTransaccionesWeb Obj_Transacciones = new ClsTransaccionesWeb(clsConexion.cadenaConexion, "Infiernix");
 
+            string respuesta = "Ocurrio un error";
+
+            if (objCUsuario.nombre == "" || objCUsuario.correo == "" || objCUsuario.apellido_materno == "" || objCUsuario.apellido_paterno == "" || objCUsuario.clave == "")
+            {
+                respuesta = "Por favor de llenar los campos";
+            }
+            else
+            {
+                String substring = objCUsuario.nombre.Substring(0, 1) + objCUsuario.apellido_paterno.Substring(0);
+                //llamas a la cadena de conexion que esta se abre en automatico por la libreria LbrUtilerias
+                String conectar = clsConexion.cadenaConexion;
+                // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
+
+                String SQL = "SELECT usuario_ap,empleado FROM usuario where empleado ='" + objCUsuario.empleado.ToString() + "'";
+                String SQL2 = " INSERT INTO usuario (usuario_ap, clave, nombre, apellido_paterno, " +
+                    "apellido_materno,correo, usuario, status) " +
+                    "VALUES ('" + substring + "','" + objCUsuario.clave + "','" + objCUsuario.nombre + "','" + objCUsuario.apellido_paterno + "','" +
+                    objCUsuario.apellido_materno + "','" + objCUsuario.correo + "','" + substring + "','A')";
+
+                //aqui reguistra los datos de la consulta
+                DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta2");
+                if (DTblTmp2 != null)
+                {
+                    if (DTblTmp2.Rows.Count <= 0)
+                    {
+
+                        DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta");
+                        if (DTblTmp != null)
+                        {
+                            if (DTblTmp.Rows.Count > 0)
+                            {
+
+
+
+                                respuesta = "Success";
+
+
+                            }
+                            else
+                            {
+                                respuesta = "Success";
+                            }
+
+
+                        }
+                        else
+                        {
+                            respuesta = "error";
+                        }
+                    }
+                    else
+                    {
+                        respuesta = "error";
+                    }
+                }
+                else
+                {
+                    respuesta = "error";
+                }
+            }
+            clsConexion = null;
+            Obj_Transacciones = null;
+            return respuesta;
+        }
     }
 }

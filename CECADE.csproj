@@ -288,6 +288,7 @@
     <Content Include="Inicia.aspx" />
     <Content Include="introduccion.aspx" />
     <Content Include="js\ContactMail.js" />
+    <Content Include="js\Create.js" />
     <Content Include="js\global.js" />
     <Content Include="js\MenuRH.js" />
     <Content Include="js\Menu.js" />
@@ -400,6 +401,7 @@
     </Compile>
     <Compile Include="model\Beca.cs" />
     <Compile Include="model\Correo.cs" />
+    <Compile Include="model\CreateUser.cs" />
     <Compile Include="model\SubGrup.cs" />
     <Compile Include="model\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
