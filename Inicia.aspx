@@ -626,8 +626,9 @@ a.btn-goback:hover {
         <div ng-app ng-init="checked = false">
 <!--------------------------Inicio Sesión-------------------------------------------------------------------->
             <form id="login-form" class="form-signin" action="" method="post" name="form">
-              <label for="username">Nombre de usuario</label> 
-              <input id="usuario" class="form-styling" type="text" name="username" placeholder="" /> 
+              <label for="username">Nombre de Usuario</label>
+              <div title="El Usuario se conforma con la primera letra del nombre seguido del apellido paterno."><input id="usuario" class="form-styling" type="text" name="username" placeholder="" /></div>
+              
 
               <label for="password">Contrase&ntilde;a</label> 
               <input id="password" class="form-styling" type="password" name="password" placeholder="" /> 
@@ -663,11 +664,6 @@ a.btn-goback:hover {
       </div>
       </div>
     </div>
-    
-                                                                                                                                     
-                               
-                                      
-
 </body>
 <script src="js/Create.js"></script>
 <script src="js/global.js"></script>
