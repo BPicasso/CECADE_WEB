@@ -130,7 +130,7 @@ namespace WebCECADE
 
             string respuesta = "Ocurrio un error";
 
-            if (objCUsuario.nombre == "" || objCUsuario.correo == "" || objCUsuario.apellido_materno == "" || objCUsuario.apellido_paterno == "" || objCUsuario.clave == "")
+            if (false)//objCUsuario.nombre == "" && objCUsuario.correo == "" && objCUsuario.apellido_materno == "" && objCUsuario.apellido_paterno == "" && objCUsuario.clave == "" && objCUsuario.organismo=="")
             {
                 respuesta = "Por favor de llenar los campos";
             }
@@ -141,37 +141,56 @@ namespace WebCECADE
                 String conectar = clsConexion.cadenaConexion;
                 // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
 
+                String SQL3 = "SELECT organismo, empleado, nombre, apellido_paterno, apellido_materno FROM empleado where empleado = "+objCUsuario.empleado + "  and organismo ='"+objCUsuario.organismo+"'";
                 String SQL = "SELECT usuario_ap,empleado FROM usuario where empleado ='" + objCUsuario.empleado.ToString() + "'";
                 String SQL2 = " INSERT INTO usuario (usuario_ap, clave, nombre, apellido_paterno, " +
-                    "apellido_materno,correo, usuario, status) " +
+                    "apellido_materno,correo, usuario, organismo, status) " +
                     "VALUES ('" + substring + "','" + objCUsuario.clave + "','" + objCUsuario.nombre + "','" + objCUsuario.apellido_paterno + "','" +
-                    objCUsuario.apellido_materno + "','" + objCUsuario.correo + "','" + substring + "','A')";
+                    objCUsuario.apellido_materno + "','" + objCUsuario.correo + "','" + substring +"','"+objCUsuario.organismo+ "','A')";
 
-                //aqui reguistra los datos de la consulta
-                DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta2");
-                if (DTblTmp2 != null)
+
+                DataTable DTblTmp3 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL3, "consulta3");
+
+                if (DTblTmp3!= null)
                 {
-                    if (DTblTmp2.Rows.Count <= 0)
+                    //Si existe el empleado registrados continua
+                    if ((DTblTmp3.Rows.Count > 0))
                     {
-
-                        DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta");
-                        if (DTblTmp != null)
+                        //valida si ya existe un usuario creado
+                        DataTable DTblTmp2 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL, "consulta2");
+                        if (DTblTmp2 != null)
                         {
-                            if (DTblTmp.Rows.Count > 0)
+                            if (DTblTmp2.Rows.Count <= 0)
                             {
+                                //Crea al usuario
+                                DataTable DTblTmp = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL2, "consulta");
+                                if (DTblTmp != null)
+                                {
+                                    if (DTblTmp.Rows.Count > 0)
+                                    {
 
 
 
-                                respuesta = "Success";
+                                        respuesta = "Success";
 
 
+                                    }
+                                    else
+                                    {
+                                        respuesta = "Success";
+                                    }
+
+
+                                }
+                                else
+                                {
+                                    respuesta = "error";
+                                }
                             }
                             else
                             {
-                                respuesta = "Success";
+                                respuesta = "Ya existe";
                             }
-
-
                         }
                         else
                         {
@@ -180,13 +199,12 @@ namespace WebCECADE
                     }
                     else
                     {
-                        respuesta = "error";
+                        respuesta = "Sin registro";
                     }
                 }
-                else
-                {
-                    respuesta = "error";
-                }
+                //aqui reguistra los datos de la consulta
+             
+                
             }
             clsConexion = null;
             Obj_Transacciones = null;

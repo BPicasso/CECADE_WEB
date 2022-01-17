@@ -641,9 +641,9 @@ a.btn-goback:hover {
               <label for="fullname">Nombre Completo</label> 
               <input style="text-transform: uppercase;" id="nombre" class="form-styling" type="text" name="fullname" placeholder="" /> 
               <label for="fullname">Apellido Paterno</label> 
-              <input style="text-transform: uppercase;" id="apellido_p" class="form-styling" type="text" name="fullname" placeholder="" /> 
+              <input style="text-transform: uppercase;" id="apellido_paterno" class="form-styling" type="text" name="fullname" placeholder="" /> 
               <label for="fullname">Apellido Materno</label> 
-              <input style="text-transform: uppercase;" id="apellido_m" class="form-styling" type="text" name="fullname" placeholder="" /> 
+              <input style="text-transform: uppercase;" id="apellido_materno" class="form-styling" type="text" name="fullname" placeholder="" /> 
               <label for="fullname">Número de empleado</label> 
               <input id="empleado" class="form-styling"  placeholder="" />
 
@@ -651,7 +651,7 @@ a.btn-goback:hover {
               <input style="text-transform: uppercase;" id="correo" class="form-styling" type="email" name="email" placeholder="" /> 
 
               <label  for="fullname">Organismo</label>
-              <select class="form-styling" type="text" name="organismo">
+              <select id="organismo" class="form-styling" type="text" name="organismo">
                   <option selected> </option>
                   <option>AMU</option>
                   <option>BUR</option>

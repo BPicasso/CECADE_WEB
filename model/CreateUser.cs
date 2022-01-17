@@ -7,6 +7,7 @@ namespace CECADE.model
 {
     public class CreateUser
     {
+        public String organismo { get; set; }
         public String usuario_ap { get; set; }
         public String clave { get; set; }
         public String nombre { get; set; }
