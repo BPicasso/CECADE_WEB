@@ -640,10 +640,13 @@ a.btn-goback:hover {
             <form id="create-form" class="form-signup" action="" method="post" name="form"> 
               <label for="fullname">Nombre Completo</label> 
               <input style="text-transform: uppercase;" id="nombre" class="form-styling" type="text" name="fullname" placeholder="" /> 
+              <label for="fullname">Apellido Paterno</label> 
+              <input style="text-transform: uppercase;" id="apellido_p" class="form-styling" type="text" name="fullname" placeholder="" /> 
+              <label for="fullname">Apellido Materno</label> 
+              <input style="text-transform: uppercase;" id="apellido_m" class="form-styling" type="text" name="fullname" placeholder="" /> 
               <label for="fullname">Número de empleado</label> 
               <input id="empleado" class="form-styling"  placeholder="" />
-              <label for="fullname">Lugar de trabajo</label> 
-              <input id="lugar" class="form-styling" type="text" name="fullname" placeholder="" /> 
+
               <label  for="email">Correo electr&oacute;nico</label>
               <input style="text-transform: uppercase;" id="correo" class="form-styling" type="email" name="email" placeholder="" /> 
 
