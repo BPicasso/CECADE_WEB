@@ -627,7 +627,7 @@ a.btn-goback:hover {
 <!--------------------------Inicio Sesión-------------------------------------------------------------------->
             <form id="login-form" class="form-signin" action="" method="post" name="form">
               <label for="username">Nombre de Usuario</label>
-              <div title="El Usuario se conforma con la primera letra del nombre seguido del apellido paterno."><input id="usuario" class="form-styling" type="text" name="username" placeholder="" /></div>
+              <div  title="El Usuario se conforma con la primera letra del nombre seguido del apellido paterno."><input id="usuario" class="form-styling" type="text" name="username" placeholder="" /></div>
               
 
               <label for="password">Contrase&ntilde;a</label> 
@@ -638,16 +638,23 @@ a.btn-goback:hover {
             </form>
 <!--------------------------Registro-------------------------------------------------------------------->
             <form id="create-form" class="form-signup" action="" method="post" name="form"> 
-              <label for="fullname">Nombres</label> 
-              <input id="nombre" class="form-styling" type="text" name="fullname" placeholder="" /> 
-              <label for="fullname">Apellido Paterno</label> 
-              <input id="apellido_paterno" class="form-styling" type="text" name="fullname" placeholder="" /> 
-              <label for="fullname">Apellido Materno</label> 
-              <input id="apellido_materno" class="form-styling" type="text" name="fullname" placeholder="" /> 
-              <label for="email">Correo electr&oacute;nico</label>
-              <input id="correo" class="form-styling" type="email" name="email" placeholder="" /> 
+              <label for="fullname">Nombre Completo</label> 
+              <input style="text-transform: uppercase;" id="nombre" class="form-styling" type="text" name="fullname" placeholder="" /> 
               <label for="fullname">Número de empleado</label> 
-              <input id="empleado" class="form-styling" type="number" name="fullname" placeholder="" />
+              <input id="empleado" class="form-styling"  placeholder="" />
+              <label for="fullname">Lugar de trabajo</label> 
+              <input id="lugar" class="form-styling" type="text" name="fullname" placeholder="" /> 
+              <label  for="email">Correo electr&oacute;nico</label>
+              <input style="text-transform: uppercase;" id="correo" class="form-styling" type="email" name="email" placeholder="" /> 
+
+              <label  for="fullname">Organismo</label>
+              <select class="form-styling" type="text" name="organismo">
+                  <option selected> </option>
+                  <option>AMU</option>
+                  <option>BUR</option>
+              </select>    
+                
+
               <label for="password">Contrase&ntilde;a</label> 
               <input id="clave"class="form-styling" type="password" name="password" placeholder="" />
               <button style="border-radius: 0px 35px 0px 35px; height: 35px; width: 110%; color: white; background: #e50069; font-size: 15px;" class="btn-signup">Registrarme</button>
@@ -664,6 +671,8 @@ a.btn-goback:hover {
       </div>
       </div>
     </div>
+
+
 </body>
 <script src="js/Create.js"></script>
 <script src="js/global.js"></script>
