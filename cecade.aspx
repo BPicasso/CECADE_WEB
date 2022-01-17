@@ -44,7 +44,6 @@
  <link rel="stylesheet" href="CSS\StyleCecade.css" />
 
 <style type="text/css">
-
     .mobile-nav-toggle.bi-x {
     color: black;
     font-weight: bold;
@@ -111,7 +110,8 @@
         text-align: center;
     }
     .navbar {
-    padding: 263px;
+    padding: 13px;
+    padding-left: 225px;
 }
  .img-fluid {
     max-width: 180%;
@@ -153,7 +153,7 @@
         <i style="color: #d70067;" class="bi bi-phone-fill phone-icon"></i> 4293300
       </div>
       <div class="cta d-none d-md-block">
-        <a  href="inicia.aspx" class="scrollto">Cerrar Sesión</a>
+        <a href="inicia.aspx" class="scrollto">Cerrar Sesión</a>
       </div>
     </div>
   </div>
@@ -166,7 +166,7 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
+      <nav style="padding-right: 10px;" id="navbar" class="navbar">
         <ul>
           <li><!--a class="nav-link scrollto active" href="menu.aspx">Inicio</a--></li>
           <li><a class="nav-link scrollto" href="quienes_Somos.aspx">¿Quienes Somos?</a></li>
@@ -203,7 +203,9 @@
       <a href="https://www.youtube.com/watch?v=2VfLYaUx-mY" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
     </div>
 
-    
+
+
+
 
   </section><!-- End Why Us Section -->
 
@@ -213,6 +215,8 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScUQcxLYYMoN67h5V2DCnjR5R1FEBUqQtGsRsLCagbzVpvdUw/viewform" target="_blank" >
             <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; margin-left: 159px; padding: 10px; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));">
                 <b>Inducción</b></button></a>
+
+
 
     <!--/section-->
 

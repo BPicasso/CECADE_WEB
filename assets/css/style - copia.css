@@ -936,9 +936,10 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url("../img/cta-bg.jpg") fixed center center;
-  background-size: all;
-  padding: 120px 0;
+    background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+    background: transparent;
+    text-align: center;
+    padding: 13px 0;
 }
 .cta h3 {
   color: #fff;
