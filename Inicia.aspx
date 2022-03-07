@@ -1,598 +1,212 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicia.aspx.cs" Inherits="WebCECADE.Inicia" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+﻿<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Portal de Servicios</title>
+  <!--link rel="stylesheet" href="estilo.css"-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Inicio de Sesi&oacute;n</title>
+<div class="container" style="background: linear-gradient( rgba(87,87,86,0.75), rgba(0,81,137,0.95)), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center; height: 100%; width: 100%;">
 
-     <!--Made with love by Mutiullah Samim -->
+<div class="container" style="background: #ffffff; height: 60%; width: 70%; margin-left: 16%; margin-top: 0%;">
 
- <!--Bootsrap 4 CDN-->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
- <!--Fontawesome CDN-->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<img style="width: 60%;" src="assets/img/fondo1.jpg">
 
-<style type="text/css">
-html, body * { 
-  box-sizing: border-box; 
-  font-family: 'Open Sans', sans-serif; 
-}
 
-body {
-  background:
-  linear-gradient(
-    rgba(246,247,249,0.8),
-    rgba(246,247,249,0.8)),
-  url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/sky-clouds-cloudy-mountain.jpg) no-repeat center center fixed;
-  background-size: cover;
-  background-image: url('assets/img/index.jpg');
-}
+</div>
 
-.container {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 100px;
-}
-/*
-.container {
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 46px;
-}
-*/
-.frame {
-  height: 715px;
-  width: 500px;
-  background:
-  linear-gradient(
-    rgba(87,87,86,0.75),
-    rgba(0,81,137,0.95)),
-  url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: solid 1px rgba(255,255,255,.5);
-  border-radius: 5px;
-  box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
-  overflow: hidden;
-  transition: all .5s ease;
-}
+    <style type="text/css">
 
-.frame-long {
-  height: 615px;
-}
 
-.frame-short {
-  height: 400px;
-  margin-top: 50px;
-  box-shadow: 0px 2px 7px rgba(0,0,0,0.1);
-}
-
-.nav {
-  width: 100%;
-  height: 100px;
-  padding-top: 40px;
-  opacity: 1;
-  transition: all .5s ease;
-}
-
-.nav-up {
-  transform: translateY(-100px);
-  opacity: 0;
-}
-
-li {
-  padding-left: 10px;
-  font-size: 18px;
-  display: inline;
-  text-align: left;
-  text-transform: uppercase;
-  padding-right: 10px;
-  color: #ffffff;
-}
-
-.signin-active a {
-  padding-bottom: 10px;
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: solid 2px #e50069;
-  transition: all .25s ease;
-  cursor: pointer;
-}
-
-.signin-inactive a {
-  padding-bottom: 0;
-  color: rgba(255,255,255,.3);
-  text-decoration: none;
-  border-bottom: none;
-  cursor: pointer;
-}
-
-.signup-active a {
-  cursor: pointer;
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: solid 2px #e50069;
-  padding-bottom: 10px;
-}
-
-.signup-inactive a {
-  cursor: pointer;
-  color: rgba(255,255,255,.3);
-  text-decoration: none;
-  transition: all .25s ease;
-}
-
-.form-signin {
-  width: 430px;
-  height: 375px;
-  font-size: 16px;
-  font-weight: 300;
-  padding-left: 37px;
-  padding-right: 37px;
-  padding-top: 55px;
-  transition: opacity .5s ease, transform .5s ease;
-}
-
-.form-signin-left {
-  transform: translateX(-400px);
-  opacity: .0;
-}
-
-.form-signup {
-    width: 420px;
-    height: 320px;
-    font-size: 20px;
-    font-weight: 300;
-    padding-left: 70px;
-    padding-right: 37px;
-    padding-top: 97px;
-    position: relative;
-    top: -466px;
-    left: 408px;
-    opacity: 0;
-    transition: all .5s ease;
-}
-
-.form-signup-left {
-  transform: translateX(-399px);
-  opacity: 1;
-}
-
-.form-signup-down {
-  top: 0px;
-  opacity: 0;
-}
-
-.success {
-  width: 80%;
-  height: 150px;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-size: 100%;
+  background-image: url('assets/img/fondo.jpg');
+}
+::selection{
+  background: #fa4299;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 500px;
+  background: #CCD1D1;
+  padding: 37px;
+  height: 525px;
+  margin-top: 55%;
+  margin-left: 32%;
+  border-radius: 25px;
+  box-shadow: 25px 80px 80px rgba(0,0,0,0.0);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
   position: relative;
-  top: -890px;
-  left: 450px;
-  opacity: .0;
-  transition: all .8s .4s ease;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 1px 0 18px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 0px;
 }
-
-.success-left {
-  transform: translateX(-406px);
-  opacity: 1;
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
 }
-
-.successtext {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: -35px;
-  padding-left: 37px;
-  padding-right: 37px;
+.slide-controls label.signup{
+  color: #000;
 }
-
-#check path {
-  stroke: #ffffff;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-  stroke-width: .85px;
-  stroke-dasharray: 60px 300px;
-  stroke-dashoffset: -166px;
-  fill: rgba(255,255,255,.0);
-  transition: stroke-dashoffset 2s ease .5s, fill 1.5s ease 1.0s;
-}
-
-#check.checked path {
-  stroke-dashoffset: 33px;
-  fill: rgba(255,255,255,.03);
-}
-
-.form-signin input, .form-signup input {
-  color: #ffffff;
-  font-size: 13px;
-}
-
-.form-styling {
-    width: 110%;
-    height: 40px;
-    padding-left: 17px;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    background: rgba(255,255,255,.2);
-}
-/*
-.form-styling {
-    width: 123%;
-    height: 50px;
-    padding-left: 15px;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    background: rgba(255,255,255,.2);
-}
-*/
-
-label {
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 13px;
-  padding-left: 15px;
-  padding-bottom: 20px;
-  color: rgba(255,255,255,.7);
-  display: block;
-}
-
-:focus {outline: none;
-}
-
-.form-signin input:focus, textarea:focus, .form-signup input:focus, textarea:focus {
-  background: rgba(255,255,255,.3);
-  border: none; 
-  padding-right: 40px;
-  transition: background .5s ease;
-}
-
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
+.slide-controls .slider-tab{
   position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
   display: none;
 }
-
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 85px;
-  padding-top: 2px;
-  cursor: pointer;
-  margin-top: 8px;
+#signup:checked ~ .slider-tab{
+  left: 50%;
 }
-
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before,
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: '';
-  position: absolute;
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
 }
-
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
-  width: 65px; 
-  height: 30px;
-  background: rgba(255,255,255,.2);
-  border-radius: 15px;
-  left: 0; 
-  top: -3px;
-  transition: all .2s ease;
+#signup:checked ~ label.login{
+  color: #005189;
 }
-
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  width: 10px; 
-  height: 10px;
-  background: rgba(255,255,255,.7);
-  border-radius: 50%;
-  top: 7px; 
-  left: 10px;
-  transition: all .2s ease;
+#login:checked ~ label.signup{
+  color: #005189;
 }
-
-/* on checked */
-[type="checkbox"]:checked + label:before {
-  background: #0F4FE6; 
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
 }
-
-[type="checkbox"]:checked + label:after {
-  background: #ffffff;
-  top: 7px; 
-  left: 45px;
-}
-
-[type="checkbox"]:checked + label .ui,
-[type="checkbox"]:not(:checked) + label .ui:before,
-[type="checkbox"]:checked + label .ui:after {
-  position: absolute;
-  left: 6px;
-  width: 65px;
-  border-radius: 15px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 22px;
-  transition: all .2s ease;
-}
-
-[type="checkbox"]:not(:checked) + label .ui:before {
-  content: "no";
-  left: 32px;
-  color: rgba(255,255,255,.7);
-}
-
-[type="checkbox"]:checked + label .ui:after {
-  content: "yes";
-  color: #ffffff;
-}
-
-[type="checkbox"]:focus + label:before {
-  box-sizing: border-box;
-  margin-top: -1px;
-}
-
-.btn-signup {
-  float: left;
-  font-weight: 700;
-  font-size: 13px;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 8px;
+.wrapper .form-container{
   width: 100%;
-  height: 35px;
-  border: none;
-  border-radius: 20px;
-  margin-top: 23px;
-  background-color: #1059FF;
+  overflow: hidden;
 }
-
-.btn-signin {
-  float: left;
-  padding-top: 10px;
-  width: 123%;
-  height: 40px;
-  border: none;
-      font-weight: bold;
-    font-size: 20px;
-  border-radius: 20px;
-  margin-top: 60px;
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 70%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #fc83bb;
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
   text-align: center;
+  margin-top: 30px;
 }
-
-.btn-animate {
-  float: left;
-  font-weight: 700;
-  font-size: 15px;
-  text-align: center;
-  color: rgba(255,255,255, 1);
-  padding-top: 8px;
-  width: 113%;
-  height: 35px;
-  border: none;
-  border-radius: 0px 35px 0px 35px;
-  margin-top: 85px;
-  background-color: rgba(229,0,125, 1);
-  left: 0px;
-  top: 0px;
-  
-}
-
-.btn-animate-grow {
-  width: 130%;
-  height: 625px;
-  position: relative;
-  left: -55px;
-  top: -420px;
-  color: rgba(255,255,255,0);
-  background-color: rgba(255,255,255,1);
-}
-
-a.btn-signup:hover, a.btn-signin:hover {
-  cursor: pointer; 
-  background-color: #e50069;
-  
-}
-
-.forgot {
-  height: 100px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 24px;
-  margin-top: -462px;
-  border-top: solid 1px rgba(255,255,255,.3);
-  transition: all 0.5s ease;
-}
-
-.forgot-left {
-  transform: translateX(-400px);
-  opacity: 0;
-}
-
-.forgot-fade {
-  opacity: 0;
-}
-
-.forgot a {
-  color: rgba(255,255,255,.3);
-  font-weight: 400;
-  font-size: 13px;
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #fa4299;
   text-decoration: none;
 }
-
-.welcome {
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
   width: 100%;
-  height: 50px;
-  position: relative;
-  color: rgba(35,43,85,0.75);
-  opacity: 0;
-  transition: transform 1.5s ease .25s, opacity .1s ease 1s;
-}
-
-.welcome-left {
-  transform: translateY(-780px);
-  opacity: 1; 
-}
-
-.cover-photo {
-  height: 150px;
-  position: relative;
-  left: 0px;  top: -900px;
-  background:
-  linear-gradient(
-    rgba(35,43,85,0.75),
-    rgba(35,43,85,0.95)),
-  url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/landscape-nature-man-person.jpeg);
-  background-size: cover;
-  opacity: 0;
-  transition: all 1.5s ease 0.55s;
-}
-
-.cover-photo-down {
-  top: -575px;
-  opacity: 1;
-}
-
-.profile-photo {
-  height: 125px;
-  width: 125px;
-  position: relative;
-  border-radius: 70px;
-  left: 155px;
-  top: -1000px;
-  background: url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/nature-water-rocks-hiking.jpg);
-  background-size: 100% 135%;
-  background-position: 100% 100%;
-  opacity: 0;
-  transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-  border: solid 3px #ffffff;
-}
-
-.profile-photo-down {
-  top: -636px;
-  opacity: 1;
-}
-
-h1 {
-  color: #ffffff;
-  font-size: 35px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.btn-goback {
-  position: relative;
-  margin-right: auto;
-  top: -400px;
-  float: left;
-  padding: 8px;
-  width: 83%;
-  margin-left: 37px;
-  margin-right: 37px;
-  height: 35px;
-  border-radius: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
-  text-align: center;
-  color: #1059FF;
-  margin-top: -8px;
-  border: solid 1px #1059FF;
-  opacity: 0;
-  transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-}
-
-.btn-goback-up {
-  top: -1080px;
-  opacity: 1;
-}
-
-a.btn-goback:hover {
-  cursor: pointer; 
-  background-color: #0F4FE6;
-  transition: all .5s; 
-  color: #ffffff;
-}
-
-/* refresh button styling */
-
-#refresh {
-  position: fixed;
-  bottom: 20px;
-  right: 20px; 
-  background-color: #ffffff;
-  width: 50px;
-  height: 50px;
   border-radius: 25px;
-  box-shadow: 0px 2px 7px rgba(0,0,0,0.1);
-  padding: 13px 0 0 13px;
+  position: relative;
+  overflow: hidden;
 }
-
-.refreshicon {
-  fill: #d3d3d3;
-  transform: rotate(0deg);
-  transition: fill .25s ease, transform .25s ease;
+form .btn .btn-layer{
+  height: 100%;
+  width: 200%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
 }
-
-.refreshicon:hover {
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
   cursor: pointer;
-  fill: #e50069;
-  transform: rotate(180deg);
-}
-
-
-.frame {
-  height: 935px;
-  width: 500px;
-  background: linear-gradient( rgba(87,87,86,0.75), rgba(0,81,137,0.95)), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: solid 1px rgba(255,255,255,.5);
-  border-radius: 5px;
-  box-shadow: 0px 2px 7px rgb(0 0 0 / 20%);
-  overflow: hidden;
-  transition: all .5s ease;
-}
-/*
-    .frame {
-  height: 620px;
-  width: 530px;
-  background: linear-gradient( rgba(87,87,86,0.75), rgba(0,81,137,0.95)), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: solid 1px rgba(255,255,255,.5);
-  border-radius: 5px;
-  box-shadow: 0px 2px 7px rgb(0 0 0 / 20%);
-  overflow: hidden;
-  transition: all .5s ease;
-}
-*/
-
-
-.form-styling {
-    width: 110%;
-    height: 40px;
-    padding-left: 15px;
-    border: none;
-    border-radius: 0px 35px 0px 35px;
-    margin-bottom: 20px;
-    background: rgba(255,255,255,.2);
 }
 
 
@@ -602,84 +216,197 @@ a.btn-goback:hover {
 
 
 
-</style>
+
+
+
+    </style>
 
 </head>
+
+
+   
+
 <body>
-    <img style="margin-left: 110px;" src="assets/img/LOGOTIPO_GOB(2021)-IMPRESOS_VERTICAL-SF.PNG" width="240px" height="230px">
-    <h3 style="text-align:center; font-size: 40px; margin-top: -226px;"><b>Secretaría de Hacienda</b></h3>
-    <br>
-    <h3 style="text-align:center; font-size: 40px;"><b>Dirección de Recursos Humanos</b></h3>
-    <br>
-    <h3 style="text-align:center; font-size: 40px;"><b>"Portal de Servicios de Recursos Humanos"</b></h3>
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-  <div class="container">
-    <div class="frame">
-        <div class="nav">
-            <ul class="links">
-                <li class="signin-active"><a class="btn">Inicio Sesi&oacute;n</a></li>
-                <li class="signup-inactive"><a class="btn">Registro</a></li>
-            </ul>
-        </div>
-        <div ng-app ng-init="checked = false">
-<!--------------------------Inicio Sesión-------------------------------------------------------------------->
-            <form id="login-form" class="form-signin" action="" method="post" name="form">
-              <label for="username">Nombre de Usuario</label>
-              <div  title="El Usuario se conforma con la primera letra del nombre seguido del apellido paterno."><input id="usuario" class="form-styling" type="text" name="username" placeholder="" /></div>
-              
 
-              <label for="password">Contrase&ntilde;a</label> 
-              <input id="password" class="form-styling" type="password" name="password" placeholder="" /> 
 
-              <button style="border-radius: 0px 35px 0px 35px; height: 35px; width: 110%; color: white; background: #e50069; font-size: 15px;" class="btn-signin">Iniciar Sesi&oacute;n</button>
+<div class="container" style="background: #ffffff; height: 60%; width: 70%; margin-left: 16%; margin-top: -49%;">
 
-            </form>
-<!--------------------------Registro-------------------------------------------------------------------->
-            <form id="create-form" class="form-signup" action="" method="post" name="form"> 
-              <label for="fullname">Nombre Completo</label> 
-              <input style="text-transform: uppercase;" id="nombre" class="form-styling" type="text" name="fullname" placeholder="" /> 
-              <label for="fullname">Apellido Paterno</label> 
-              <input style="text-transform: uppercase;" id="apellido_paterno" class="form-styling" type="text" name="fullname" placeholder="" /> 
-              <label for="fullname">Apellido Materno</label> 
-              <input style="text-transform: uppercase;" id="apellido_materno" class="form-styling" type="text" name="fullname" placeholder="" /> 
-              <label for="fullname">Número de empleado</label> 
-              <input id="empleado" class="form-styling"  placeholder="" />
+   
 
-              <label  for="email">Correo electr&oacute;nico</label>
-              <input style="text-transform: uppercase;" id="correo" class="form-styling" type="email" name="email" placeholder="" /> 
+  <div class="wrapper">
+ 
+        <div class="form-container">
 
-              <label  for="fullname">Organismo</label>
-              <select id="organismo" class="form-styling" type="text" name="organismo">
-                  <option selected> </option>
-                  <option>AMU</option>
-                  <option>BUR</option>
-              </select>    
-                
+            <div class="slide-controls">
+             <input type="radio" name="slide" id="login" checked>
+             <input type="radio" name="slide" id="signup">
+             <label style="font-weight: bold;" for="login" class="slide login">INICIO SESI&Oacute;N</label>
+             <label style="font-weight: bold;" for="signup" class="slide signup">REGISTRO</label>
+             <div class="slider-tab"></div>
+         </div>
 
-              <label for="password">Contrase&ntilde;a</label> 
-              <input id="clave"class="form-styling" type="password" name="password" placeholder="" />
-              <button style="border-radius: 0px 35px 0px 35px; height: 35px; width: 110%; color: white; background: #e50069; font-size: 15px;" class="btn-signup">Registrarme</button>
-            </form>
-            <div class="success"> <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
-                    <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314 c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042 c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
-
+         <div class="form-inner">
+             <form action="#" class="login">
+              <div class="field">
+                <label style="font-weight: bold; color: #005189" for="username">NOMBRE DE USUARIO</label>
+                <input type="text"  required>
             </div>
+            <br>
+            <div class="field">
+                <label style="font-weight: bold; color: #005189" for="username">CONTRASEÑA</label>
+                <input type="password" required>
+            </div>
+            <br>
+                  <!--div class="pass-link">
+                     <a href="#">Forgot password?</a>
+                 </div-->
+                 <div class="field btn">
+                   <div class="btn-layer"></div>
+                   <input style="font-weight: bold;" type="submit" value="INICIAR SESIÓN">
+               </div><br>
+               <div class="forgot">
+                <div style="color: #005189;" class="copyright"><font size="2">
+                  &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span><a style="color: #005189;" href="http://ipagos.chihuahua.gob.mx" target="_blank"> http://ipagos.chihuahua.gob.mx</a></span></strong> y/o <strong><span><a style="color: #005189;" href="http://www.chihuahua.gob.mx/avisos" target="_blank">http://www.chihuahua.gob.mx/avisos</a></span></strong>, as&iacute; mismo sus modificaciones ser&aacute;n publicadas en estas direcciones.</font>
+              </div>
+          </div>
+      </form>
+      <form action="#" class="signup">
+          <div class="field">
+            <label style="font-weight: bold; color: #005189" for="username">NOMBRE COMPLETO</label>
+            <input type="text" required>
         </div>
-        <div class="forgot">
-        <div style="color: black;" class="copyright"><font size="3">
-          &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span><a href="http://ipagos.chihuahua.gob.mx" target="_blank"> http://ipagos.chihuahua.gob.mx</a></span></strong> y/o <strong><span><a href="http://www.chihuahua.gob.mx/avisos" target="_blank">http://www.chihuahua.gob.mx/avisos</a></span></strong>, as&iacute; mismo sus modificaciones ser&aacute;n publicadas en estas direcciones.</font>
-        </div>
+        <div class="field">
+            <label style="font-weight: bold; color: #005189" for="username">ORGANISMO</label><br>
+            <select style="height: 35px; width: 425px; border-radius: 25px" id="organismo" class="form-styling" type="text" name="organismo">
+              <option selected> </option>
+              <option>AMU</option>
+              <option>CAS</option>
+              <option>CEC</option>
+              <option>CET</option>
+              <option>COB</option>
+              <option>COE</option>
+              <option>CON</option>
+              <option>DIF</option>
+              <option>ENE</option>
+              <option>ICA</option>
+              <option>ICD</option>
+              <option>ICE</option>
+              <option>ICH</option>
+              <option>ICJ</option>
+              <option>ICS</option>
+              <option>INA</option>
+              <option>IPC</option>
+              <option>ITM</option>
+              <option>ITS</option>
+              <option>IVI</option>
+              <option>JAP</option>
+              <option>JCA</option>
+              <option>PCE</option>
+              <option>PIC</option>
+              <option>PNC</option>
+              <option>SSC</option>
+              <option>SEC</option>
+              <option>UTC</option>
+              <option>UTJ</option>
+              <option>SNE</option>
+              <option>FID</option>
+              <option>BUR</option>
+              <option>MAG</option>
+              <option>CAM</option>
+              <option>VAR</option>
+              <option>JMA</option>
+              <option>SEE</option>
+              <option>ETS</option>
+              <option>MCC</option>
+              <option>CRI</option>
+              <option>IEE</option>
+              <option>JMJ</option>
+              <option>JMC</option>
+              <option>IVJ</option>
+              <option>CCT</option>
+              <option>JMP</option>
+              <option>IAI</option>
+              <option>PCP</option>
+              <option>JAC</option>
+              <option>JSC</option>
+              <option>JMI</option>
+              <option>JMO</option>
+              <option>CEA</option>
+              <option>OCV</option>
+              <option>UPN</option>
+              <option>PRE</option>
+              <option>JUB</option>
+              <option>BUS</option>
+              <option>CPD</option>
+              <option>TEE</option>
+              <option>ASA</option>
+              <option>ENS</option>
+              <option>CED</option>
+              <option>REP</option>
+              <option>UAC</option>
+              <option>UAJ</option>
+              <option>CPE</option>
+              <option>CDC</option>
+              <option>IIC</option>
+              <option>UPC</option>
+              <option>UTT</option>
+              <option>UTP</option>
+              <option>UTB</option>
+              <option>UTQ</option>
+              <option>UTM</option>
+              <option>UTS</option>
+              <option>UTN</option>
+              <option>UTG</option>
+              <option>CEM</option>
+              <option>100</option>
+              <option>101</option>
+              <option>FPF</option>
+              <option>0</option>
+              <option>FAC</option>
+          </select>
       </div>
-      </div>
+      <div class="field">
+        <label style="font-weight: bold; color: #005189" for="username">CORREO ELECTRÓNICO</label>
+        <input type="text" required>
     </div>
+    <div class="field">
+        <label style="font-weight: bold; color: #005189" for="username">CONTRASEÑA</label>
+        <input type="password" required>
+    </div>
+    <div class="field btn">
+       <div class="btn-layer"></div>
+       <input style="font-weight: bold; " type="submit" value="REGISTRARME">
+   </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+        signupBtn.click();
+        return false;
+    });
+</script>
 
-
-</body>
 <script src="js/Create.js"></script>
 <script src="js/global.js"></script>
-    <script>
+<script>
         $(function () {
             __login();
 
@@ -740,7 +467,7 @@ a.btn-goback:hover {
              $(this).removeClass("idle").addClass("active");
          });
      });
- 
+
      $(function () {
          $(".btn-signup").click(function () {
              $(".nav").toggleClass("nav-up");
@@ -749,7 +476,7 @@ a.btn-goback:hover {
              $(".frame").toggleClass("frame-short");
          });
      });
-    
+   
      $(function () {
          $(".btn-signin").click(function () {
              $(".btn-animate").toggleClass("btn-animate-grow");
@@ -761,8 +488,8 @@ a.btn-goback:hover {
              $(".forgot").toggleClass("forgot-fade");
          });
      });
- 
- 
+
+
  */
 
 
@@ -772,4 +499,5 @@ a.btn-goback:hover {
 
 
 </script>
+</body>
 </html>
