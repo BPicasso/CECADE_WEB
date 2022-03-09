@@ -119,6 +119,7 @@
     <Content Include="assets\img\clients\RADIODIÁGNOTICOEIMAGEN.png" />
     <Content Include="assets\img\clients\SALÓNCOMICS.jpg" />
     <Content Include="assets\img\fondo1.jpg" />
+    <Content Include="assets\img\fondo2.jpg" />
     <Content Include="assets\img\FORMATO_SOLICITUD.pdf" />
     <Content Include="assets\img\galeria\imagen1.jpg" />
     <Content Include="assets\img\galeria\imagen2.jpg" />
@@ -138,6 +139,7 @@
     <Content Include="assets\img\LOGOTIPO_GOB%282021%29-IMPRESOS_VERTICAL-SF.PNG" />
     <Content Include="assets\img\LOGOTIPO_GOB%282021%29-MONOCROMO_HORIZONTAL-NEGRO.PNG" />
     <Content Include="assets\img\maru1.jpg" />
+    <Content Include="assets\img\menu4.jpg" />
     <Content Include="assets\vendor\bootstrap-icons\bootstrap-icons.json" />
     <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
     <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />

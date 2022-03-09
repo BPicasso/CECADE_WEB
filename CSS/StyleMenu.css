@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +8,14 @@
     text-align: center;
 }
 
-/*html, body {
+html, body {
     display: grid;
     height: 100%;
     width: 100%;
     place-items: center;
     background-size: 100%;
-    background-image: url('assets/imginicia.jpg');
-}*/
+    background-image: url('img/imginicia.jpg');
+}
 
 ::selection {
     background: #fa4299;
@@ -22,15 +23,15 @@
 }
 
 .wrapper {
-    overflow: hidden;
-    max-width: 500px;
-    background: #CCD1D1;
+    /*overflow: hidden;*/
+    max-width: 1180px;
+    /*background: #CCD1D1;*/
     padding: 37px;
-    height: 525px;
+    height: 732px;
     margin-top: 55%;
-    margin-left: 32%;
-    border-radius: 25px;
-    box-shadow: 25px 80px 80px rgba(0,0,0,0.0);
+    margin-left: 3%;
+    /*border-radius: 25px;
+  box-shadow: 25px 80px 80px rgba(0,0,0,0.0);*/
 }
 
     .wrapper .title-text {
