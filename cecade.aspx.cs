@@ -16,10 +16,10 @@ namespace WebCECADE
        
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session.IsNewSession)
-            {
-                Response.Redirect("Inicia.aspx");
-            }
+            //if (Session.IsNewSession)
+            //{
+            //    Response.Redirect("Inicia.aspx");
+            //}
         }
 
         [WebMethod(EnableSession = true)]

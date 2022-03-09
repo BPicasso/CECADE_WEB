@@ -36,16 +36,6 @@
 
 
 
-#topbar {
-    height: 60px;
-    padding: 0;
-    font-size: 14px;
-    transition: all 0.5s;
-    overflow: hidden;
-    color: black;
-    z-index: 996;
-}
-
     #topbar .contact-info a {
         line-height: 0;
         color: black;

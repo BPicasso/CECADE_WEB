@@ -100,14 +100,14 @@
     padding: 15px 20px;
 }
     #header .logo {
-        font-size: 30px;
-        margin: 0;
+        font-size: 237%;
         padding: 0;
         line-height: 1;
         font-weight: 500;
-        letter-spacing: 4px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         text-align: center;
+        margin-left: 5%;
     }
     .navbar {
     padding: 13px;
@@ -139,43 +139,49 @@
     transition: all 0.3s ease-in-out;
     border-radius: 0px 35px 0px 35px;
 }
+#topbar .cta a {
+        color: #fff;
+        background: #005189;
+        padding: 1px 24px 5px 27px;
+        display: inline-block;
+        transition: 0.3s;
+        border-radius: 50px;
+}
+#topbar .cta a:hover {
+        background: #005189;
+    }
+#topbar {
+    height: 8%;
+    padding: 0%;
+    font-size: 14px;
+    transition: all 0.5s;
+    overflow: hidden;
+    color: black;
+    z-index: 996;
+}
 
 </style>
 
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i style="color: #d70067;" class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">cecade@chihuahua.gob.mx</a>
-        <i style="color: #d70067;" class="bi bi-phone-fill phone-icon"></i> 4293300
-      </div>
-      <div class="cta d-none d-md-block">
-        <a href="inicia.aspx" class="scrollto">Cerrar Sesión</a>
-      </div>
-    </div>
-  </div>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
     
 
-      <h1 class="logo"><a href="cecade.aspx">Centro de Capacitaci&oacute;n y Desarrollo</a></h1>
+      <h1 class="logo"><a href="cecade.aspx"><b> Centro de Capacitaci&oacute;n y Desarrollo</b></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav style="padding-right: 10px;" id="navbar" class="navbar">
-        <ul>
+        <ul style="margin-left: -12%">
           <li><!--a class="nav-link scrollto active" href="menu.aspx">Inicio</a--></li>
-          <li><a class="nav-link scrollto" href="quienes_Somos.aspx">¿Quienes Somos?</a></li>
-          <li><a class="nav-link scrollto" href="aviso.aspx">Marco Legal</a></li>
+          <li><a class="nav-link scrollto" href="quienes_Somos.aspx" style="color:#FFFFFF; font-size: 125%;"><b>QUIÉNES SOMOS</b></a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li-->
-          <li class="dropdown"><a href="#portfolio"><span>Capacitaci&oacute;n y desarrollo</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#portfolio" style="color:#FFFFFF; font-size: 125%;"><span><b>CAPACITACI&Oacute;N Y DESARROLLO</b></span> <!--i class="bi bi-chevron-down"></i--></a>
             <ul>
               <li><a href="#portfolio">Cátalogo de Cursos</a></li>
               <li><a href="#portfolio">Consulta de los cursos del mes</a></li>
@@ -184,24 +190,34 @@
               <li><a href="#portfolio">Solicitar un curso para tu Dependencia</a></li>
               <li><a href="#portfolio">Validaciones</a></li>
               <li><a href="#portfolio">Becas</a></li>
-              <li><a href="#portfolio">Alianzas y más</a></li>
+              <li><a href="#alianza">Alianzas y más</a></li>
               <li><a href="#portfolio">Bolsa de Trabajo</a></li>
               <li><a href="#portfolio">Servicio Social y Prácticas Profesionales</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="aviso.aspx" style="color:#FFFFFF; font-size: 125%;"><b>MARCO LEGAL</b></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
+   <!-- ======= Top Bar ======= -->
+  <div style="margin-top: 4%; margin-left: 86%;" id="topbar" class="fixed-top d-flex align-items-center ">
+    <div  class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div  class="cta d-none d-md-block">
+        <a href="inicia.aspx" class="scrollto">Cerrar Sesión</a>
+      </div>
     </div>
+  </div>
+
+
+
   </header><!-- End Header -->
 
   <section id="why-us" class="why-us">
 
-    <div class="col-lg-12 align-items-center position-center video-box" style='background-image: url("assets/img/maru1.jpg");' >
-      <a href="https://www.youtube.com/watch?v=2VfLYaUx-mY" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-    </div>
+    <div class="col-lg-12 align-items-center position-center video-box" style='margin-top: 10%; background-image: url("assets/img/maru1.jpg");' >
+      <a href="https://www.youtube.com/watch?v=2VfLYaUx-mY" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" style="margin-left:25%;"></a>
+    </div><br/><br/>
 
 
 
@@ -211,11 +227,19 @@
 
 
     <!--section style="margin-left: 149px; margin-top: -55px; margin-right: 1613px;"-->
-
+        
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScUQcxLYYMoN67h5V2DCnjR5R1FEBUqQtGsRsLCagbzVpvdUw/viewform" target="_blank" >
-            <button type="submit" style="text-align:center; color: white; font-size: 25px; border-radius: 0px 35px 0px 35px; border-color: #e50069; margin-left: 159px; padding: 10px; background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9));">
-                <b>Inducción</b></button></a>
-
+            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #005189; width: 11%; margin-left: 13%; padding: 0%; background: #005189;">
+                <b><I>INDUCCIÓN</I></b></button></a>
+        <a href="Alianza.aspx">
+            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #e50069; width: 21%; margin-left: 3%; padding: 0%; background: #e50069;">
+                <b><i>ALIANZAS Y BENEFICIOS</i></b></button></a>
+        <a href=" " target="_blank" >
+            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #702283; width: 18%; margin-left: 3%; padding: 0%; background: #702283;">
+                <b><i>CURSOS DEL MES</i></b></button></a>
+        <a href=" " target="_blank" >
+            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #55B2E1; width: 13%; margin-left: 3%; padding: 0%; background: #55B2E1;">
+                <b><i>SERVICIOS</i></b></button></a>
 
 
     <!--/section-->

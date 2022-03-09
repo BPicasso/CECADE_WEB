@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 996;
 }
 #topbar.topbar-scrolled {
-  top: -60px;
+  top: 0%;
 }
 #topbar .contact-info a {
   line-height: 0;
@@ -146,30 +146,20 @@ h1, h2, h3, h4, h5, h6 {
 #topbar .cta {
   background: transparent;
 }
-#topbar .cta a {
-  color: #fff;
-  background: #d70067;
-  padding: 6px 24px 8px 24px;
-  display: inline-block;
-  transition: 0.3s;
-  border-radius: 50px;
-}
-#topbar .cta a:hover {
-  background: #F10A7A;
-}
+
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #5C0BAC;
+  background: #e50069;
   transition: all 0.5s;
   z-index: 997;
-  height: 70px;
-  top: 60px;
+  height: 12%;
+  top: 0%;
 }
 #header.header-scrolled {
-  background: rgba(128, 0, 255, 0.9);
+  background: #e50069;
   top: 0;
 }
     #header .logo {
@@ -709,7 +699,7 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
-  background: #F3E8FF;
+  background: #FFFFFF;
   padding: 0;
 }
 .why-us .content {
