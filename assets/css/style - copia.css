@@ -500,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 13% 0;
   overflow: hidden;
   background: #fff;
 }
@@ -513,14 +513,7 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  color: #000000;
-}
+
 .section-title p {
   margin-bottom: 0;
   font-style: italic;
@@ -529,11 +522,7 @@ section {
 /*--------------------------------------------------------------
 # Icon Boxes
 --------------------------------------------------------------*/
-.icon-boxes {
-  padding-top: 0;
-  position: relative;
-  z-index: 100;
-}
+
 .icon-boxes .icon-box {
   padding: 40px 30px;
   position: relative;
@@ -929,7 +918,7 @@ section {
     background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)), url("../img/cta-bg.jpg") fixed center center;
     background: transparent;
     text-align: center;
-    padding: 13px 0;
+    padding: 0px 0;
 }
 .cta h3 {
   color: #fff;
@@ -975,7 +964,7 @@ section {
 --------------------------------------------------------------*/
 .portfoio #portfolio-flters {
   padding: 0;
-  margin: 0 auto 25px auto;
+  margin: -13% 38% 0% 40%;
   list-style: none;
   text-align: center;
   border-radius: 50px;

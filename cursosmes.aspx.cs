@@ -17,14 +17,14 @@ namespace CECADE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session.IsNewSession)
-            {
-                Response.Redirect("Inicia.aspx");
-            }
-            else
-            {
-                llenarGV();
-            }
+            //if (Session.IsNewSession)
+            //{
+            //    Response.Redirect("Inicia.aspx");
+            //}
+            //else
+            //{
+            //    llenarGV();
+            //}
 
         }
 

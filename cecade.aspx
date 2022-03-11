@@ -44,6 +44,12 @@
  <link rel="stylesheet" href="CSS\StyleCecade.css" />
 
 <style type="text/css">
+
+.icon-boxes {
+  padding-top: 3%;
+  position: relative;
+  z-index: 100;
+}
     .mobile-nav-toggle.bi-x {
     color: black;
     font-weight: bold;
@@ -159,6 +165,15 @@
     color: black;
     z-index: 996;
 }
+.section-title h2 {
+  font-size: 560%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #fff;
+  margin-left: -86%;
+}
 
 </style>
 
@@ -176,12 +191,12 @@
       <nav style="padding-right: 10px;" id="navbar" class="navbar">
         <ul style="margin-left: -12%">
           <li><!--a class="nav-link scrollto active" href="menu.aspx">Inicio</a--></li>
-          <li><a class="nav-link scrollto" href="quienes_Somos.aspx" style="color:#FFFFFF; font-size: 125%;"><b>QUIÉNES SOMOS</b></a></li>
+          <li><a class="nav-link scrollto" href="#portfolio" style="color:#FFFFFF; font-size: 125%;"><b>QUIÉNES SOMOS</b></a></li>
           <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li-->
-          <li class="dropdown"><a href="#portfolio" style="color:#FFFFFF; font-size: 125%;"><span><b>CAPACITACI&Oacute;N Y DESARROLLO</b></span> <!--i class="bi bi-chevron-down"></i--></a>
+          <li class="dropdown"><a href="#servicios" style="color:#FFFFFF; font-size: 125%;"><span><b>CAPACITACI&Oacute;N Y DESARROLLO</b></span> <!--i class="bi bi-chevron-down"></i--></a>
             <ul>
               <li><a href="#portfolio">Cátalogo de Cursos</a></li>
               <li><a href="#portfolio">Consulta de los cursos del mes</a></li>
@@ -216,7 +231,7 @@
   <section id="why-us" class="why-us">
 
     <div class="col-lg-12 align-items-center position-center video-box" style='margin-top: 10%; background-image: url("assets/img/maru1.jpg");' >
-      <a href="https://www.youtube.com/watch?v=2VfLYaUx-mY" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" style="margin-left:25%;"></a>
+      <a href="https://www.youtube.com/watch?v=xGRsu2GhS30" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" style="margin-left:25%;"></a>
     </div><br/><br/>
 
 
@@ -231,13 +246,13 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScUQcxLYYMoN67h5V2DCnjR5R1FEBUqQtGsRsLCagbzVpvdUw/viewform" target="_blank" >
             <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #005189; width: 11%; margin-left: 13%; padding: 0%; background: #005189;">
                 <b><I>INDUCCIÓN</I></b></button></a>
-        <a href="Alianza.aspx">
+        <a href="#icon-boxes">
             <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #e50069; width: 21%; margin-left: 3%; padding: 0%; background: #e50069;">
                 <b><i>ALIANZAS Y BENEFICIOS</i></b></button></a>
-        <a href=" " target="_blank" >
+        <a href="#cursosmes">
             <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #702283; width: 18%; margin-left: 3%; padding: 0%; background: #702283;">
                 <b><i>CURSOS DEL MES</i></b></button></a>
-        <a href=" " target="_blank" >
+        <a href="#cta" >
             <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #55B2E1; width: 13%; margin-left: 3%; padding: 0%; background: #55B2E1;">
                 <b><i>SERVICIOS</i></b></button></a>
 
@@ -334,61 +349,234 @@
   </div>
 </section--><!-- End Cta Section -->
 
+      
+    <br/><br/><br/><section style="background:  #d5dce6 " id="portfolio" class="portfoio">
+      <div class="container" style="margin-top: -8%;" >
 
-      <!-- ======= Clients Section ======= -->
-      <section>        
-<div class="container" data-aos="zoom-in">
+        <div class="section-title">
+          <h2 style="color: #2e5284"><b>¿Quiénes<br />somos?</b></h2>
 
-  <div class="clients-slider swiper" >
-      <h3 style="text-align: center; font-size: 50px"><b>Cursos del mes</b></h3>
-    <div class="swiper-wrapper align-items-center" >
-
-      <div class="swiper-slide"><img src="assets/img/portfolio/imagen1.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/portfolio/imagen2.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/portfolio/imagen3.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/portfolio/imagen4.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/portfolio/imagen5.jpg"  class="img-fluid" alt=""></div>
-      <div class="swiper-slide"><img src="assets/img/portfolio/imagen6.jpg"  class="img-fluid" alt=""></div>
-    </div>
-    <br>
-    <br>
-  </div>
-
-</div>
-</section><!-- End Clients Section -->
+        </div>
 
 
+        <div class="row" style="margin-top: -7%;">
+          <div class="col-lg-12 d-flex justify-content-center"> 
+            <ul  id="portfolio-flters">
+              <li style="background-color: #61277e; margin-left: -160%; width: 121%; height: 115%; border-radius: 49%;" data-filter=".filter-app">
+                  <p style="margin-top: 39%; font-size: 200%;"><b>OBJETIVO</b></p></li>
 
-<!-- ======= Why Us Section ======= -->
-<section id="why-us" class="why-us">
+            </ul>
+          </div>
+
+         <div class="col-lg-12 d-flex justify-content-center"> 
+            <ul  id="portfolio-flters">
+              <li style=" background-color: #c20167; margin-left: 70%; width: 145%; height: 115%; border-radius: 49%;" data-filter=".filter-web">
+                  <p style="margin-top: 39%; font-size: 200%;"><b>MISIÓN</b></p></li>
+            </ul>
+          </div>
+
+                      <div class="col-lg-12 d-flex justify-content-center"> 
+            <ul  id="portfolio-flters">
+              <li style="background-color: #6eb0e1; margin-left: 275%; width: 152%; height: 115%; border-radius: 49%;" data-filter=".filter-card">
+                  <p style="margin-top: 39%; font-size: 200%;"><b>VISIÓN</b></p></li>
+            </ul>
+          </div>
+
+        </div>
+
+          <img style="margin-top: 8%; height: 10%; width: 30%; margin-left: -9%;" src="assets/img/quienessomos.jpg" />
+
+        <div class="row portfolio-container " style="position: center; height: 353.782px; margin-left: 25%; margin-top: -25%; ">
+
+            <div  class="col-lg-12 col-md-6 portfolio-item filter-app" >
+                            <h2 style="color: #61277e; text-align:justify; font-size: 300%;"><b>Objetivo</b></h2>
+              <p style="color:black; text-align:justify; margin-top: 3%; font-size: 165%;"><b>Proporcionar herramientas necesarias que proporcione el desarrollo de sus habilidades, 
+                  imaprtiendo cursos de capacitación al personal que lo solicite, a fin de ampliar sus conocimeintos y brindar un mejor servicio responsable, 
+                  con ética, orientación, y calidad, atendiendo sus necesidades con empatía y amabilidad.</b></p>
+
+          </div>
+
+
+                        <div  class="col-lg-12 col-md-6 portfolio-item filter-web" style="display: none;">
+                            <h2 style="color: #c20167;  text-align:justify; font-size: 300%;"><b>Misión</b></h2>
+              <p style="color:black; text-align:justify; font-size: 165%;"><b>Diseñar, instrumentar y dirigir estrategias de selección, capacitación, comunicación interna e 
+                  integración social de los servicios públicos, a través del fortalecimiento de las competencias necesarias que coadyuven en la presentación 
+                  de un excelente servicio a las y los chihuahuenses.</b></p>
+
+          </div>
+
+
+          <div  class="col-lg-12 col-md-6 portfolio-item filter-card" style="display: none;" >
+                            <h2 style="color: #6eb0e1;  text-align:justify; font-size: 300%;"><b>Visión</b></h2>
+              <p style="color:black; text-align:justify; font-size: 165%;"><b>Ser un centro vanguardista en materia de profesionalización que genere aprendizajes, 
+                  desarrolle capacidades y transforme actitudes de las y los servidores públicos.</b></p>
+
+          </div>
+        </div>
+      </div><br /><br /><br /><br />
+    </section><!-- End Portfoio Section -->
+  
+
+
+
+            <!-- ======= Clients Section ======= -->
+<%--          <section>        --%>
+             <br/><br/><br/><br/><div class="container" data-aos="zoom-in">
+              <div class="clients-slider swiper" >
+                  <h3 style="text-align: center; font-size: 50px; background: #6eb0e1; color: #fff; width: 45%; 
+                                margin-left: 25%;"><b>GALERÍA SOCIAL</b></h3>
+                <div style="margin-top: 12%;" class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
+                </div>
+                <br>
+                <br>
+              </div>
+            </div><br/><br/><br/><br/>
+<%--          </section><!-- End Clients Section -->--%>
+
+
+
+                <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes" style="background: #d8d8d8;">
+
+      <div class="container">
+         <h3 style="text-align: center; font-size: 50px; margin-top: 10%; background: #c20167; color: #fff; 
+                    width: 61%; margin-left: 18%;"><b>Alianzas y Beneficios</b></h3>
+       <div class="clients-slider swiper" >
+                       <div style="margin-top: 12%;" class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide"><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/EXTENDEDSUITES.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/FLAYERSOTOLERÍA.png"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/FLYERHOLIDAYINN.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/GRANDEVENTOS.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/imagen1.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/imagen2.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/imagen3.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/imagen4.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/imagen5.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/imagen6.jpg"  class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/clients/LABORATORIOLUÉVANO.jpg"  class="img-fluid" alt=""></div>
+                </div>   
+          
+           </div>
+
+
+        </div>
+    </section><!-- End Icon Boxes Section -->
+
+
+
+  <!-- ======= Contact Section ======= -->
+      <section class="container" id="cursosmes">
+      <div class="container" data-aos="fade-up" style="margin-top: -13%;">
+
+          <h3  style="text-align: center; font-size: 250%; margin-top: 10%; background: #61277e; color: #fff; 
+                    width: 33%; margin-left: 35%;"><b>CURSOS DEL MES</b></h3>
+
+
+          <a  style="font-size: 760%; color: #d70067; margin-left: 10%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
+                        border-top: transparent; border-left: transparent; border-right: transparent;">Becas para Maestría</button></a>
+          <a  style="font-size: 760%; color: #d70067; margin-left: 25%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
+                        border-top: transparent; border-left: transparent; border-right: transparent;">Becas para Maestría</button></a>
+          <a  style="font-size: 760%; color: #d70067; margin-left: 10%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
+                        border-top: transparent; border-left: transparent; border-right: transparent;">Lucha contra el cáncer</button></a>
+          <a  style="font-size: 760%; color: #d70067; margin-left: 22%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
+                        border-top: transparent; border-left: transparent; border-right: transparent;">Lucha contra el cáncer</button></a>
+          <a  style="font-size: 760%; color: #d70067; margin-left: 10%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
+                        border-top: transparent; border-left: transparent; border-right: transparent;">Lenguaje Incluyente</button></a>
+          <a  style="font-size: 760%; color: #d70067; margin-left: 25%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
+                        border-top: transparent; border-left: transparent; border-right: transparent;">Lenguaje Incluyente</button></a>
+
+
+
+      </div><br /><br />
+
+</section>
+      <!-- ======= Why Us Section ======= -->
+<section id="why-us" class="why-us" style=" margin-top:-9%;">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+      <div class="col-lg-5 align-items-stretch position-relative video-box" style='width: 100%; background-image: url("assets/img/declaracion.jpg");' data-aos="fade-right">
+        <!--a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></!--a-->
+          <img style="margin-left: 78%; height: 100%;" src="assets/img/escudo1.jpg">
+
+          <p style="color: #2e5284; margin-left: 50%; font-size: 270%; margin-top: -29%;"><b>Haga su</b></p>
+          <p style="color: #c20167; margin-left: 50%; font-size: 593%;"><b>Declarción<br />Patrimonial</b></p>
+          <a href="https://declaranet.chihuahua.gob.mx/" target="_blank"><button style="background: #e50069; border-color: #e50069; 
+                                                                                    width: 8%; height: 7%; border-radius: 40px; margin-left: 60%; color:#fff;"><b>AQUÍ</b></button></a>
       </div>
+
+
+
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
 
         <div class="content">
-          <h3 >Declaración patrimonial de Inicio para Gobierno del Estado de Chihuahua</h3>
-          <a href="https://declaranet.chihuahua.gob.mx/" target="_blank"><p>
-            Declaración patrimonial.
-          </p></a>
+          
         </div>
       </div>
     </div>
-  </section><!-- End Why Us Section -->
+</div>
+  </section><br /><br /><br /><br /><br /><br /><!-- End Why Us Section -->
 
   <!-- ======= Portfoio Section ======= -->
-  <section id="cta" class="cta">
-    <section style="background: linear-gradient(rgba(205, 72, 216, 0.8), rgba(139, 72, 216, 0.9)) " id="portfolio" class="portfoio">
-      <div class="container" data-aos="fade-up">
+  <section id="cta" class="cta" style="margin-top: -5%;">
+    <section style="background: linear-gradient(rgba(229, 0, 105, 0.8), rgba(112, 34, 131, 0.9)) " id="servicios" class="portfoio">
+      <div class="container" data-aos="fade-up" style="margin-top: -7%;">
 
-        <div class="section-title">
+
+
+        <div class="section-title" style="margin-top: 5%;">
           <h2>Servicios</h2>
-
         </div>
 
-        <div class="row">
+
+          <ul style="margin-left: 41%; margin-top: -12%">
+  <li style="font-size: 239%; color: #6eb0e1; margin-left: 18%; text-align: initial;"> <a  style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
+  border-top: transparent; border-left: transparent; border-right: transparent;" href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank">Detección de necesidades de capacitación</a></li>
+
+  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
+  border-top: transparent; border-left: transparent; border-right: transparent;" href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank">Solicitar un curso para tu dependencia</a></li>
+
+  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
+  border-top: transparent; border-left: transparent; border-right: transparent;" href="assets/img/FORMATO_SOLICITUD.pdf"  target="_blank">Validaciones</a></li>
+
+  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
+  border-top: transparent; border-left: transparent; border-right: transparent;" href="becas.aspx">Becas</a></li>
+
+  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
+  border-top: transparent; border-left: transparent; border-right: transparent;" href="Alianza.aspx">Alianza y más</a></li>
+
+  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
+  border-top: transparent; border-left: transparent; border-right: transparent;" <!--href=""-->Bolsa de trabajo</a></li>
+
+  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
+  border-top: transparent; border-left: transparent; border-right: transparent;" <!--href=""-->Servicio social y prácticas profesionales</a></li>
+</ul>
+
+
+
+          <!--onclick="window.location='cursos.aspx'"-->
+
+          <h3  style="text-align: center; font-size: 250%; margin-top: -36%; background: #6eb0e1;  
+                    width: 25%; margin-left: -10%;"><a style="color: #fff;" href="cursosempleado.aspx" target="_blank"><b>Mis cursos</b></a></h3>
+
+          <h3 href="cursos.aspx"style="text-align: center; font-size: 250%; margin-top: 6%; background: #f456b0; color: #fff; 
+                    width: 32%; margin-left: -10%;" ><a style="color: #fff;"  href="cursos.aspx" target="_blank"><b>Catálogo cursos</b></a></h3>
+
+          <h3 style="text-align: center; font-size: 250%; margin-top: 8%; background: #501275; color: #fff; 
+                    width: 42%; margin-left: -10%;"><a style="color: #fff;" href="cursosmes.aspx" target="_blank"><b>Consulta cursos del mes</b></a></h3>
+
+
+
+
+
+
+<%--        <div class="row">
           <div class="col-lg-12 d-flex justify-content-center"> 
             <ul  id="portfolio-flters">
               <li style="background-color: #d70067"; id="Todo" data-filter="*" class="filter-active">Todo</li>
@@ -494,132 +682,22 @@
             <div style="background-color: #d70067"; class="portfolio-info">
               <h4>Servicio Social y Prácticas Profesionales</h4>
             </div>
-          </div>
+          </div>--%>
 
-        </div>
+        <%--</div>--%>
       </div>
     </section><!-- End Portfoio Section -->
+
+          <img src="assets/img/final.jpg">
+
   </section>
 
 
-          <!-- ======= Icon Boxes Section ======= -->
-    <section id="icon-boxes" class="icon-boxes">
-
-      <div class="container">
-         <h3 style="text-align: center; font-size: 50px; color: black; "><b>Alianzas y Beneficios</b></h3><br>
-                <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box1">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/FLAYERSOTOLERÍA.png" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/FLAYERSOTOLERÍA.png" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/SALÓNCOMICS.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/SALÓNCOMICS.jpg" width="250" height="380"></a>
-            </div>
-          </div>
-          <!---------------------------------------------------->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box1">
-              <i style="color: #702283;"></i>
-              <a href="assets/img/clients/PEKESYFAMILY.jpg" class="portfolio-lightbox preview-link" ><img src="assets/img/clients/PEKESYFAMILY.jpg" width="250" height="380"></a>
-            </div>
-          </div>
-
-        </div>
-        </div>
-    </section><!-- End Icon Boxes Section -->
-
-
-            <!-- ======= Clients Section ======= -->
-          <section>        
-
-
-              <div class="container" data-aos="zoom-in">
-
-              <div class="clients-slider swiper" >
-                  <h3 style="text-align: center; font-size: 50px"><b>Galeria</b></h3>
-                <div class="swiper-wrapper align-items-center" >
-
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
-                </div>
-                <br>
-                <br>
-              </div>
-
-</div>
-
-
-
-          </section><!-- End Clients Section -->
-      
-
-  <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 >Contacto</h2>
-        </div>
-
-        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
-
-          <div class="col-lg-5">
-            <div class="info">
-
-              <div class="address">
-                <a href="https://goo.gl/maps/nHg1X3jrGkQUfrPK9" target="_blank"><i class="bi bi-geo-alt" style="background-color: #d70067";></i></a>
-                <h4>Dirección:</h4>
-                <p>C. 15 215, Zona Centro, 31000 Chihuahua, Chih.</p>
-              </div>
-
-              <div class="email">
-                <a href="https://accounts.google.com/ServiceLogin/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&followup=https%3A%2F%2Faccounts.google.com%2FEditPasswd%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i style="background-color: #d70067"; class="bi bi-envelope"></i></a>
-                <h4>Correo:</h4>
-                <p>cecade@chihuahua.gob.mx</p>
-              </div>
-
-              <div class="phone">
-                <i style="background-color: #d70067"; class="bi bi-phone"></i>
-                <h4>Teléfono:</h4>
-                <p>4293300</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-
-            <iframe src="Contacto.aspx" width="350" height="500"></iframe>
-
-              
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+<%--  <footer id="footer">
 
     <div Style = "width:2500px;" class="container">
       <div class="copyright">
@@ -633,7 +711,7 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div-->
     </div>
-  </footer><!-- End Footer -->
+  </footer><!-- End Footer -->--%>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
