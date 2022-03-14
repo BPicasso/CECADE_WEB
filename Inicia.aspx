@@ -81,15 +81,15 @@ html, body {
       </form>
 
 
-      <form class="signup" id="#create-form" action="#" >
+      <form class="signup" id="create-form" action="#" >
           <div class="field">
             <label style="font-weight: bold; color: #005189" for="username" >NOMBRE COMPLETO</label>
             <input type="text" id="nombre" name="nombre" required>
         </div>
         <div class="field">
             <label style="font-weight: bold; color: #005189" for="username">ORGANISMO</label><br>
-            <select id="organismo" style="height: 35px; width: 425px; border-radius: 25px;"  class="form-styling" type="text" name="organismo">
-              <option selected  id="organismo" name="organismo"> </option>
+            <select  style="height: 35px; width: 425px; border-radius: 25px;"  class="form-styling" type="text" id="organismo" name="organismo">
+              <option selected > </option>
               <option>AMU</option>
               <option>CAS</option>
               <option>CEC</option>
@@ -222,14 +222,7 @@ html, body {
         loginForm.style.marginLeft = "-50%";
         loginText.style.marginLeft = "-50%";
     });
-    loginBtn.onclick = (() => {
-        loginForm.style.marginLeft = "0%";
-        loginText.style.marginLeft = "0%";
-    });
-    signupLink.onclick = (() => {
-        signupBtn.click();
-        return false;
-    });
+    
  </script>
 
 <%--<script type="text/javascript">
