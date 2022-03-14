@@ -129,24 +129,27 @@ namespace WebCECADE
             ClsTransaccionesWeb Obj_Transacciones = new ClsTransaccionesWeb(clsConexion.cadenaConexion, "Infiernix");
 
             string respuesta = "Ocurrio un error";
+            char delimitador = ' ';
+            string[] valores = objCUsuario.nombre.Split(delimitador);
 
-            if (false)//objCUsuario.nombre == "" && objCUsuario.correo == "" && objCUsuario.apellido_materno == "" && objCUsuario.apellido_paterno == "" && objCUsuario.clave == "" && objCUsuario.organismo=="")
+            if (objCUsuario.nombre == "" && objCUsuario.correo == "" && objCUsuario.clave == "" && objCUsuario.organismo=="" && valores.Length<=1)
             {
                 respuesta = "Por favor de llenar los campos";
             }
             else
             {
-                String substring = objCUsuario.nombre.Substring(0, 1) + objCUsuario.apellido_paterno.Substring(0);
+                
+                String substring = valores[0].Substring(0, 1)+valores[1].Substring(0);
+                //String substring = objCUsuario.nombre.Substring(0, 1) + objCUsuario.apellido_paterno.Substring(0);
                 //llamas a la cadena de conexion que esta se abre en automatico por la libreria LbrUtilerias
                 String conectar = clsConexion.cadenaConexion;
                 // String SQL = "SELECT * FROM usuario_prueba where nombre ='" + objUsuario.user + "' and contrasena = '" + objUsuario.password + "'";
 
-                String SQL3 = "SELECT organismo, empleado, nombre, apellido_paterno, apellido_materno FROM empleado where empleado = "+objCUsuario.empleado + "  and organismo ='"+objCUsuario.organismo+"'";
+                String SQL3 = "SELECT organismo, empleado, nombre, FROM empleado where empleado = "+objCUsuario.empleado + "  and organismo ='"+objCUsuario.organismo+"'";
                 String SQL = "SELECT usuario_ap,empleado FROM usuario where empleado ='" + objCUsuario.empleado.ToString() + "'";
-                String SQL2 = " INSERT INTO usuario (usuario_ap, clave, nombre, apellido_paterno, " +
-                    "apellido_materno,correo, usuario, organismo, status) " +
-                    "VALUES ('" + substring + "','" + objCUsuario.clave + "','" + objCUsuario.nombre + "','" + objCUsuario.apellido_paterno + "','" +
-                    objCUsuario.apellido_materno + "','" + objCUsuario.correo + "','" + substring +"','"+objCUsuario.organismo+ "','A')";
+                String SQL2 = " INSERT INTO usuario (usuario_ap, clave, nombre, " +
+                    "correo, usuario, organismo, status) " +
+                    "VALUES ('" + substring + "','" + objCUsuario.clave + "','" + objCUsuario.nombre + "','" + objCUsuario.correo + "','" + substring +"','"+objCUsuario.organismo+ "','A')";
 
 
                 DataTable DTblTmp3 = Obj_Transacciones.OdbRegresa_Datos_Tabla(SQL3, "consulta3");

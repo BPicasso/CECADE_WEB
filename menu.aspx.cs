@@ -18,7 +18,7 @@ namespace WebCECADE
             }
             else
             {
-                if (Session["id"].Equals("1"))
+                if (Session["id"].Equals("99"))
                 {
                     Response.Redirect("cecade.aspx");
                 }

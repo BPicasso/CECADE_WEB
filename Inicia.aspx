@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicia.aspx.cs" Inherits="WebCECADE.Inicia" %>
+
+<!DOCTYPE html>
 <!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
 <head>
@@ -50,15 +52,17 @@ html, body {
          </div>
 
          <div class="form-inner">
-             <form action="#" class="login">
+            
+
+           <form id="login-form" action="" method="post" name="form" class="login">
               <div class="field">
                 <label style="font-weight: bold; color: #005189" for="username">NOMBRE DE USUARIO</label>
-                <input type="text"  required>
+                <input type="text"  required id="usuario" name="usuario">
             </div>
             <br>
             <div class="field">
                 <label style="font-weight: bold; color: #005189" for="username">CONTRASEÑA</label>
-                <input type="password" required>
+                <input type="password" required id="password" name="password">
             </div>
             <br>
                   <!--div class="pass-link">
@@ -66,7 +70,8 @@ html, body {
                  </div-->
                  <div class="field btn">
                    <div class="btn-layer"></div>
-                   <input style="font-weight: bold;" type="submit" value="INICIAR SESIÓN">
+                   
+                 <input style="font-weight: bold;" type="submit" value="INICIAR SESIÓN">
                </div><br>
                <div class="forgot">
                 <div style="color: #005189;" class="copyright"><font size="2">
@@ -74,15 +79,17 @@ html, body {
               </div>
           </div>
       </form>
-      <form action="#" class="signup">
+
+
+      <form class="signup" id="#create-form" action="" method="post" >
           <div class="field">
-            <label style="font-weight: bold; color: #005189" for="username">NOMBRE COMPLETO</label>
-            <input type="text" required>
+            <label style="font-weight: bold; color: #005189" for="username" >NOMBRE COMPLETO</label>
+            <input type="text" id="nombre" name="nombre" required>
         </div>
         <div class="field">
             <label style="font-weight: bold; color: #005189" for="username">ORGANISMO</label><br>
             <select style="height: 35px; width: 425px; border-radius: 25px" id="organismo" class="form-styling" type="text" name="organismo">
-              <option selected> </option>
+              <option selected  id="organismo" name="organismo"> </option>
               <option>AMU</option>
               <option>CAS</option>
               <option>CEC</option>
@@ -171,11 +178,11 @@ html, body {
       </div>
       <div class="field">
         <label style="font-weight: bold; color: #005189" for="username">CORREO ELECTRÓNICO</label>
-        <input type="text" required>
+        <input type="text"  id="correo" name="correo" required>
     </div>
     <div class="field">
         <label style="font-weight: bold; color: #005189" for="username">CONTRASEÑA</label>
-        <input type="password" required>
+        <input type="password" id="clave" name="clave" required>
     </div>
     <div class="field btn">
        <div class="btn-layer"></div>
@@ -186,26 +193,10 @@ html, body {
 </div>
 </div>
 </div>
-<script>
-    const loginText = document.querySelector(".title-text .login");
-    const loginForm = document.querySelector("form.login");
-    const loginBtn = document.querySelector("label.login");
-    const signupBtn = document.querySelector("label.signup");
-    const signupLink = document.querySelector("form .signup-link a");
-    signupBtn.onclick = (() => {
-        loginForm.style.marginLeft = "-50%";
-        loginText.style.marginLeft = "-50%";
-    });
-    loginBtn.onclick = (() => {
-        loginForm.style.marginLeft = "0%";
-        loginText.style.marginLeft = "0%";
-    });
-    signupLink.onclick = (() => {
-        signupBtn.click();
-        return false;
-    });
-</script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/datatables.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/Create.js"></script>
 <script src="js/global.js"></script>
 <script>
@@ -221,8 +212,9 @@ html, body {
          });
      </script>
 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script type="text/javascript">
+ 
+
+<%--<script type="text/javascript">
 
     $(function () {
         $(".btn").click(function () {
@@ -300,6 +292,6 @@ html, body {
 
 
 
-</script>
+</script>--%>
 </body>
 </html>

@@ -4,8 +4,8 @@
         var data = {
             objCUsuario: {
                 nombre: $("#nombre").val(),
-                apellido_paterno: $("#apellido_paterno").val(),
-                apellido_materno: $("#apellido_materno").val(),
+                apellido_paterno: "",
+                apellido_materno: "",
                 correo: $("#correo").val(),
                 empleado: $("#empleado").val(),
                 clave: $("#clave").val(),

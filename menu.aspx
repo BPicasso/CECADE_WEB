@@ -215,13 +215,13 @@ form .btn input[type="submit"]{
 <img style="width: 60%;" src="assets/img/fondo2.jpg">
 <br>
 
-<button style="border-radius: 48%; margin-left: 5%; margin-top: 2%; width: 18%; color: #005189; border-color: #e50069; background: #ffffff; height: 34%; font-size: 150%;" ><b>Personal<br>Burócrata</b></button>
+<button style="border-radius: 48%; margin-left: 5%; margin-top: 2%; width: 18%; color: #005189; border-color: #e50069; background: #ffffff; height: 34%; font-size: 150%;" onclick="window.location.href='/cecade.aspx'" ><b>Personal<br>Burócrata</b></button>
 
 
-<button style="border-radius: 48%; margin-left: 5%; margin-top: 2%; width: 18%; color: #005189; border-color: #e50069; background: #ffffff; height: 34%; font-size: 145%;" ><b>Centro de Capacitación y Desarrollo</b></button>
+<button style="border-radius: 48%; margin-left: 5%; margin-top: 2%; width: 18%; color: #005189; border-color: #e50069; background: #ffffff; height: 34%; font-size: 145%;" onclick="window.location.href='/cecade.aspx'" ><b>Centro de Capacitación y Desarrollo</b></button>
 
 
-<button style="border-radius: 48%; margin-left: 5%; margin-top: 2%; width: 18%; color: #005189; border-color: #e50069; background: #ffffff; height: 34%; font-size: 145%;" ><b>Personal Magisterial</b></button>
+<button style="border-radius: 48%; margin-left: 5%; margin-top: 2%; width: 18%; color: #005189; border-color: #e50069; background: #ffffff; height: 34%; font-size: 145%;" onclick="window.location.href='/cecade.aspx'" ><b>Personal Magisterial</b></button>
 
 </div>
 
