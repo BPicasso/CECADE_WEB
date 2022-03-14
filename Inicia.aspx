@@ -22,12 +22,14 @@
 
 <style type="text/css">
 html, body {
+    min-width: 1600px;
     display: grid;
     height: 100%;
     width: 100%;
     place-items: center;
     background-size: 100%;
     background-image: url('assets/img/imginicia.jpg');
+    min-height: 1640px;
 }
 </style>
 
@@ -35,7 +37,7 @@ html, body {
 
 <body>
 
-<div class="container" style="background: #ffffff; height: 60%; width: 70%; margin-left: 16%; margin-top: -49%;">
+<div class="container" style="background: #ffffff; height: 60%; width: 70%; margin-left: 16%; margin-top: -56%;">
 
    
 

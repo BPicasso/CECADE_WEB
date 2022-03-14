@@ -24,6 +24,7 @@ html,body{
   place-items: center;
   background-size: 100%;
   background-image: url('assets/img/imginicia.jpg');
+  min-width: 2300px;
 }
 ::selection{
   background: #fa4299;
@@ -226,7 +227,7 @@ form .btn input[type="submit"]{
 </div>
 
 <br>
-<img style="width: 31%; margin-top: -4%; margin-left: 5%;" src="assets/img/menu4.jpg">
+<img style="width: 31%; margin-top: -3%; margin-left: 5%;" src="assets/img/menu4.jpg">
 
 </head>
 <body>
