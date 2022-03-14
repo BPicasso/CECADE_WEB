@@ -54,7 +54,7 @@ html, body {
          <div class="form-inner">
             
 
-           <form id="login-form" action="" method="post" name="form" class="login">
+           <form id="login-form" action="#" class="login">
               <div class="field">
                 <label style="font-weight: bold; color: #005189" for="username">NOMBRE DE USUARIO</label>
                 <input type="text"  required id="usuario" name="usuario">
@@ -81,14 +81,14 @@ html, body {
       </form>
 
 
-      <form class="signup" id="#create-form" action="" method="post" >
+      <form class="signup" id="#create-form" action="#" >
           <div class="field">
             <label style="font-weight: bold; color: #005189" for="username" >NOMBRE COMPLETO</label>
             <input type="text" id="nombre" name="nombre" required>
         </div>
         <div class="field">
             <label style="font-weight: bold; color: #005189" for="username">ORGANISMO</label><br>
-            <select style="height: 35px; width: 425px; border-radius: 25px" id="organismo" class="form-styling" type="text" name="organismo">
+            <select id="organismo" style="height: 35px; width: 425px; border-radius: 25px;"  class="form-styling" type="text" name="organismo">
               <option selected  id="organismo" name="organismo"> </option>
               <option>AMU</option>
               <option>CAS</option>
@@ -212,7 +212,25 @@ html, body {
          });
      </script>
 
- 
+ <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+        signupBtn.click();
+        return false;
+    });
+ </script>
 
 <%--<script type="text/javascript">
 

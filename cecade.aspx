@@ -391,7 +391,7 @@
             <div  class="col-lg-12 col-md-6 portfolio-item filter-app" >
                             <h2 style="color: #61277e; text-align:justify; font-size: 300%;"><b>Objetivo</b></h2>
               <p style="color:black; text-align:justify; margin-top: 3%; font-size: 165%;"><b>Proporcionar herramientas necesarias que proporcione el desarrollo de sus habilidades, 
-                  imaprtiendo cursos de capacitación al personal que lo solicite, a fin de ampliar sus conocimeintos y brindar un mejor servicio responsable, 
+                  impartiendo cursos de capacitación al personal que lo solicite, a fin de ampliar sus conocimeintos y brindar un mejor servicio responsable, 
                   con ética, orientación, y calidad, atendiendo sus necesidades con empatía y amabilidad.</b></p>
 
           </div>
