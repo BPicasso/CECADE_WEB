@@ -185,10 +185,12 @@
     <Content Include="CSS\StyleCursosEmpleados.css" />
     <Content Include="CSS\StyleCecade.css" />
     <Content Include="CSS\StyleCursosMes.css" />
+    <Content Include="CSS\styleDatos.css" />
     <Content Include="cursos.aspx" />
     <Content Include="cursosempleado.aspx" />
     <Content Include="cursosmes.aspx" />
     <Content Include="cursosvirtual.aspx" />
+    <Content Include="datos.aspx" />
     <Content Include="forms\contact.php" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -371,6 +373,13 @@
     </Compile>
     <Compile Include="cursosvirtual.aspx.designer.cs">
       <DependentUpon>cursosvirtual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datos.aspx.cs">
+      <DependentUpon>datos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="datos.aspx.designer.cs">
+      <DependentUpon>datos.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormularioBeca.aspx.cs">
       <DependentUpon>FormularioBeca.aspx</DependentUpon>
