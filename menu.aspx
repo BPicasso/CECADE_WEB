@@ -8,7 +8,6 @@
 	
 
 <style type="text/css">
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
   margin: 0;

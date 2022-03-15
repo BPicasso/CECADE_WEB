@@ -28,7 +28,7 @@ html, body {
     width: 100%;
     place-items: center;
     background-size: 100%;
-    background-image: url('assets/img/imginicia.jpg');
+    background: url('assets/img/imginicia.jpg');
     min-height: 1640px;
 }
 </style>
