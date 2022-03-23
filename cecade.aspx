@@ -38,10 +38,11 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+    <link rel="stylesheet" href="CSS\StyleCecade.css" />
 </head>
 
 
- <link rel="stylesheet" href="CSS\StyleCecade.css" />
+ 
 
 <style type="text/css">
 
@@ -489,7 +490,7 @@
                         border-top: transparent; border-left: transparent; border-right: transparent;">Lucha contra el cáncer</button></a>
           <a  style="font-size: 760%; color: #d70067; margin-left: 10%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
                         border-top: transparent; border-left: transparent; border-right: transparent;">Lenguaje Incluyente</button></a>
-          <a  style="font-size: 760%; color: #d70067; margin-left: 25%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
+          <a  style="font-size: 760%; color: #2e5284; margin-left: 25%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
                         border-top: transparent; border-left: transparent; border-right: transparent;">Lenguaje Incluyente</button></a>
 
 
@@ -506,7 +507,7 @@
           <img style="margin-left: 78%; height: 100%;" src="assets/img/escudo1.jpg">
 
           <p style="color: #2e5284; margin-left: 50%; font-size: 270%; margin-top: -29%;"><b>Haga su</b></p>
-          <p style="color: #c20167; margin-left: 50%; font-size: 593%;"><b>Declarción<br />Patrimonial</b></p>
+          <p style="color: #d8d8d8; margin-left: 50%; font-size: 593%;"><b>Declarción<br />Patrimonial</b></p>
           <a href="https://declaranet.chihuahua.gob.mx/" target="_blank"><button style="background: #e50069; border-color: #e50069; 
                                                                                     width: 8%; height: 7%; border-radius: 40px; margin-left: 60%; color:#fff;"><b>AQUÍ</b></button></a>
       </div>
