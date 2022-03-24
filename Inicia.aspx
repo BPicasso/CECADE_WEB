@@ -1,96 +1,95 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicia.aspx.cs" Inherits="WebCECADE.Inicia" %>
 
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
+<html lang="en" >
 <head>
-  <meta charset="utf-8">
-  <title>Portal de Servicios</title>
-  <!--link rel="stylesheet" href="estilo.css"-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="CSS/StyleMenu.css" rel="stylesheet">
-
-<div class="container" style="background: linear-gradient( rgba(87,87,86,0.75), rgba(0,81,137,0.95)), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center; height: 100%; width: 100%;">
-    
-<div class="container" style="background: #ffffff; height: 60%; width: 70%; margin-left: 16%; margin-top: 0%;">
-
-
-<img style="width: 60%;" src="assets/img/fondo1.jpg">
-
-
-</div>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="CSS/StyleMenu.css">
 
 <style type="text/css">
-html, body {
-    min-width: 1600px;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    place-items: center;
-    background-size: 100%;
-    background: url('assets/img/imginicia.jpg');
-    min-height: 1640px;
+    body {
+    background-image: linear-gradient( rgba(87,87,86,0.75), rgba(0,81,137,0.95)), url('assets/img/imginicia.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+    background:
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="container" style="background: #ffffff; height: 60%; width: 70%; margin-left: 16%; margin-top: -56%;">
+<div class="container" style="height: 1473px;margin-top: 0px;background-color: white;">
+  
+<img style="width: 100%;" src="assets/img/fondo1.jpg">
 
-   
+  
+  <div class="form">
 
-  <div class="wrapper">
- 
-        <div class="form-container">
-
-            <div class="slide-controls">
-             <input type="radio" name="slide" id="login" checked>
-             <input type="radio" name="slide" id="signup">
-             <label style="font-weight: bold;" for="login" class="slide login">INICIO SESI&Oacute;N</label>
-             <label style="font-weight: bold;" for="signup" class="slide signup">REGISTRO</label>
-             <div class="slider-tab"></div>
-         </div>
-
-         <div class="form-inner">
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">INICIO SESI&Oacute;N</a></li>
+        <li class="tab"><a href="#login">REGISTRO</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <div class="field-wrap">
+                <label style="margin-left: 25%; MARGIN-TOP: -5%; font-weight: bold; color: #005189" for="username" >NOMBRE DE USUARIO</label><br>
+  
+                <input type="text"required autocomplete="off"/>
+              </div>
+          
+            </div>
+        
             
+          </div>
 
-           <form id="login-form" action="#" class="login">
-              <div class="field">
-                <label style="font-weight: bold; color: #005189" for="username">NOMBRE DE USUARIO</label>
-                <input type="text"  required id="usuario" name="usuario">
-            </div>
-            <br>
-            <div class="field">
-                <label style="font-weight: bold; color: #005189" for="username">CONTRASEÑA</label>
-                <input type="password" required id="password" name="password">
-            </div>
-            <br>
-                  <!--div class="pass-link">
-                     <a href="#">Forgot password?</a>
-                 </div-->
-                 <div class="field btn">
-                   <div class="btn-layer"></div>
-                   
-                 <input style="font-weight: bold;" type="submit" value="INICIAR SESIÓN">
-               </div><br>
+         
+          
+          <div class="field-wrap">
+            <label style="margin-left: 33%; MARGIN-TOP: -5%; font-weight: bold; color: #005189" for="username" >CONTRASEÑA</label><br>
+
+            <input type="password"required autocomplete="off"/>
+
+            <a style="margin-left:62%; font-size: 123%;">¿Olvidaste Contraseña?</a>
+          </div>
+          
+          
+          <button type="submit" style="border-radius: 25px;" class="button button-block">INICIAR SESIÓN</button>
+          <br>          <br>
+
                <div class="forgot">
-                <div style="color: #005189;" class="copyright"><font size="2">
+                <div style="color: #005189;" class="copyright"><font size="3">
                   &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span><a style="color: #005189;" href="http://ipagos.chihuahua.gob.mx" target="_blank"> http://ipagos.chihuahua.gob.mx</a></span></strong> y/o <strong><span><a style="color: #005189;" href="http://www.chihuahua.gob.mx/avisos" target="_blank">http://www.chihuahua.gob.mx/avisos</a></span></strong>, as&iacute; mismo sus modificaciones ser&aacute;n publicadas en estas direcciones.</font>
               </div>
           </div>
-      </form>
+          </form>
 
-
-      <form class="signup" id="create-form" action="#" >
-          <div class="field">
-            <label style="font-weight: bold; color: #005189" for="username" >NOMBRE COMPLETO</label>
-            <input type="text" id="nombre" name="nombre" required>
         </div>
-        <div class="field">
-            <label style="font-weight: bold; color: #005189" for="username">ORGANISMO</label><br>
-            <select  style="height: 35px; width: 425px; border-radius: 25px;"  class="form-styling" type="text" id="organismo" name="organismo">
+        
+        <div id="login">   
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+              <label style="margin-left: 25%; MARGIN-TOP: -5%;  text-align: center ; font-weight: bold; color: #005189" for="username" >NOMBRE COMPLETO</label><br>
+
+            <input type="text"required autocomplete="off"/>
+          </div>
+
+
+          <div class="field-wrap">
+            <label style="margin-left: 33%; MARGIN-TOP: -5%;  font-weight: bold; color: #005189" >ORGANISMO</label><br>
+            <select  style="height: 35px; border-radius: 25px; width: 100%;"  class="form-styling" type="text" id="organismo" name="organismo">
               <option selected > </option>
               <option>AMU</option>
               <option>CAS</option>
@@ -176,135 +175,94 @@ html, body {
               <option>FPF</option>
               <option>0</option>
               <option>FAC</option>
-          </select>
-      </div>
-      <div class="field">
-        <label style="font-weight: bold; color: #005189" for="username">CORREO ELECTRÓNICO</label>
-        <input type="text"  id="correo" name="correo" required>
-    </div>
-    <div class="field">
-        <label style="font-weight: bold; color: #005189" for="username">CONTRASEÑA</label>
-        <input type="password" id="clave" name="clave" required>
-    </div>
-    <div class="field btn">
-       <div class="btn-layer"></div>
-       <input style="font-weight: bold; " type="submit" value="REGISTRARME">
-   </div>
-</form>
+          </select>          </div>
+      
+
+
+          <div class="top-row">
+            <div class="field-wrap">
+              <label style="margin-left: 25%; MARGIN-TOP: -5%; font-weight: bold; color: #005189" for="username" >CORREO ELECTRÓNICO</label><br>
+
+              <input type="email"required autocomplete="off"/>
+            </div>
+        
+            <br>
+          </div>
+
+
+        
+
+
+          <div class="field-wrap">
+            <label style="margin-left: 33%; MARGIN-TOP: -5%; font-weight: bold; color: #005189" for="username" >CONTRASEÑA</label><br>
+
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          
+          <button style="border-radius: 25px;" class="button button-block">REGISTRARME</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+
+
 </div>
-</div>
-</div>
-</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/datatables.min.js"></script>
-     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="js/Create.js"></script>
-<script src="js/global.js"></script>
-<script>
-        $(function () {
-            __login();
 
-        });
-    </script>
-     <script>
-         $(function () {
-             __create();
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<script type="text/javascript">
+    $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
-         });
-     </script>
+        var $this = $(this),
+            label = $this.prev('label');
 
- <script>
-    const loginText = document.querySelector(".title-text .login");
-    const loginForm = document.querySelector("form.login");
-    const loginBtn = document.querySelector("label.login");
-    const signupBtn = document.querySelector("label.signup");
-    const signupLink = document.querySelector("form .signup-link a");
-    signupBtn.onclick = (() => {
-        loginForm.style.marginLeft = "-50%";
-        loginText.style.marginLeft = "-50%";
-    });
-    
- </script>
+        if (e.type === 'keyup') {
+            if ($this.val() === '') {
+                label.removeClass('active highlight');
+            } else {
+                label.addClass('active highlight');
+            }
+        } else if (e.type === 'blur') {
+            if ($this.val() === '') {
+                label.removeClass('active highlight');
+            } else {
+                label.removeClass('highlight');
+            }
+        } else if (e.type === 'focus') {
 
-<%--<script type="text/javascript">
+            if ($this.val() === '') {
+                label.removeClass('highlight');
+            }
+            else if ($this.val() !== '') {
+                label.addClass('highlight');
+            }
+        }
 
-    $(function () {
-        $(".btn").click(function () {
-            $(".form-signin").toggleClass("form-signin-left");
-            $(".form-signup").toggleClass("form-signup-left");
-            $(".frame").toggleClass("frame-long");
-            $(".signup-inactive").toggleClass("signup-active");
-            $(".signin-active").toggleClass("signin-inactive");
-            $(".forgot").toggleClass("forgot-left");
-            $(this).removeClass("idle").addClass("active");
-        });
-    });
-
-    $(function () {
-        $(".btn-signup").click(function () {
-            $(".nav").toggleClass("nav-up");
-            $(".form-signup-left").toggleClass("form-signup-down");
-            $(".success").toggleClass("success-left");
-            $(".frame").toggleClass("frame-short");
-        });
     });
 
-    $(function () {
-        $(".btn-signin").click(function () {
-            $(".btn-animate").toggleClass("btn-animate-grow");
-            $(".welcome").toggleClass("welcome-left");
-            $(".cover-photo").toggleClass("cover-photo-down");
-            $(".frame").toggleClass("frame-short");
-            $(".profile-photo").toggleClass("profile-photo-down");
-            $(".btn-goback").toggleClass("btn-goback-up");
-            $(".forgot").toggleClass("forgot-fade");
-        });
+    $('.tab a').on('click', function (e) {
+
+        e.preventDefault();
+
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+
+        target = $(this).attr('href');
+
+        $('.tab-content > div').not(target).hide();
+
+        $(target).fadeIn(600);
+
     });
 
-
-    /* $(function () {
-         $(".btn").click(function () {
-             $(".form-signin").toggleClass("form-signin-left");
-             $(".form-signup").toggleClass("form-signup-left");
-             $(".frame").toggleClass("frame-long");
-             $(".signup-inactive").toggleClass("signup-active");
-             $(".signin-active").toggleClass("signin-inactive");
-             $(".forgot").toggleClass("forgot-left");
-             $(this).removeClass("idle").addClass("active");
-         });
-     });
-
-     $(function () {
-         $(".btn-signup").click(function () {
-             $(".nav").toggleClass("nav-up");
-             $(".form-signup-left").toggleClass("form-signup-down");
-             $(".success").toggleClass("success-left");
-             $(".frame").toggleClass("frame-short");
-         });
-     });
-   
-     $(function () {
-         $(".btn-signin").click(function () {
-             $(".btn-animate").toggleClass("btn-animate-grow");
-             $(".welcome").toggleClass("welcome-left");
-             $(".cover-photo").toggleClass("cover-photo-down");
-             $(".frame").toggleClass("frame-short");
-             $(".profile-photo").toggleClass("profile-photo-down");
-             $(".btn-goback").toggleClass("btn-goback-up");
-             $(".forgot").toggleClass("forgot-fade");
-         });
-     });
+</script>
 
 
- */
-
-
-
-
-
-
-
-</script>--%>
 </body>
 </html>

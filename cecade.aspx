@@ -1,722 +1,372 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cecade.aspx.cs" Inherits="WebCECADE.cecade" %>
 
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Centro de Capacitación y Desarrollo</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <!--link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style - copia.css" rel="stylesheet">
-   
-
-  <!-- =======================================================
-  * Template Name: Anyar - v4.6.0
-  * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+	<title>CECADE</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style - copia.css" />
+	<noscript><link rel="stylesheet" href="assets/css/Stylecontacto.css" /></noscript>
 
 
- <link rel="stylesheet" href="CSS\StyleCecade.css" />
 
-<style type="text/css">
 
-.icon-boxes {
-  padding-top: 3%;
-  position: relative;
-  z-index: 100;
+	<style type="text/css">
+
+
+
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+	display: none;
 }
-    .mobile-nav-toggle.bi-x {
-    color: black;
-    font-weight: bold;
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+	display: block;
+	width: 160px;
+	height: 150px;
+	margin: 0 auto;
+	padding: 5px 20px;
+	cursor: pointer;
+	border-radius: 100px;
 }
-
-    .navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: none;
-    color: black;
-    font-weight: bold;
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] ~ .spoiler {
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
 }
-
-    .navbar-mobile a, .navbar-mobile a:focus {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-}
-
-    .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-    color: #e50069;
-}
-
-    .nav-link:focus, .nav-link:hover {
-    color: black;
-}
-
-    .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #e50069;
-}
-
-    .navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(229, 0, 105, 0.9);
-    transition: 0.3s;
-    z-index: 999;
-}
-.portfoio .portfolio-item .portfolio-info {
-    opacity: 0;
-    position: absolute;
-    left: 15px;
-    right: 65px;
-    bottom: -50px;
-    z-index: 3;
-    transition: all ease-in-out 0.3s;
-    background: #0880e8;
-    padding: 15px 20px;
-}
-    #header .logo {
-        font-size: 237%;
-        padding: 0;
-        line-height: 1;
-        font-weight: 500;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-align: center;
-        margin-left: 5%;
-    }
-    .navbar {
-    padding: 13px;
-    padding-left: 225px;
-}
- .img-fluid {
-    max-width: 180%;
-    height: auto;
-}
-
-.icon-boxes .icon-box {
-    padding: 30px 20px;
-    position: relative;
-    overflow: hidden;
-    background: #702383;
-    transform: scale(1);
-    box-shadow: 50px 100px 120px 0 rgb(112 34 131 / 20%);
-    transition: all 0.3s ease-in-out;
-    border-radius: 0px 35px 0px 35px;
-}
-
-.icon-boxes .icon-box1 {
-    padding: 30px 20px;
-    position: relative;
-    overflow: hidden;
-    background: #e50069;
-    transform: scale(1);
-    box-shadow: 50px 100px 120px 0 rgb(229 0 105 / 20%);
-    transition: all 0.3s ease-in-out;
-    border-radius: 0px 35px 0px 35px;
-}
-#topbar .cta a {
-        color: #fff;
-        background: #005189;
-        padding: 1px 24px 5px 27px;
-        display: inline-block;
-        transition: 0.3s;
-        border-radius: 50px;
-}
-#topbar .cta a:hover {
-        background: #005189;
-    }
-#topbar {
-    height: 8%;
-    padding: 0%;
-    font-size: 14px;
-    transition: all 0.5s;
-    overflow: hidden;
-    color: black;
-    z-index: 996;
-}
-.section-title h2 {
-  font-size: 560%;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  color: #fff;
-  margin-left: -86%;
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+	height: auto;
+	opacity: 1;
 }
 
 </style>
 
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    
-
-      <h1 class="logo"><a href="cecade.aspx"><b> Centro de Capacitaci&oacute;n y Desarrollo</b></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav style="padding-right: 10px;" id="navbar" class="navbar">
-        <ul style="margin-left: -12%">
-          <li><!--a class="nav-link scrollto active" href="menu.aspx">Inicio</a--></li>
-          <li><a class="nav-link scrollto" href="#portfolio" style="color:#FFFFFF; font-size: 125%;"><b>QUIÉNES SOMOS</b></a></li>
-          <!--li><a class="nav-link scrollto " href="#portfolio">Capacitación y desarrollo</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li-->
-          <li class="dropdown"><a href="#servicios" style="color:#FFFFFF; font-size: 125%;"><span><b>CAPACITACI&Oacute;N Y DESARROLLO</b></span> <!--i class="bi bi-chevron-down"></i--></a>
-            <ul>
-              <li><a href="#portfolio">Cátalogo de Cursos</a></li>
-              <li><a href="#portfolio">Consulta de los cursos del mes</a></li>
-              <li><a href="#portfolio">Mis cursos</a></li>
-              <li><a href="#portfolio">Detección de Necesidades de capacitación</a></li>
-              <li><a href="#portfolio">Solicitar un curso para tu Dependencia</a></li>
-              <li><a href="#portfolio">Validaciones</a></li>
-              <li><a href="#portfolio">Becas</a></li>
-              <li><a href="#alianza">Alianzas y más</a></li>
-              <li><a href="#portfolio">Bolsa de Trabajo</a></li>
-              <li><a href="#portfolio">Servicio Social y Prácticas Profesionales</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="aviso.aspx" style="color:#FFFFFF; font-size: 125%;"><b>MARCO LEGAL</b></a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-   <!-- ======= Top Bar ======= -->
-  <div style="margin-top: 4%; margin-left: 86%;" id="topbar" class="fixed-top d-flex align-items-center ">
-    <div  class="container d-flex align-items-center justify-content-center justify-content-md-between">
-      <div  class="cta d-none d-md-block">
-        <a href="inicia.aspx" class="scrollto">Cerrar Sesión</a>
-      </div>
-    </div>
-  </div>
-
-
-
-  </header><!-- End Header -->
-
-  <section id="why-us" class="why-us">
-
-    <div class="col-lg-12 align-items-center position-center video-box" style='margin-top: 10%; background-image: url("assets/img/maru1.jpg");' >
-      <a href="https://www.youtube.com/watch?v=xGRsu2GhS30" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" style="margin-left:25%;"></a>
-    </div><br/><br/>
-
-
-
-
-
-  </section><!-- End Why Us Section -->
-
-
-    <!--section style="margin-left: 149px; margin-top: -55px; margin-right: 1613px;"-->
-        
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScUQcxLYYMoN67h5V2DCnjR5R1FEBUqQtGsRsLCagbzVpvdUw/viewform" target="_blank" >
-            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #005189; width: 11%; margin-left: 13%; padding: 0%; background: #005189;">
-                <b><I>INDUCCIÓN</I></b></button></a>
-        <a href="#icon-boxes">
-            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #e50069; width: 21%; margin-left: 3%; padding: 0%; background: #e50069;">
-                <b><i>ALIANZAS Y BENEFICIOS</i></b></button></a>
-        <a href="#cursosmes">
-            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #702283; width: 18%; margin-left: 3%; padding: 0%; background: #702283;">
-                <b><i>CURSOS DEL MES</i></b></button></a>
-        <a href="#cta" >
-            <button type="submit" style="text-align:center; color: white; font-size: 180%; border-color: #55B2E1; width: 13%; margin-left: 3%; padding: 0%; background: #55B2E1;">
-                <b><i>SERVICIOS</i></b></button></a>
-
-
-    <!--/section-->
-
-  <main id="main">
-
-
-    <!-- ======= About Us Section ======= -->
-
-    <!--section-- id="about" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>¿Quiénes somos?</h2>
-          
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box" >
-              <i style="color: #702283;" class="bi bi-card-checklist"></i>
-              <h4><a style="color: #121212;" href="#">Objetivo</a></h4>
-              <p>Proporcionar herramientas necesarias que proporcione el desarrollo de sus habilidades, imaprtiendo cursos de capacitación al personal que lo solicite, a fin de ampliar sus conocimeintos y brindar un mejor servicio responsable, con ética, orientación, y calidad, atendiendo sus necesidades con empatía y amabilidad.</p>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div   class="icon-box">
-              <i style="color: #702283;" class="bi bi-bar-chart"></i>
-              <h4><a style="color: #121212;" href="#">Misión</a></h4>
-              <p style='text-align: justify;'>Diseñar, instrumentar y dirigir estrategias de selección, capacitación, comunicación interna e integración social de los servicios públicos, a través del fortalecimiento de las competencias necesarias que coadyuven en la presentación de un excelente servicio a las y los chihuahuenses.</p>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i style="color: #702283;" class="bi bi-binoculars"></i>
-              <h4><a style="color: #121212;" href="#">Visión</a></h4>
-              <p style='text-align: justify;'>Ser un centro vanguardista en materia de profesionalización que genere aprendizajes, desarrolle capacidades y transforme actitudes de las y los servidores públicos.</p>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i style="color: #702283;" class="bi bi-calendar4-week"></i>
-              <h4><a style="color: #121212;" href="#">Organigrama </a></h4>
-              <p style='text-align: justify;'><img src="assets/img/ORGANIGRAMA.jpg" onmouseover="this.width=1011;this.height=628;" onmouseout="this.width=100;this.height=80;" width="100" height="80" /></p>
-            </div>
-          </div>
-        </div>
-    </section--><!-- End Services Section -->
-
-<!-- ======= Cta Section ======= -->
-<!--section id="cta" class="cta">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2 style="color:#FFFFFF";>Marco Legal</h2>
-      <div class="col-md-15 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
-        <div class="icon-box">
-
-          <h4><b><a href="#" style="color:#000000";>ARTÍCULO 51. Compete al Centro de Capacitación y Desarrollo, las siguinetes funciones:</a></b></h4>
-          <p style='text-align: justify;'>I. Aplicar las póliticas establecidad por la Subsecretaria de Administración en materia de reclutamiento y selección del personal al servicio del Poder Ejecutivo.</p>
-          <p style='text-align: justify;'>II. Apoyar a las Dependencias, y en su caso a las entidades, en el reclutamiento y la selección de su personal.</p>
-          <p style='text-align: justify;'>III. Diseñar e impartir a los empleados de nuevo ingreso a las Dependencias, el Programa de Inducción al Gobierno del Estado, proporcionadoles la información básica relativa a las mismas, así como en relación a sus derechos y obligaciones públicos.</p>
-          <p style='text-align: justify;'>IV. Operar los sistemas de detección de necesidades de capacitación, actualización y desarrollo humano de los servidores públicos.</p>
-          <p style='text-align: justify;'>V. Diseñar y desarrollar programas de capacitación para el recurso humano de las Dependencias, así como validar en su caso los formulados por éstas.</p>
-          <p style='text-align: justify;'>VI. Elaborar el Programa Anual de Capacitación, basandose en la detección de necesidades de las Dependencias.</p>
-          <p style='text-align: justify;'>VII. Llevar el control de los cursos impartidos y evaluar en coordinación con las dependencias su eficiencia.</p>
-          <p style='text-align: justify;'>VIII. Evaluar y tramitar el otorgamiento de becas de capacitación y actualización al personal adscrito a las Dependencias, con apego a las políticas establecidas por la Dirección General de Administración.</p>
-
-          <p style='text-align: justify;'>IX. Fomentar y organizar en el ámbito institucional las actividades de recreación e integración de los servidores públicos, en coordinacion con las Dependencias.</p>
-          <br>
-          <h4><b><a href="#" style="color:#000000";>Anexo al periódico oficial Miércoles 10 de septiembre del 2014. 45</a></b></h4>
-          <p style='text-align: justify;'>X. Administrar la bolsa de trabajo del Gobierno del Estado, en coordinación con la Secretaría de Trabajo y Previsión Social.</p>
-          <p style='text-align: justify;'>XI. Extender constancias a los prestadores del servicio social y prácticas profesionales realizadas en las dependencias del Poder Ejecutivo.</p>
-          <p style='text-align: justify;'>XII. Las funciones que le asigne el Secretario, el Subsecretario de Administración y/o Director de Recursos Humanos, y las demás que les competen de conformidad con las disposiciones legales y reglamentarias alicables.</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="container" align="right">
-
-    <div class="row" data-aos="zoom-in">
-      <div class="col-lg-3 cta-btn-container text-center">
-        <a class="cta-btn align-middle" href="assets/img/cacech_anexo73-2014.pdf" download="cacech_anexo73-2014.pdf">Consultar Reglamento Interior de la Secretaría de Hacienda</a>
-      </div>
-    </div>
-
-  </div>
-</section--><!-- End Cta Section -->
-
-      
-    <br/><br/><br/><section style="background:  #d5dce6 " id="portfolio" class="portfoio">
-      <div class="container" style="margin-top: -8%;" >
-
-        <div class="section-title">
-          <h2 style="color: #2e5284"><b>¿Quiénes<br />somos?</b></h2>
-
-        </div>
-
-
-        <div class="row" style="margin-top: -7%;">
-          <div class="col-lg-12 d-flex justify-content-center"> 
-            <ul  id="portfolio-flters">
-              <li style="background-color: #61277e; margin-left: -160%; width: 121%; height: 115%; border-radius: 49%;" data-filter=".filter-app">
-                  <p style="margin-top: 39%; font-size: 200%;"><b>OBJETIVO</b></p></li>
-
-            </ul>
-          </div>
-
-         <div class="col-lg-12 d-flex justify-content-center"> 
-            <ul  id="portfolio-flters">
-              <li style=" background-color: #c20167; margin-left: 70%; width: 145%; height: 115%; border-radius: 49%;" data-filter=".filter-web">
-                  <p style="margin-top: 39%; font-size: 200%;"><b>MISIÓN</b></p></li>
-            </ul>
-          </div>
-
-                      <div class="col-lg-12 d-flex justify-content-center"> 
-            <ul  id="portfolio-flters">
-              <li style="background-color: #6eb0e1; margin-left: 275%; width: 152%; height: 115%; border-radius: 49%;" data-filter=".filter-card">
-                  <p style="margin-top: 39%; font-size: 200%;"><b>VISIÓN</b></p></li>
-            </ul>
-          </div>
-
-        </div>
-
-          <img style="margin-top: 8%; height: 10%; width: 30%; margin-left: -9%;" src="assets/img/quienessomos.jpg" />
-
-        <div class="row portfolio-container " style="position: center; height: 353.782px; margin-left: 25%; margin-top: -25%; ">
-
-            <div  class="col-lg-12 col-md-6 portfolio-item filter-app" >
-                            <h2 style="color: #61277e; text-align:justify; font-size: 300%;"><b>Objetivo</b></h2>
-              <p style="color:black; text-align:justify; margin-top: 3%; font-size: 165%;"><b>Proporcionar herramientas necesarias que proporcione el desarrollo de sus habilidades, 
-                  impartiendo cursos de capacitación al personal que lo solicite, a fin de ampliar sus conocimeintos y brindar un mejor servicio responsable, 
-                  con ética, orientación, y calidad, atendiendo sus necesidades con empatía y amabilidad.</b></p>
-
-          </div>
-
-
-                        <div  class="col-lg-12 col-md-6 portfolio-item filter-web" style="display: none;">
-                            <h2 style="color: #c20167;  text-align:justify; font-size: 300%;"><b>Misión</b></h2>
-              <p style="color:black; text-align:justify; font-size: 165%;"><b>Diseñar, instrumentar y dirigir estrategias de selección, capacitación, comunicación interna e 
-                  integración social de los servicios públicos, a través del fortalecimiento de las competencias necesarias que coadyuven en la presentación 
-                  de un excelente servicio a las y los chihuahuenses.</b></p>
-
-          </div>
-
-
-          <div  class="col-lg-12 col-md-6 portfolio-item filter-card" style="display: none;" >
-                            <h2 style="color: #6eb0e1;  text-align:justify; font-size: 300%;"><b>Visión</b></h2>
-              <p style="color:black; text-align:justify; font-size: 165%;"><b>Ser un centro vanguardista en materia de profesionalización que genere aprendizajes, 
-                  desarrolle capacidades y transforme actitudes de las y los servidores públicos.</b></p>
-
-          </div>
-        </div>
-      </div><br /><br /><br /><br />
-    </section><!-- End Portfoio Section -->
-  
-
-
-
-            <!-- ======= Clients Section ======= -->
-<%--          <section>        --%>
-             <br/><br/><br/><br/><div class="container" data-aos="zoom-in">
-              <div class="clients-slider swiper" >
-                  <h3 style="text-align: center; font-size: 50px; background: #6eb0e1; color: #fff; width: 45%; 
-                                margin-left: 25%;"><b>GALERÍA SOCIAL</b></h3>
-                <div style="margin-top: 12%;" class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen1.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen2.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/galeria/imagen3.jpg"  class="img-fluid" alt=""></div>
-                </div>
-                <br>
-                <br>
-              </div>
-            </div><br/><br/><br/><br/>
-<%--          </section><!-- End Clients Section -->--%>
-
-
-
-                <!-- ======= Icon Boxes Section ======= -->
-    <section id="icon-boxes" class="icon-boxes" style="background: #d8d8d8;">
-
-      <div class="container">
-         <h3 style="text-align: center; font-size: 50px; margin-top: 10%; background: #c20167; color: #fff; 
-                    width: 61%; margin-left: 18%;"><b>Alianzas y Beneficios</b></h3>
-       <div class="clients-slider swiper" >
-                       <div style="margin-top: 12%;" class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide"><img src="assets/img/clients/CENTRODEMEDICNABUCAL.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/EXTENDEDSUITES.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/FLAYERSOTOLERÍA.png"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/FLYERHOLIDAYINN.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/GRANDEVENTOS.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen1.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen2.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen3.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen4.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen5.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/imagen6.jpg"  class="img-fluid" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/img/clients/LABORATORIOLUÉVANO.jpg"  class="img-fluid" alt=""></div>
-                </div>   
-          
-           </div>
-
-
-        </div>
-    </section><!-- End Icon Boxes Section -->
-
-
-
-  <!-- ======= Contact Section ======= -->
-      <section class="container" id="cursosmes">
-      <div class="container" data-aos="fade-up" style="margin-top: -13%;">
 
-          <h3  style="text-align: center; font-size: 250%; margin-top: 10%; background: #61277e; color: #fff; 
-                    width: 33%; margin-left: 35%;"><b>CURSOS DEL MES</b></h3>
+</head>
+<body class="is-preload landing">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="index.html">Centro de Capacitación y Desarrollo</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="cecade.aspx">CECADE</a></li>
+					<li><a href="#four">¿Quiénes Somos?</a></li>
+					<li>
+						<!--ul>
+							<li>
+								<a href="#">Capacitación y Desarrollo</a>
+								<ul>
+									<li><a href="#">Cátalogo de Cursos</a></li>
+									<li><a href="#">Consulta de los cursos del mes</a></li>
+									<li><a href="#">Mis cursos</a></li>
+									<li><a href="#">Detección de Necesidades de capacitación</a></li>
+									<li><a href="#">Solicitar un curso para tu Dependencia</a></li>
+									<li><a href="#">Validaciones</a></li>
+									<li><a href="#">Becas</a></li>
+									<li><a href="#">Alianzas y más</a></li>
+									<li><a href="#">Bolsa de Trabajo</a></li>
+									<li><a href="#">Servicio Social y Prácticas Profesionales</a></li>
+								</ul>
+							</li>
+						</ul-->
+					</li>
+					<li><a href="#">Capacitación y Desarrollo</a></li>
+					<li><a href="#">Marco Legal</a></li>
+					<li><a href="inicia.aspx" class="button primary">Cerrar Sesión</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="row">
+
+				<!---->
+				<li style="margin-left: 8%;"><a href="#" ><span class="label"><button style="color: #fff; border-color: #005279; background: #005279; font-size: 150%;">INDUCCIÓN</button></span></a></li>
+				<li style="margin-left: 10%;"><a href="#" ><span class="label"><button style="color: #fff; border-color: #e50069; background: #e50069; margin-left: -30%; font-size: 150%;">ALIANZAS Y BENEFICIOS</button></span></a></li>
+				<li><a href="#" ><span class="label"><button style="color: #fff; border-color: #702283; background: #702283; margin-left: -5%; font-size: 145%;">MIS CURSOS</button></span></a></li>
+				<li><a href="#" ><span class="label"><button style="color: #fff;border-color: #55B2E1;background: #55B2E1; font-size: 150%;">SERVICIOS</button></span></a></li>
+			</div>
+		</section>
+
+
+
+
+		<!-- Four -->
+		<section id="four" class="wrapper style1 special fade-up">
+			<div class="container">
+				<header class="major">
+					<h2>¿Quiénes somos?</h2>
+				</header>
+				<!--div class="box alt"-->
+				<div class="row gtr-uniform">
+					<img src="images/quienessomos.jpg">	
+
+					<section class="col-4 col-6-medium col-12-xsmall" style="margin-top: 1%;">
+						<input type="checkbox" id="spoiler1"></input>
+						<label for="spoiler1" style="background: #702283;"><p style="color: #fff; font-size: 170%; text-align: center; margin-top: 35%;">Objetivo</p></label>
+						<div class="spoiler" style="width: 85%; overflow: hidden; margin: 120% auto 0; margin-left: 5%; font-size: 90%; margin-top: 8%;">Proporcionar herramientas necesarias que proporcione el desarrollo de sus habilidades, impartiendo cursos de capacitación al personal que lo solicite, a fin de ampliar sus conocimeintos y brindar un mejor servicio responsable, con ética, orientación, y calidad, atendiendo sus necesidades con empatía y amabilidad.</div>
+					</section>
+
+					<section class="col-4 col-6-medium col-12-xsmall" style="margin-top: 1%;">
+						<input type="checkbox" id="spoiler2"></input>
+						<label for="spoiler2" style="background: #575756; color: #fff; font-size: 126%; text-align: center;"><p style="color: #fff; font-size: 165%; text-align: center; margin-top: 31%;">Misión</p></label>
+						<div class="spoiler" style="width: 85%; overflow: hidden; margin: 120% auto 0; margin-left: 5%; font-size: 90%; margin-top: 8%;">Diseñar, instrumentar y dirigir estrategias de selección, capacitación, comunicación interna e integración social de los servicios públicos, a través del fortalecimiento de las competencias necesarias que coadyuven en la presentación de un excelente servicio a las y los chihuahuenses.</div>
+					</section>
+
+					<section class="col-4 col-6-medium col-12-xsmall" style="margin-top: 1%;">
+						<input type="checkbox" id="spoiler3"></input>
+						<label for="spoiler3" style="background: #005189; color: #fff; font-size: 138%; text-align: center;"><p style="color: #fff; font-size: 165%; text-align: center; margin-top: 31%;">Visión</p></label>
+						<div class="spoiler" style="width: 90%; overflow: hidden; margin: 295% auto 0; margin-left: 7%; font-size: 120%; margin-top: 15%;">Ser un centro vanguardista en materia de profesionalización que genere aprendizajes, desarrolle capacidades y transforme actitudes de las y los servidores públicos.</div>
+					</section>
+				</div>
+				<!--/div-->
+			</div>
+		</section>
+
+
+
+
+
+		<!-- Two -->
+		<section id="two" class="spotlight style2 right">
+			<div class="content">
+				<header>
+					<h3 style="text-align: center; font-size: 50px; background: #6eb0e1; color: #fff; width: 45%; 
+					margin-left: 25%;"><b>GALERÍA SOCIAL</b></h3>
+													<form enctype="multipart/form-data" action="" method="POST">
+									<input type="file">
+									<input type="submit" value="Subir archivo">
+								</form>
+				</header>
 
+				<div id="slider">
+					<figure>
 
-          <a  style="font-size: 760%; color: #d70067; margin-left: 10%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
-                        border-top: transparent; border-left: transparent; border-right: transparent;">Becas para Maestría</button></a>
-          <a  style="font-size: 760%; color: #d70067; margin-left: 25%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
-                        border-top: transparent; border-left: transparent; border-right: transparent;">Becas para Maestría</button></a>
-          <a  style="font-size: 760%; color: #d70067; margin-left: 10%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
-                        border-top: transparent; border-left: transparent; border-right: transparent;">Lucha contra el cáncer</button></a>
-          <a  style="font-size: 760%; color: #d70067; margin-left: 22%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
-                        border-top: transparent; border-left: transparent; border-right: transparent;">Lucha contra el cáncer</button></a>
-          <a  style="font-size: 760%; color: #d70067; margin-left: 10%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
-                        border-top: transparent; border-left: transparent; border-right: transparent;">Lenguaje Incluyente</button></a>
-          <a  style="font-size: 760%; color: #d70067; margin-left: 25%;">.<button style="font-size: 30%; background: #fff; border-bottom: #e50069 solid; 
-                        border-top: transparent; border-left: transparent; border-right: transparent;">Lenguaje Incluyente</button></a>
-
-
-
-      </div><br /><br />
-
-</section>
-      <!-- ======= Why Us Section ======= -->
-<section id="why-us" class="why-us" style=" margin-top:-9%;">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-5 align-items-stretch position-relative video-box" style='width: 100%; background-image: url("assets/img/declaracion.jpg");' data-aos="fade-right">
-        <!--a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></!--a-->
-          <img style="margin-left: 78%; height: 100%;" src="assets/img/escudo1.jpg">
-
-          <p style="color: #2e5284; margin-left: 50%; font-size: 270%; margin-top: -29%;"><b>Haga su</b></p>
-          <p style="color: #c20167; margin-left: 50%; font-size: 593%;"><b>Declarción<br />Patrimonial</b></p>
-          <a href="https://declaranet.chihuahua.gob.mx/" target="_blank"><button style="background: #e50069; border-color: #e50069; 
-                                                                                    width: 8%; height: 7%; border-radius: 40px; margin-left: 60%; color:#fff;"><b>AQUÍ</b></button></a>
-      </div>
-
-
-
-      <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
-
-        <div class="content">
-          
-        </div>
-      </div>
-    </div>
-</div>
-  </section><br /><br /><br /><br /><br /><br /><!-- End Why Us Section -->
-
-  <!-- ======= Portfoio Section ======= -->
-  <section id="cta" class="cta" style="margin-top: -5%;">
-    <section style="background: linear-gradient(rgba(229, 0, 105, 0.8), rgba(112, 34, 131, 0.9)) " id="servicios" class="portfoio">
-      <div class="container" data-aos="fade-up" style="margin-top: -7%;">
-
-
-
-        <div class="section-title" style="margin-top: 5%;">
-          <h2>Servicios</h2>
-        </div>
-
-
-          <ul style="margin-left: 41%; margin-top: -12%">
-  <li style="font-size: 239%; color: #6eb0e1; margin-left: 18%; text-align: initial;"> <a  style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
-  border-top: transparent; border-left: transparent; border-right: transparent;" href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank">Detección de necesidades de capacitación</a></li>
-
-  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
-  border-top: transparent; border-left: transparent; border-right: transparent;" href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank">Solicitar un curso para tu dependencia</a></li>
-
-  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
-  border-top: transparent; border-left: transparent; border-right: transparent;" href="assets/img/FORMATO_SOLICITUD.pdf"  target="_blank">Validaciones</a></li>
-
-  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
-  border-top: transparent; border-left: transparent; border-right: transparent;" href="becas.aspx">Becas</a></li>
-
-  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
-  border-top: transparent; border-left: transparent; border-right: transparent;" href="Alianza.aspx">Alianza y más</a></li>
-
-  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
-  border-top: transparent; border-left: transparent; border-right: transparent;" <!--href=""-->Bolsa de trabajo</a></li>
-
-  <li style="font-size: 239%; color: #6eb0e1; margin-top: 5%; margin-left: 18%; text-align: initial;"> <a style="font-size: 80%; background: transparent; color: #fff; border-bottom: #fff solid; 
-  border-top: transparent; border-left: transparent; border-right: transparent;" <!--href=""-->Servicio social y prácticas profesionales</a></li>
-</ul>
-
-
-
-          <!--onclick="window.location='cursos.aspx'"-->
-
-          <h3  style="text-align: center; font-size: 250%; margin-top: -36%; background: #6eb0e1;  
-                    width: 25%; margin-left: -10%;"><a style="color: #fff;" href="cursosempleado.aspx" target="_blank"><b>Mis cursos</b></a></h3>
-
-          <h3 href="cursos.aspx"style="text-align: center; font-size: 250%; margin-top: 6%; background: #f456b0; color: #fff; 
-                    width: 32%; margin-left: -10%;" ><a style="color: #fff;"  href="cursos.aspx" target="_blank"><b>Catálogo cursos</b></a></h3>
-
-          <h3 style="text-align: center; font-size: 250%; margin-top: 8%; background: #501275; color: #fff; 
-                    width: 42%; margin-left: -10%;"><a style="color: #fff;" href="cursosmes.aspx" target="_blank"><b>Consulta cursos del mes</b></a></h3>
-
-
-
-
-
-
-<%--        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center"> 
-            <ul  id="portfolio-flters">
-              <li style="background-color: #d70067"; id="Todo" data-filter="*" class="filter-active">Todo</li>
-              <li style="background-color: #d70067"; data-filter=".filter-app">Cursos</li>
-              <li style="background-color: #d70067"; data-filter=".filter-card">Mi espacio</li>
-              <!--li data-filter=".filter-web">Web</li-->
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <!--img align="center" src="assets/img/img1.jpg" class="img-fluid" alt=""-->
-              <a href="cursos.aspx" ><img src="assets/img/img1.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Cátalogo de cursos</h4>
-              <p>Programas</p>
-              <!--a href="cursos.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <!--img src="assets/img/img3.jpg" class="img-fluid" alt=""-->
-              <a href="cursosmes.aspx" ><img src="assets/img/img3.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Cursos del mes</h4>
-              <!--a href="cursosmes.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <!--img src="assets/img/img4.jpg" class="img-fluid" alt=""-->
-              <a href="cursosempleado.aspx" ><img src="assets/img/img4.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Mis Cursos</h4>
-              <!--a href="cursosempleado.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <!--img src="assets/img/img5.jpg" class="img-fluid" alt=""-->
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" ><img src="assets/img/img5.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Detección de Necesidad de Capacitación</h4>
-              <p>DNC</p>
-              <!--a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="details-link" ><i class="bx bx-link"></i></a-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <!--img width="900" src="assets/img/img6.jpg" class="img-fluid" alt=""-->
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank"><img src="assets/img/img6.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Solicitar Curso para tu Dependencia</h4>
-              <p>App</p>
-              <!--a href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank" class="details-link" ><i class="bx bx-link"></i></a-->
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <!--img src="assets/img/img7.jpg" class="img-fluid" alt=""-->
-               <a id =" plugin "type =" application / x-google-chrome-pdf" href="assets/img/FORMATO_SOLICITUD.pdf"  target="_blank"><img src="assets/img/img7.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Validaciones</h4>
-              <p>Formato de solicitud</p>
-              <!--a href="assets/img/vali2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a-->
-              <!--a href="assets/img/imgform.jpg" data-gallery="portfolioGallery" class="details-link" ><i class="bx bx-plus"></i></a-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <!--img width="900" src="assets/img/img8.jpg" class="img-fluid" alt=""-->
-              <a href="becas.aspx" ><img src="assets/img/img8.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Beca</h4>
-              <p>UACH Maestría</p>
-              <!--a href="assets/img/imgbeca.jpg" class="preview-link" ><i class="bx bx-plus"></i></a-->
-              <!--a href="becas.aspx" class="details-link" ><i class="bx bx-link"></i></a-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <!--img  src="assets/img/img13.jpg" class="img-fluid" alt=""-->
-              <a href="Alianza.aspx" ><img src="assets/img/img13.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Alianzas y más</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <!--img  src="assets/img/img13.jpg" class="img-fluid" alt=""-->
-              <a href="" ><img src="assets/img/img9.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Bolsas de Trabajo</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <!--img  src="assets/img/img13.jpg" class="img-fluid" alt=""-->
-              <a href="" ><img src="assets/img/img11.jpg" width="350" height="200" ></a>
-            <div style="background-color: #d70067"; class="portfolio-info">
-              <h4>Servicio Social y Prácticas Profesionales</h4>
-            </div>
-          </div>--%>
-
-        <%--</div>--%>
-      </div>
-    </section><!-- End Portfoio Section -->
-
-          <img src="assets/img/final.jpg">
-
-  </section>
-
-
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-<%--  <footer id="footer">
-
-    <div Style = "width:2500px;" class="container">
-      <div class="copyright">
-        &copy; El presente aviso de privacidad integral se encuentra disponible en las siguientes ligas del portal gubernamental <strong><span> http://ipagos.chihuahua.gob.mx</span></strong> y/o <strong><span> http://www.chihuahua.gob.mx/avisos</span></strong>, así mismo sus modificaciones serán publicadas en estas direcciones.
-      </div>
-      <!--div class="credits">
-        < All the links in the footer should remain intact. >
-        < You can delete the links only if you purchased the pro version. >
-        < Licensing information: https://bootstrapmade.com/license/ >
-        < Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/ >
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div-->
-    </div>
-  </footer><!-- End Footer -->--%>
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
+						<img src="galeria/imagen2.jpg" alt="">
+						<img src="galeria/imagen3.jpg" alt="">
+						<img src="galeria/imagen2.jpg" alt="">
+						<img src="galeria/imagen3.jpg" alt="">
+					</figure>
+				</div>
+
+			</section>
+<!-- Two -->
+
+					<section id=" " class="spotlight style2 right" >
+			<div class="content" style="background: #d8d8d8;">
+				<header>
+					<h3 style="text-align: center; font-size: 50px; background: #e50069; color: #fff; width: 45%; 
+					margin-left: 25%;"><b>ALIANZAS Y BENEFICIOS</b></h3>
+													<form enctype="multipart/form-data" action="" method="POST">
+									<input type="file">
+									<input type="submit" value="Subir archivo">
+								</form>
+				</header>
+
+				<div id="slider">
+					<figure>
+
+						<img src="galeria/imagen2.jpg" alt="">
+						<img src="galeria/imagen3.jpg" alt="">
+						<img src="galeria/imagen2.jpg" alt="">
+						<img src="galeria/imagen3.jpg" alt="">
+					</figure>
+				</div>
+
+			</section>
+
+
+			<!-- Five -->
+			<section id="five" class="wrapper style2 special fade">
+				<div class="container">
+					<header style="margin-top: -5%;">
+						<h3><b>CURSOS DEL MES</b></h3>
+					</header>
+
+					<div class="row" style="margin-top: -10%;">
+
+						<table class="table table-hover table-bordered results" style="margin-left: 11%;">
+
+							<tbody>
+
+								<tr>
+
+									<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="color: #2e5284; border-bottom: #e50069 solid;">Becas para Maestría</a></td>          
+								</tr>
+								<tr>
+
+									<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="color: #2e5284; border-bottom: #e50069 solid">Lucha contra el cáncer</a></td>          
+								</tr>
+								<tr>
+
+									<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="color: #2e5284; border-bottom: #e50069 solid">Lenguaje incluyente</a></td>          
+								</tr>
+							</tbody>
+
+
+						</table>
+
+						<table class="table table-hover table-bordered results" style="margin-left: -11%;">
+
+							<tbody>
+
+								<tr>
+
+									<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="color: #2e5284; border-bottom: #e50069 solid">Becas para Maestría</a></td>          
+								</tr>
+								<tr>
+
+									<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="color: #2e5284; border-bottom: #e50069 solid">Lucha contra el cáncer</a></td>          
+								</tr>
+								<tr>
+
+									<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="color: #2e5284; border-bottom: #e50069 solid">Lenguaje incluyente</a></td>          
+								</tr>
+							</tbody>
+
+
+						</table>
+					</div>
+
+				</div>
+			</section>
+
+
+
+			<!-- Five -->
+			<section id="five" class="wrapper style2 special fade">
+				<div class="container" style="background: gainsboro">
+					<header>
+
+						<div class="img col-lg-5 align-items-stretch position-relative video-box" style=' width: 100%; height: 769px;margin-top: -14%;' data-aos="fade-right">
+							<!--a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></!--a-->
+							<img src="images/decla.jpg" style="margin-top: 10%; height: 400px; margin-left: -23%;">
+
+							<a href="https://declaranet.chihuahua.gob.mx/" target="_blank">
+								<button style="background: #e50069; border-color: #e50069; width: 8%; height: 7%; border-radius: 40px; margin-left: -33%; color:#fff; font-size: 135%;"><b>AQUÍ</b></button></a>
+								<p ><b>Haga su<b></p>
+									<p style="color: #e50069;margin-left: 5%;font-size: 455%;margin-top: -2%;"><b>Declarción</b></p>
+									<p style="color: #e50069;margin-left: 7%;font-size: 455%;margin-top: -6%;"><b>Patrimonial</b></p>
+
+								</div>
+
+
+
+								<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+
+									<div class="content">
+
+									</div>
+								</div>
+							</header>
+						</div>
+					</section>
+
+
+
+
+
+
+					<!-- Five -->
+					<section id="five" class="wrapper style2 special fade" style="background: linear-gradient(rgba(229, 0, 105, 0.8), rgba(112, 34, 131, 0.9));">
+						<div class="container">
+							<header>
+								<h3 style="margin-left: 5%;"><b>SERVICIOS</b></h3>
+							</header>
+							<div class="row" style="margin-top: -10%;">
+
+								<table class="table table-hover table-bordered results" >
+
+									<tbody>
+
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="background: #6eb0e1;">Mis Cursos</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="background: #f456b0;">Catálogo Cursos</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="background: #501275;">Consulta Cursos del Mes</a></td>          
+										</tr>
+									</tbody>
+
+
+								</table>
+
+								<table class="table table-hover table-bordered results" >
+
+									<tbody>
+
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Detección de necesidades de capacitación</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Solicitar un curso para tu dependencia</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Validaciones</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Becas</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Alianzas y más</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Bolsa de trabajo</a></td>          
+										</tr>
+										<tr>
+
+											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Servicio social y prácticas profesionales</a></td>          
+										</tr>
+									</tbody>
+
+
+								</table>
+							</div>
+						</div>
+					</section>
+
+
+					<!-- Footer -->
+					<footer id="footer">
+						<img src="images/final.jpg">
+					</footer>
+
+				</div>
+
+				<!-- Scripts -->
+
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -724,8 +374,8 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js">
+
+				  <script src="assets/js/main.js">
 
 
     var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
@@ -815,8 +465,6 @@
 
 
     </script>
-        
 
-  </body>
-
-  </html>
+			</body>
+			</html>
