@@ -298,6 +298,15 @@
     <Content Include="FormularioBeca.aspx" />
     <Content Include="Inicia.aspx" />
     <Content Include="introduccion.aspx" />
+    <Content Include="javascript\breakpoints.min.js" />
+    <Content Include="javascript\browser.min.js" />
+    <Content Include="javascript\jquery.dropotron.min.js" />
+    <Content Include="javascript\jquery.min.js" />
+    <Content Include="javascript\jquery.scrollex.min.js" />
+    <Content Include="javascript\jquery.scrolly.min.js" />
+    <Content Include="javascript\main.js" />
+    <Content Include="javascript\script.js" />
+    <Content Include="javascript\util.js" />
     <Content Include="js\ContactMail.js" />
     <Content Include="js\Create.js" />
     <Content Include="js\global.js" />
