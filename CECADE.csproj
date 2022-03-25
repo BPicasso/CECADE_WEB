@@ -118,6 +118,7 @@
     <Content Include="assets\img\clients\RADIODIAGNEIMAGEN.jpg" />
     <Content Include="assets\img\clients\RADIODIÁGNOTICOEIMAGEN.png" />
     <Content Include="assets\img\clients\SALÓNCOMICS.jpg" />
+    <Content Include="assets\img\decla.jpg" />
     <Content Include="assets\img\declaracion.jpg" />
     <Content Include="assets\img\escudo1.jpg" />
     <Content Include="assets\img\final.jpg" />

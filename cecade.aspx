@@ -12,15 +12,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/style - copia.css" />
-	<noscript><link rel="stylesheet" href="assets/css/Stylecontacto.css" /></noscript>
+	<link rel="stylesheet" href="assets/css/Stylecontacto.css" />
 
 
 
 
 	<style type="text/css">
-
-
-
 /* Ocultar botón radio */
 input[id^="spoiler"]{
 	display: none;
@@ -90,7 +87,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
 
 
 		<!-- Banner -->
-		<section id="banner">
+		<section id="banner" style="">
 			<div class="row">
 
 				<!---->
@@ -112,7 +109,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
 				</header>
 				<!--div class="box alt"-->
 				<div class="row gtr-uniform">
-					<img src="images/quienessomos.jpg">	
+					<img src="assets/img/quienessomos.jpg">	
 
 					<section class="col-4 col-6-medium col-12-xsmall" style="margin-top: 1%;">
 						<input type="checkbox" id="spoiler1"></input>
@@ -152,39 +149,88 @@ input[id^="spoiler"]:checked + label + .spoiler{
 								</form>
 				</header>
 
-				<div id="slider">
-					<figure>
+				<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'><link rel="stylesheet" href="CSS/style.css">
 
-						<img src="galeria/imagen2.jpg" alt="">
-						<img src="galeria/imagen3.jpg" alt="">
-						<img src="galeria/imagen2.jpg" alt="">
-						<img src="galeria/imagen3.jpg" alt="">
-					</figure>
-				</div>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="0" height="0" viewBox="0 0 1366 768" xml:space="preserve">
+  <!-- Gaussian blur filter progression to animate -->
+  <defs>
+    <filter id="blur0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 0" />
+    </filter>
+    <filter id="blur1">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5 0" />
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12 0" />
+    </filter>
+    <filter id="blur3">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20 0" />
+    </filter>
+    <filter id="blur4">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="35 1" />
+    </filter>
+    <filter id="blur5">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="50 1" />
+    </filter>
+  </defs>
+</svg>
+
+<div class="slider">
+  <div>
+    <img src="https://images.unsplash.com/photo-1446770145316-10a05382c470?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1455717974081-0436a066bb96?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1477420086945-b99c643e8a3d?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="javascript/scriptslider.js"></script>
+
+</body>
+</html>
+
+
+
 
 			</section>
 <!-- Two -->
 
-					<section id=" " class="spotlight style2 right" >
+		<section id=" " class="spotlight style2 right" >
 			<div class="content" style="background: #d8d8d8;">
 				<header>
 					<h3 style="text-align: center; font-size: 50px; background: #e50069; color: #fff; width: 45%; 
-					margin-left: 25%;"><b>ALIANZAS Y BENEFICIOS</b></h3>
-													<form enctype="multipart/form-data" action="" method="POST">
-									<input type="file">
-									<input type="submit" value="Subir archivo">
-								</form>
+					margin-left: 25%; margin-top: 0%;"><b>ALIANZAS Y BENEFICIOS</b></h3>
+					<form enctype="multipart/form-data" action="" method="POST">
+					<input type="file">
+					<input type="submit" value="Subir archivo">
+					</form>
 				</header>
 
-				<div id="slider">
-					<figure>
-
-						<img src="galeria/imagen2.jpg" alt="">
-						<img src="galeria/imagen3.jpg" alt="">
-						<img src="galeria/imagen2.jpg" alt="">
-						<img src="galeria/imagen3.jpg" alt="">
-					</figure>
-				</div>
+<div class="slider">
+  <div>
+    <img src="https://images.unsplash.com/photo-1446770145316-10a05382c470?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1455717974081-0436a066bb96?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1477420086945-b99c643e8a3d?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
+  </div>
+</div>
+			</div>
 
 			</section>
 
@@ -192,11 +238,11 @@ input[id^="spoiler"]:checked + label + .spoiler{
 			<!-- Five -->
 			<section id="five" class="wrapper style2 special fade">
 				<div class="container">
-					<header style="margin-top: -5%;">
+					<header style="margin-top: -20%;">
 						<h3><b>CURSOS DEL MES</b></h3>
 					</header>
 
-					<div class="row" style="margin-top: -10%;">
+					<div class="row" style="margin-top: -7%;">
 
 						<table class="table table-hover table-bordered results" style="margin-left: 11%;">
 
@@ -248,18 +294,19 @@ input[id^="spoiler"]:checked + label + .spoiler{
 
 			<!-- Five -->
 			<section id="five" class="wrapper style2 special fade">
-				<div class="container" style="background: gainsboro">
+				<div class="container" >
 					<header>
 
 						<div class="img col-lg-5 align-items-stretch position-relative video-box" style=' width: 100%; height: 769px;margin-top: -14%;' data-aos="fade-right">
 							<!--a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></!--a-->
-							<img src="images/decla.jpg" style="margin-top: 10%; height: 400px; margin-left: -23%;">
+							<img src="assets/img/decla.jpg" style="height: 88%; margin-left: -42%;">
+							<!--img src="assets/img/escudo1.jpg" style="height: 100%; margin-left: -23%;"-->
 
 							<a href="https://declaranet.chihuahua.gob.mx/" target="_blank">
-								<button style="background: #e50069; border-color: #e50069; width: 8%; height: 7%; border-radius: 40px; margin-left: -33%; color:#fff; font-size: 135%;"><b>AQUÍ</b></button></a>
+								<button style="background: #e50069; border-color: #e50069; width: 8%; height: 7%; border-radius: 40px; margin-left: -50%; color:#fff; font-size: 135%;"><b>AQUÍ</b></button></a>
 								<p ><b>Haga su<b></p>
-									<p style="color: #e50069;margin-left: 5%;font-size: 455%;margin-top: -2%;"><b>Declarción</b></p>
-									<p style="color: #e50069;margin-left: 7%;font-size: 455%;margin-top: -6%;"><b>Patrimonial</b></p>
+									<p style="color: #e50069;margin-left: 17%;font-size: 700%;margin-top: -2%;"><b>Declarción</b></p>
+									<p style="color: #e50069;margin-left: 20%;font-size: 700%;margin-top: -6%;"><b>Patrimonial</b></p>
 
 								</div>
 
@@ -284,7 +331,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
 					<section id="five" class="wrapper style2 special fade" style="background: linear-gradient(rgba(229, 0, 105, 0.8), rgba(112, 34, 131, 0.9));">
 						<div class="container">
 							<header>
-								<h3 style="margin-left: 5%;"><b>SERVICIOS</b></h3>
+								<h3><b>SERVICIOS</b></h3>
 							</header>
 							<div class="row" style="margin-top: -10%;">
 
@@ -352,20 +399,21 @@ input[id^="spoiler"]:checked + label + .spoiler{
 
 					<!-- Footer -->
 					<footer id="footer">
-						<img src="images/final.jpg">
+						<img src="assets/img/final.jpg">
 					</footer>
 
 				</div>
 
 				<!-- Scripts -->
 
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.scrolly.min.js"></script>
-				<script src="assets/js/jquery.dropotron.min.js"></script>
-				<script src="assets/js/jquery.scrollex.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
+
+				<script src="javascript/jquery.min.js"></script>
+				<script src="javascript/jquery.scrolly.min.js"></script>
+				<script src="javascript/jquery.dropotron.min.js"></script>
+				<script src="javascript/jquery.scrollex.min.js"></script>
+				<script src="javascript/browser.min.js"></script>
+				<script src="javascript/breakpoints.min.js"></script>
+				<script src="javascript/util.js"></script>
 
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -375,96 +423,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 
-				  <script src="assets/js/main.js">
-
-
-    var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-
-    class Carousel extends React.Component {
-
-      constructor(props) {
-        super(props)
-        this.state = {
-          items: this.props.items,
-          active: this.props.active,
-          direction: ''
-        }
-        this.rightClick = this.moveRight.bind(this)
-        this.leftClick = this.moveLeft.bind(this)
-      }
-
-      generateItems() {
-        var items = []
-        var level
-        console.log(this.state.active)
-        for (var i = this.state.active - 2; i < this.state.active + 3; i++) {
-          var index = i
-          if (i < 0) {
-            index = this.state.items.length + i
-          } else if (i >= this.state.items.length) {
-            index = i % this.state.items.length
-          }
-          level = this.state.active - i
-          items.push(<Item key={index} id={this.state.items[index]} level={level} />)
-        }
-        return items
-      }
-
-      moveLeft() {
-        var newActive = this.state.active
-        newActive--
-        this.setState({
-          active: newActive < 0 ? this.state.items.length - 1 : newActive,
-          direction: 'left'
-        })
-      }
-
-      moveRight() {
-        var newActive = this.state.active
-        this.setState({
-          active: (newActive + 1) % this.state.items.length,
-          direction: 'right'
-        })
-      }
-
-      render() {
-        return(
-          <div id="carousel" className="noselect">
-          <div className="arrow arrow-left" onClick={this.leftClick}><i className="fi-arrow-left"></i></div>
-          <ReactCSSTransitionGroup 
-          transitionName={this.state.direction}>
-          {this.generateItems()}
-          </ReactCSSTransitionGroup>
-          <div className="arrow arrow-right" onClick={this.rightClick}><i className="fi-arrow-right"></i></div>
-          </div>
-          )
-      }
-    }
-
-    class Item extends React.Component {
-
-      constructor(props) {
-        super(props)
-        this.state = {
-          level: this.props.level
-        }
-      }
-
-      render() {
-        const className = 'item level' + this.props.level
-        return(
-          <div className={className}>
-          {this.props.id}
-          </div>
-          )
-        }
-      }
-
-      var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-      ReactDOM.render(<Carousel items={items} active={0}/>, document.getElementById('app'))
-
-
-    </script>
+				  
 
 			</body>
 			</html>
