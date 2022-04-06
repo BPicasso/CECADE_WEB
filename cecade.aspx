@@ -88,14 +88,14 @@ input[id^="spoiler"]:checked + label + .spoiler{
 
 
 		<!-- Banner -->
-		<section id="banner" style="">
+		<section id="banner" style="background-image: url('assets/img/maru1.jpg'); background-size: contain;background-repeat: no-repeat;background-position: center;">
 			<div class="row">
 
 				<!---->
 				<li style="margin-left: 8%;"><a href="#" ><span class="label"><button style="color: #fff; border-color: #005279; background: #005279; font-size: 150%;">INDUCCIÓN</button></span></a></li>
-				<li style="margin-left: 10%;"><a href="#" ><span class="label"><button style="color: #fff; border-color: #e50069; background: #e50069; margin-left: -30%; font-size: 150%;">ALIANZAS Y BENEFICIOS</button></span></a></li>
-				<li><a href="#" ><span class="label"><button style="color: #fff; border-color: #702283; background: #702283; margin-left: -5%; font-size: 145%;">MIS CURSOS</button></span></a></li>
-				<li><a href="#" ><span class="label"><button style="color: #fff;border-color: #55B2E1;background: #55B2E1; font-size: 150%;">SERVICIOS</button></span></a></li>
+				<li style="margin-left: 10%;"><a href="#alianza" ><span class="label"><button style="color: #fff; border-color: #e50069; background: #e50069; margin-left: -30%; font-size: 150%;">ALIANZAS Y BENEFICIOS</button></span></a></li>
+				<li><a href="#five" ><span class="label"><button style="color: #fff; border-color: #702283; background: #702283; margin-left: -5%; font-size: 145%;">MIS CURSOS</button></span></a></li>
+				<li><a href="#idservicio" ><span class="label"><button style="color: #fff;border-color: #55B2E1;background: #55B2E1; font-size: 150%;">SERVICIOS</button></span></a></li>
 			</div>
 		</section>
 
@@ -149,7 +149,15 @@ input[id^="spoiler"]:checked + label + .spoiler{
 									<input type="submit" value="Subir archivo">
 								</form>
 				</header>
-	
+					<div class="slider">
+ 
+    <img src="assets/img/galeria/imagen1.jpg" alt="">
+
+    <img src="assets/img/galeria/imagen2.jpg" alt="">
+
+    <img src="assets/img/galeria/imagen3.jpg" alt="">
+
+</div>
 
 
 
@@ -159,7 +167,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
 			</section>
 <!-- Two -->
 
-		<section id=" " class="spotlight style2 right" >
+		<section id="alianza" class="spotlight style2 right" >
 			<div class="content" style="background: #d8d8d8;">
 				<header>
 					<h3 style="text-align: center; font-size: 50px; background: #e50069; color: #fff; width: 45%; 
@@ -282,7 +290,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
 
 
 					<!-- Five -->
-					<section id="five" class="wrapper style2 special fade" style="background: linear-gradient(rgba(229, 0, 105, 0.8), rgba(112, 34, 131, 0.9));">
+					<section id="idservicio" class="wrapper style2 special fade" style="background: linear-gradient(rgba(229, 0, 105, 0.8), rgba(112, 34, 131, 0.9));">
 						<div class="container">
 							<header>
 								<h3><b>SERVICIOS</b></h3>
@@ -295,15 +303,15 @@ input[id^="spoiler"]:checked + label + .spoiler{
 
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="background: #6eb0e1;">Mis Cursos</a></td>          
+											<td align="left"><a href="cursosempleado.aspx" class="clsVentanaIFrame clsBoton" style="background: #6eb0e1;">Mis Cursos</a></td>          
 										</tr>
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="background: #f456b0;">Catálogo Cursos</a></td>          
+											<td align="left"><a href="cursos.aspx" class="clsVentanaIFrame clsBoton" style="background: #f456b0;">Catálogo Cursos</a></td>          
 										</tr>
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" style="background: #501275;">Consulta Cursos del Mes</a></td>          
+											<td align="left"><a href="cursosmes.aspx" class="clsVentanaIFrame clsBoton" style="background: #501275;">Consulta Cursos del Mes</a></td>          
 										</tr>
 									</tbody>
 
@@ -316,23 +324,23 @@ input[id^="spoiler"]:checked + label + .spoiler{
 
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Detección de necesidades de capacitación</a></td>          
+											<td align="left"><a href="https://docs.google.com/forms/d/e/1FAIpQLScbqqHLrlurpsfGOYzM7qfpgFpbOqi0rssUv4hcn1Oacn4U1Q/viewform" target="_blank" class="clsVentanaIFrame clsBoton" >Detección de necesidades de capacitación</a></td>          
 										</tr>
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Solicitar un curso para tu dependencia</a></td>          
+											<td align="left"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBUrKSYdr_j6Chj8yVuMzJs_8lwLq_MdU-yZwzH8RYI7kcKQ/viewform" target="_blank" class="clsVentanaIFrame clsBoton" >Solicitar un curso para tu dependencia</a></td>          
 										</tr>
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Validaciones</a></td>          
+											<td align="left"><a href="assets/img/FORMATO_SOLICITUD.pdf" class="clsVentanaIFrame clsBoton" >Validaciones</a></td>          
 										</tr>
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Becas</a></td>          
+											<td align="left"><a href="becas.aspx" class="clsVentanaIFrame clsBoton" >Becas</a></td>          
 										</tr>
 										<tr>
 
-											<td align="left"><a href="#" class="clsVentanaIFrame clsBoton" >Alianzas y más</a></td>          
+											<td align="left"><a href="#alianza" class="clsVentanaIFrame clsBoton" >Alianzas y más</a></td>          
 										</tr>
 										<tr>
 

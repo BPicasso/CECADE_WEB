@@ -88,7 +88,7 @@ html {
 }
 
 html, body {
-    background: #1c1d26;
+    background: #fff;
 }
 
 /*   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3634,7 +3634,7 @@ body.landing #header {
 
 #banner {
     /*background-attachment: fixed;*/
-    background-color: #fff;
+    /*background-color: #fff;*/
     /*background-position: center center;*/
     background-size: contain;
     background-repeat: no-repeat;

@@ -16,7 +16,6 @@
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Titillium Web', sans-serif;
-    background:
 }
 </style>
 </head>
