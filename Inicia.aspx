@@ -43,7 +43,7 @@
           <div class="top-row">
             <div class="field-wrap">
               <div class="field-wrap">
-                <label style="margin-left: 25%; MARGIN-TOP: -5%; font-weight: bold; color: #005189" for="username" >NOMBRE DE USUARIO</label><br>
+                <label style="margin-left: 25%; MARGIN-TOP: -5%; font-weight: bold; color: #025c8f" for="username" >NOMBRE DE USUARIO</label><br>
   
                 <input type="text"required autocomplete="off"/>
               </div>

@@ -13,6 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/style - copia.css" />
 	<link rel="stylesheet" href="assets/css/Stylecontacto.css" />
+	
 
 
 
@@ -140,7 +141,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
 		<!-- Two -->
 		<section id="two" class="spotlight style2 right">
 			<div class="content">
-				<header>
+				<header style="margin-top: -13%;">
 					<h3 style="text-align: center; font-size: 50px; background: #6eb0e1; color: #fff; width: 45%; 
 					margin-left: 25%;"><b>GALERÍA SOCIAL</b></h3>
 													<form enctype="multipart/form-data" action="" method="POST">
@@ -148,62 +149,12 @@ input[id^="spoiler"]:checked + label + .spoiler{
 									<input type="submit" value="Subir archivo">
 								</form>
 				</header>
-
-				<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'><link rel="stylesheet" href="CSS/style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-           width="0" height="0" viewBox="0 0 1366 768" xml:space="preserve">
-  <!-- Gaussian blur filter progression to animate -->
-  <defs>
-    <filter id="blur0">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="0 0" />
-    </filter>
-    <filter id="blur1">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5 0" />
-    </filter>
-    <filter id="blur2">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="12 0" />
-    </filter>
-    <filter id="blur3">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="20 0" />
-    </filter>
-    <filter id="blur4">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="35 1" />
-    </filter>
-    <filter id="blur5">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="50 1" />
-    </filter>
-  </defs>
-</svg>
-
-<div class="slider">
-  <div>
-    <img src="https://images.unsplash.com/photo-1446770145316-10a05382c470?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1455717974081-0436a066bb96?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1477420086945-b99c643e8a3d?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
-  </div>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="javascript/scriptslider.js"></script>
-
-</body>
-</html>
+	
 
 
 
+
+			</div>
 
 			</section>
 <!-- Two -->
@@ -219,17 +170,20 @@ input[id^="spoiler"]:checked + label + .spoiler{
 					</form>
 				</header>
 
-<div class="slider">
-  <div>
-    <img src="https://images.unsplash.com/photo-1446770145316-10a05382c470?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1455717974081-0436a066bb96?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1477420086945-b99c643e8a3d?dpr=1&auto=format&fit=crop&w=900&h=450&q=80&cs=tinysrgb&crop=" alt="">
-  </div>
+
+				<div class="slider">
+ 
+    <img src="assets/img/clients/imagen1.jpg" alt="">
+
+    <img src="assets/img/clients/imagen2.jpg" alt="">
+
+    <img src="assets/img/clients/imagen3.jpg" alt="">
+
 </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="javascript/scriptslider.js"></script>
+
 			</div>
 
 			</section>
@@ -405,7 +359,6 @@ input[id^="spoiler"]:checked + label + .spoiler{
 				</div>
 
 				<!-- Scripts -->
-
 
 				<script src="javascript/jquery.min.js"></script>
 				<script src="javascript/jquery.scrolly.min.js"></script>

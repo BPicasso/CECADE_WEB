@@ -15,7 +15,7 @@
     <form id="mail-form" method="post">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input style="border-color: #702383; border-radius: 0px 35px 0px 35px; font-size: 18px; margin: 0 0 25px; overflow: hidden; padding: 16px;" type="text" name="Nombre"  id="Nombre" class="form-control" placeholder="Nombre" required>
+                  <input style="border-color: #0b6599; border-radius: 0px 35px 0px 35px; font-size: 18px; margin: 0 0 25px; overflow: hidden; padding: 16px;" type="text" name="Nombre"  id="Nombre" class="form-control" placeholder="Nombre" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input style="font-family: sans-serif; border-color: #702383; border-radius: 0px 35px 0px 35px; font-size: 18px; margin: 0 0 25px; overflow: hidden; padding: 16px;" type="email"  name="Correo" id="Correp" placeholder="Correo" required>
