@@ -37,7 +37,7 @@
             $(".mensaje").html(info.d);
             if (info.d == "Success") {
                 
-                setTimeout(function () { window.location.href = "menu.aspx"; }, 500);
+                setTimeout(function () { window.location.href = "cecade.aspx"; }, 500);
                // window.location.href = "menu.aspx";
             } else {
                 
