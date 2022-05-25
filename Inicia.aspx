@@ -26,7 +26,7 @@
   
 <img style="width: 100%;" src="assets/img/fondo1.jpg">
 
-  
+
   <div class="form">
 
       <ul class="tab-group">
@@ -36,15 +36,14 @@
       
       <div class="tab-content">
         <div id="signup">   
-          
-          <form action="/" method="post">
+         <form id="login-form" action="" method="post" name="form">
           
           <div class="top-row">
             <div class="field-wrap">
               <div class="field-wrap">
                 <label style="margin-left: 25%; MARGIN-TOP: -5%; font-weight: bold; color: #025c8f" for="username" >NOMBRE DE USUARIO</label><br>
   
-                <input type="text"required autocomplete="off"/>
+                <input id="usuario" name="usuario" type="text"required autocomplete="off"/>
               </div>
           
             </div>
@@ -55,9 +54,9 @@
          
           
           <div class="field-wrap">
-            <label style="margin-left: 33%; MARGIN-TOP: -5%; font-weight: bold; color: #005189" for="username" >CONTRASEÑA</label><br>
+            <label style="margin-left: 33%; MARGIN-TOP: -5%; font-weight: bold; color: #005189" for="username"  >CONTRASEÑA</label><br>
 
-            <input type="password"required autocomplete="off"/>
+            <input id="password" name="password" type="password"required autocomplete="off"/>
 
             <a style="margin-left:62%; font-size: 123%;">¿Olvidaste Contraseña?</a>
           </div>
@@ -211,6 +210,17 @@
 
 
 </div>
+<%--    Funcionalidad Ayax No borrar   --%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/datatables.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       <script src="js/global.js"></script>
+            <script>
+                $(function () {
+                    __login();
+
+                });
+            </script>  
 
 
 <!-- partial -->
