@@ -63,7 +63,7 @@
           </div>
           
           
-          <button type="submit" style="border-radius: 25px;" class="button button-block">INICIAR SESIÓN</button>
+          <button type="submit" style="border-radius: 25px;" class="button button-block" onclick="window.location.href='/cecade.aspx'">INICIAR SESIÓN</button>
           <br>          <br>
 
                <div class="forgot">
