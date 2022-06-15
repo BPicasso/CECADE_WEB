@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <title>Login</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="CSS/StyleMenu.css">
+  <link rel="stylesheet" href="CSS/StyleMenu.css">
 
 <style type="text/css">
     body {
@@ -62,7 +62,7 @@
           </div>
           
           
-          <button type="submit" style="border-radius: 25px;" class="button button-block" onclick="window.location.href='/cecade.aspx'">INICIAR SESIÓN</button>
+          <button type="submit" style="border-radius: 25px;" class="button button-block">INICIAR SESIÓN</button>
           <br>          <br>
 
                <div class="forgot">
